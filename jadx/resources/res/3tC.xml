@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.loading.LoadingView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/loading_skeleton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" app:item_count="3" app:item_layout="@layout/skeleton_thumnail_list_item" app:scrollable="false"/>

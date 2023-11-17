@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:background="@color/bog_card_view_background_color" android:layout_width="match_parent" android:layout_height="@dimen/default_list_item_with_image_container_height">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/add_payments_clickable" android:background="?attr/selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.FlipImageViewContainer android:layout_gravity="center_vertical" android:id="@+id/add_payment_item_flipper" android:paddingLeft="@dimen/item_default_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" app:flippedImageBorderColor="@android:color/transparent" app:flippedImageResourceId="@drawable/ic_template_basket_selected" app:frontImageBorderColor="@color/bog_circular_image_container_grey_color" app:frontImagePlaceHolderResourceId="@drawable/ic_fingerprint"/>
+        <FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/default_list_item_text_left_margin">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center_vertical" android:id="@+id/add_templates_title" android:paddingRight="@dimen/item_default_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="დენი სახლის" android:fontFamily="@font/bog_medium"/>
+            <View android:layout_gravity="bottom" android:id="@+id/add_payment_item_divider" android:background="@color/default_divider_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

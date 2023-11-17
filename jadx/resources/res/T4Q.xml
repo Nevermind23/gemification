@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/hole_item" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="@dimen/text_type_view_default_height">
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogInputLayout android:id="@+id/bog_input_view" android:layout_width="match_parent" android:layout_height="match_parent" app:changeColorOnFocus="false" app:layoutColor="@color/banner_text_color_grey"/>
+    <View android:id="@+id/view_selector" android:background="?attr/selectableItemBackground" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/extra_icon" android:visibility="gone" android:layout_width="40dp" android:layout_height="25dp" android:layout_marginBottom="@dimen/spacing_s" android:layout_marginEnd="@dimen/spacing_m"/>
+</FrameLayout>

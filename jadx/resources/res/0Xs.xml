@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/spacing_16">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_component_tr_25" android:layout_width="@dimen/insurance_polices_loading_title_width" android:layout_height="@dimen/insurance_polices_loading_title_height" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius12Shadow0"/>
+    <include layout="@layout/skeleton_text_image_card_wide"/>
+    <include layout="@layout/skeleton_text_image_card_wide"/>
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow20">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_component_tr_25" android:layout_width="@dimen/insurance_polices_loading_polices_title_width" android:layout_height="@dimen/insurance_polices_loading_polices_title_height" android:layout_marginTop="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" android:layout_marginStart="@dimen/spacing_16" app:layerStyle="@style/LayerRadius12Shadow0"/>
+            <include layout="@layout/skeleton_list_item"/>
+            <include layout="@layout/skeleton_list_item"/>
+            <include layout="@layout/skeleton_list_item"/>
+            <include layout="@layout/skeleton_list_item"/>
+        </LinearLayout>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/address_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icons_24_contacts_pin" android:tint="?attr/color_primary_solid_df_500"/>
+    <p341ge.bog.designsystem.components.list.SingleLineTextItem android:id="@+id/address_name_text" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/chevron_image" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icons_16_system_chevron_right" android:tint="@color/color_invert_component_tr_400"/>
+</p341ge.bog.designsystem.components.list.ListItem>

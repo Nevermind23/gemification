@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" android:maxLines="1" android:fontFamily="@font/bog_medium"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/shadow_background" android:background="@drawable/circle_shadow" android:padding="@dimen/swipe_button_shadow_padding" android:layout_width="@dimen/swipe_menu_button_size" android:layout_height="@dimen/swipe_menu_button_size">
+            <FrameLayout android:layout_gravity="center" android:id="@+id/item_button" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.appcompat.widget.AppCompatImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/item_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside" android:adjustViewBounds="true"/>
+            </FrameLayout>
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="10sp" android:textColor="?attr/color_invert_component_tr_200" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="2" android:minLines="2" android:fontFamily="@font/bog_medium"/>
+    </LinearLayout>
+    <TextView android:textSize="7sp" android:textColor="@color/bog_white_color" android:layout_gravity="center_horizontal" android:id="@+id/newIcon" android:background="@drawable/button_new_icon_background" android:paddingLeft="6dp" android:paddingTop="2dp" android:paddingRight="6dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="NEW" android:maxLines="1" android:fontFamily="@font/bog_medium" android:paddingStart="6dp" android:paddingEnd="6dp" android:layout_marginStart="20dp"/>
+</FrameLayout>

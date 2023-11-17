@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.designsystem.components.search.NavigationSearchView android:id="@+id/search_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:navigationSearchHint="@string/search_hint_text" app:navigationSearchNavigationEnabled="true"/>
+    <FrameLayout android:background="?attr/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/content_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/search_progressbar" android:background="?attr/color_invert_background_canvas" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <p341ge.bog.mobilebank.p975ui.components.BogProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:progressStyle="2"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

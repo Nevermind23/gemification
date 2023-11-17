@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <p341ge.bog.mobilebank.cleanarch.presentation.common.StateView android:id="@+id/state_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:contentLayout="@layout/layout_templates_providers" app:errorLayout="@layout/layout_payments_providers_error" app:loadingLayout="@layout/layout_payments_loading" app:noDataLayout="@layout/empty_templates_layout"/>
+    <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/auth_types_separator_size"/>
+    <FrameLayout android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/new_payment_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_16" app:button_text="@string/payments_button_add_new_payment" app:button_type="0"/>
+    </FrameLayout>
+</LinearLayout>

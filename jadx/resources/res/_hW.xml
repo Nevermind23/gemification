@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:layout_marginTop="0dp" app:layerStyle="@style/LayerRadius30Shadow0" style="@style/PiggyBankDetailsLayer">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/piggy_stats" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:background="@drawable/shape_invert_background_additional" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/spacing_12" android:layout_marginStart="@dimen/spacing_16" android:layout_marginEnd="@dimen/spacing_16">
+                    <p341ge.bog.designsystem.components.textgroup.TextGroupView android:id="@+id/total_amount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <p341ge.bog.designsystem.components.textgroup.TextGroupView android:id="@+id/monthly_amount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView app:layerStyle="@style/LayerRadius30Shadow0" style="@style/PiggyBankDetailsLayer">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/stats_header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/empty_state_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:drawable_tint="?attr/color_primary_solid_df_500"/>
+                <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/piggyBankHistoryRecycler" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

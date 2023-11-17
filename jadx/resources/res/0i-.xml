@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="@dimen/spacing_16" app:layerStyle="@style/LayerRadiusBottom16Shadow0"/>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_layer" android:paddingBottom="@dimen/spacing_l" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadiusBottom16Shadow20">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:layout_width="match_parent" android:layout_height="wrap_content" app:drawable_src="@drawable/icons_48_system_error_outline" app:drawable_tint="?attr/color_primary_solid_df_500" app:drawable_type="1" app:text="@string/transactions_loading_error_label"/>
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/refresh_operations" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:button_text="@string/common_button_refresh" app:button_type="1"/>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

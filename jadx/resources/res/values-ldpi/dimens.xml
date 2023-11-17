@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_card_amount_text_size">22sp</dimen>
+    <dimen name="home_card_badge_bg_height">21dp</dimen>
+    <dimen name="home_card_badge_bg_width">28dp</dimen>
+    <dimen name="home_card_badge_container_width">60dp</dimen>
+    <dimen name="home_card_badge_height">24dp</dimen>
+    <dimen name="home_card_badge_width">30dp</dimen>
+    <dimen name="home_card_padding">16dp</dimen>
+    <dimen name="home_currency_height">16dp</dimen>
+    <dimen name="home_currency_margin">3dp</dimen>
+    <dimen name="home_currency_text_size">10sp</dimen>
+    <dimen name="home_currency_width">20dp</dimen>
+</resources>

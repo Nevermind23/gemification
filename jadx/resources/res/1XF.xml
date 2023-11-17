@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingBottom="@dimen/spacing_28" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.pagestate.PageState android:id="@+id/page_state" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:page_state_type="3"/>
+    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/contact_button" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:button_icon="@drawable/icons_24_contacts_call" app:button_type="2"/>
+</LinearLayout>

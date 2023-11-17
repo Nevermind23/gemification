@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="@dimen/item_default_margin" android:paddingRight="@dimen/item_default_margin" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="@dimen/infinite_alpha_start">
+    <include layout="@layout/template_object_loading_item"/>
+    <include layout="@layout/template_object_loading_item"/>
+    <include layout="@layout/template_object_loading_item"/>
+    <include layout="@layout/template_object_loading_item"/>
+    <include layout="@layout/template_object_loading_item"/>
+    <include layout="@layout/template_object_loading_item"/>
+    <include layout="@layout/template_object_loading_item"/>
+    <include layout="@layout/template_object_loading_item"/>
+    <include layout="@layout/template_object_loading_item"/>
+    <include layout="@layout/template_object_loading_item"/>
+    <include layout="@layout/template_object_loading_item"/>
+    <include layout="@layout/template_object_loading_item"/>
+    <include layout="@layout/template_object_loading_item"/>
+    <include layout="@layout/template_object_loading_item"/>
+    <include layout="@layout/template_object_loading_item"/>
+    <include layout="@layout/template_object_loading_item"/>
+</LinearLayout>

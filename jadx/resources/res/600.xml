@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/bog_card_view_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/add_template_create_button" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/item_default_margin" android:paddingRight="@dimen/item_default_margin" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/default_list_item_with_image_container_height">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:layout_gravity="center" android:background="@drawable/circle_image_background" android:layout_width="@dimen/rounded_image_container_small_width_height" android:layout_height="@dimen/rounded_image_container_small_width_height" android:src="@drawable/ic_add_small" android:scaleType="center" app:tintType="0"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="?attr/colorPrimary" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_list_item_text_left_margin" android:text="@string/template_add_create_new_template" android:fontFamily="@font/bog_medium"/>
+        </LinearLayout>
+        <View android:background="@color/default_divider_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <FrameLayout android:paddingLeft="@dimen/item_default_margin" android:paddingRight="@dimen/item_default_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="14dp">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="@color/bog_default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/template_add_choose_template" android:fontFamily="@font/bog_headline_light"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="?attr/colorPrimary" android:layout_gravity="right" android:id="@+id/add_template_mark_all_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/template_add_mark_all" android:fontFamily="@font/bog_medium"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/template_add_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/add_template_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <include android:id="@+id/template_loading_view" android:visibility="invisible" layout="@layout/layout_template_loading"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/bog_card_view_background_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogButton android:textSize="@dimen/payment_pay_btn_text_size" android:id="@+id/add_template_add_button" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="@dimen/payment_pay_group_item_margin" android:text="@string/template_add_button_text_add" android:textAllCaps="true" android:fontFamily="@font/bog_headline_medium" style="@style/BogButtonNormalStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

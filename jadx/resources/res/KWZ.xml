@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/p2p_nav_graph">
+    <fragment android:label="@string/title_p2p" android:name="p341ge.bog.mobilebank.p2p.presentation.send.P2PSendFragment" android:id="@+id/P2PSendFragment">
+        <action android:id="@+id/action_P2PSendFragment_to_p2PSuccessFragment" app:destination="@+id/p2PSuccessFragment"/>
+    </fragment>
+    <fragment android:label="@string/title_p2p" android:name="p341ge.bog.mobilebank.p2p.presentation.success.P2PSuccessFragment" android:id="@+id/p2PSuccessFragment"/>
+    <fragment android:label="@string/p2p_top_up_balance" android:name="p341ge.bog.mobilebank.p2p.presentation.topup.P2PTopUpFragment" android:id="@+id/p2PTopUpFragment">
+        <action android:id="@+id/action_p2PTopUpFragment_to_p2PTopUpWebViewFragment" app:destination="@+id/p2PTopUpWebViewFragment"/>
+    </fragment>
+    <fragment android:label="@string/p2p_top_up_balance" android:name="p341ge.bog.mobilebank.p2p.presentation.topup_webview.P2PTopUpWebViewFragment" android:id="@+id/p2PTopUpWebViewFragment"/>
+</navigation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadiusTop40Shadow0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.buttonlist.ButtonListView android:id="@+id/statement_category_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:bottom_text="" app:button_text="@string/common_text_change" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:top_text="@string/common_text_user"/>
+            <p341ge.bog.designsystem.components.passcode.PasscodeView android:layout_gravity="center" android:id="@+id/passcode_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/sso_passcode_message"/>
+            <p341ge.bog.designsystem.components.digitalkeyboard.NumericKeyboardView android:id="@+id/passcode_keyboard_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:AdditionalButtonType="2"/>
+            <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/forgot_passcode" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_m" app:button_text="@string/onboarding_forgot_passcode" app:button_type="1"/>
+        </LinearLayout>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+</ScrollView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/main_content" android:background="?attr/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toTopOf="@+id/terms_check_layout" app:layout_constraintTop_toBottomOf="@+id/first_progress_badge">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:padding="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius12Shadow0">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.pagestate.PageState android:id="@+id/page_state" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <p341ge.bog.designsystem.components.smallsteps.SmallStepsView android:id="@+id/download_policy_steps" android:background="@color/color_information_solid_25" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:small_steps_state="4"/>
+                    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/button_return_to_home_page" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:button_icon="@drawable/icons_48_general_home_outline" app:button_type="2"/>
+                </LinearLayout>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/personal_info_container" android:background="@color/color_invert_background_layer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius12Shadow0">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/insured_person_info" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/first_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                    <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/last_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                    <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/personal_id" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                    <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/date_of_birth" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                </LinearLayout>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/product_details_content" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <androidx.core.widget.NestedScrollView android:background="@color/bog_white_color" android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintBottom_toTopOf="@+id/buttonContainer" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="#4b445b" android:gravity="center_vertical" android:id="@+id/page_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="53.5dp" android:lineSpacingExtra="7sp" android:fontFamily="@font/bog_headline_medium" android:layout_marginStart="25dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <View android:id="@+id/divider" android:background="@color/default_divider_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" app:layout_constraintTop_toBottomOf="@+id/page_title"/>
+            <RelativeLayout android:id="@+id/header_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:layout_marginEnd="30dp" app:layout_constraintTop_toBottomOf="@+id/divider">
+                <ImageView android:id="@+id/description_icon" android:visibility="gone" android:layout_width="64dp" android:layout_height="64dp" android:layout_marginStart="25dp" android:layout_alignParentStart="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24dp" android:layout_toEndOf="@+id/description_icon">
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#5c576b" android:id="@+id/description_header" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4sp" android:fontFamily="@font/bog_medium"/>
+                    <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#9e9e9e" android:id="@+id/description_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="1sp" android:fontFamily="@font/bog_medium"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:id="@+id/divider2" android:background="@color/default_divider_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/header_container"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/details_text_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="27dp" app:layout_constraintTop_toBottomOf="@+id/divider2"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.cardview.widget.CardView android:id="@+id/buttonContainer" android:background="@color/bog_white_color" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogButton android:textSize="18sp" android:id="@+id/continue_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:fontFamily="@font/bog_headline_medium" style="@style/BogButtonActiveStyle"/>
+    </androidx.cardview.widget.CardView>
+    <FrameLayout android:id="@+id/retry_button_container" android:background="@color/bog_activity_background_color" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_below="@+id/toolbar" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <include android:layout_gravity="center" android:id="@+id/retry_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/retry_button"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.progressbar.ProgressBarView android:id="@+id/first_progress_badge" android:layout_width="@dimen/text_image_card_wide_height" android:layout_height="wrap_content" app:progress_bar_full_color="1"/>
+        <p341ge.bog.designsystem.components.progressbar.ProgressBarView android:id="@+id/second_progress_badge" android:layout_width="@dimen/text_image_card_wide_height" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_4" app:progress_bar_full_color="1"/>
+        <p341ge.bog.designsystem.components.progressbar.ProgressBarView android:id="@+id/third_progress_badge" android:layout_width="@dimen/text_image_card_wide_height" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_4" app:progress_bar_full_color="4"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/insurance_providers_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</LinearLayout>

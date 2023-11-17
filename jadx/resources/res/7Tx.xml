@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/section_phone" android:layout_width="match_parent" android:layout_height="wrap_content" app:leftItemLayout="@layout/item_button_small_icon">
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_primary_tr_5" android:layout_width="36dp" android:layout_height="36dp" android:layout_margin="@dimen/spacing_s" app:layerStyle="@style/LayerRadiusCircleShadow0">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/spacing_xs" android:src="@drawable/icons_24_payment_category_phone" app:tint="?attr/color_primary_solid_df_500"/>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextBody1InvertComponents400Left" android:gravity="center_vertical" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="match_parent" android:layout_height="@dimen/height_list_item" android:text="@string/onboarding_phone_hint" style="@style/SingleLine.EllipsizeEnd"/>
+        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/section_email" android:layout_width="match_parent" android:layout_height="wrap_content" app:leftItemLayout="@layout/item_button_small_icon">
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_primary_tr_5" android:layout_width="36dp" android:layout_height="36dp" android:layout_margin="@dimen/spacing_s" app:layerStyle="@style/LayerRadiusCircleShadow0">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/spacing_xs" android:src="@drawable/icons_24_contacts_email_close_fill" app:tint="?attr/color_primary_solid_df_500"/>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextBody1InvertComponents400Left" android:gravity="center_vertical" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="match_parent" android:layout_height="@dimen/height_list_item" android:text="@string/onboarding_email_hint" style="@style/SingleLine.EllipsizeEnd"/>
+        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+</LinearLayout>

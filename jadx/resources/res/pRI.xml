@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/gift_cards_scroll_container" android:background="?attr/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/gift_cards_success_container" android:background="?attr/color_invert_background_canvas" android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/page_state_layer_container" android:background="?attr/color_invert_background_layer" android:padding="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius12Shadow0">
+            <LinearLayout android:orientation="vertical" android:id="@+id/page_state_linear_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <p341ge.bog.designsystem.components.pagestate.PageState android:id="@+id/page_state" android:layout_width="match_parent" android:layout_height="wrap_content" app:page_state_type="0"/>
+                <TextView android:textColor="?attr/color_invert_component_solid_500" android:gravity="center" android:id="@+id/information_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" style="@style/TextBody2"/>
+                <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/result_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:button_type="1"/>
+            </LinearLayout>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/details_layer_container" android:background="?attr/color_invert_background_layer" android:paddingBottom="@dimen/spacing_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius12Shadow0">
+            <LinearLayout android:orientation="vertical" android:id="@+id/details_linear_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/empty_widget_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/spacing_16">
+                    <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/gift_card_store_two_line_text" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/gift_card_store_image_view" android:layout_width="@dimen/brand_image_dimen" android:layout_height="@dimen/brand_image_dimen" app:layout_constraintBottom_toBottomOf="@+id/gift_card_animation_view" app:layout_constraintEnd_toEndOf="@+id/gift_card_animation_view" app:layout_constraintStart_toStartOf="@+id/gift_card_animation_view" app:layout_constraintTop_toTopOf="@+id/gift_card_animation_view" app:srcCompat="@drawable/thumbnail_circle"/>
+                </p341ge.bog.designsystem.components.list.ListItem>
+                <View android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="match_parent">
+                    <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/gift_card_mobile_number_two_line_text" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </p341ge.bog.designsystem.components.list.ListItem>
+                <View android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="match_parent">
+                    <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/gift_card_amount_two_line_text" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </p341ge.bog.designsystem.components.list.ListItem>
+                <View android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="match_parent">
+                    <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/gift_card_validity_two_line_text" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </p341ge.bog.designsystem.components.list.ListItem>
+                <View android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/spacing_8">
+                    <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textAppearance="@style/TextBody1" android:textColor="?attr/color_invert_component_tr_400" android:ellipsize="end" android:id="@+id/terms_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+                    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/terms_icon_layer_container" android:background="?attr/color_primary_tr_25" android:padding="@dimen/spacing_12" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius50Shadow0" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0">
+                        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/terms_conditions_image_view" android:layout_width="@dimen/spacing_16" android:layout_height="@dimen/spacing_16" android:src="@drawable/terms_icon" app:tint="?attr/color_primary_solid_df_500"/>
+                    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+                </p341ge.bog.designsystem.components.list.ListItem>
+            </LinearLayout>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    </LinearLayout>
+</ScrollView>

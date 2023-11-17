@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt">
+    <View android:id="@+id/third_badge" android:background="@drawable/shape_credit_cards_badge" android:layout_width="@dimen/width_credit_cards_badge_one" android:layout_height="@dimen/height_credit_cards_badge" android:layout_marginStart="12dp"/>
+    <View android:id="@+id/second_badge" android:background="@drawable/shape_credit_cards_badge" android:layout_width="@dimen/width_credit_cards_badge_one" android:layout_height="@dimen/height_credit_cards_badge" android:layout_marginStart="6dp"/>
+    <TextView android:textAppearance="@style/TextOverline2InvertComponents400Left" android:gravity="center" android:id="@+id/badges_num_text" android:background="@drawable/shape_credit_cards_badge" android:layout_width="@dimen/width_credit_cards_badge_one" android:layout_height="@dimen/height_credit_cards_badge"/>
+</merge>

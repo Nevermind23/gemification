@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/payment_pay_group_item_margin" android:paddingRight="@dimen/payment_pay_group_item_margin" android:paddingBottom="@dimen/payment_pay_group_item_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="8sp" android:textColor="@color/bog_black_text_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/transfer_details_header_initials_tv" android:background="@drawable/circle_image_background" android:layout_width="25dp" android:layout_height="25dp" android:fontFamily="@font/bog_headline_medium"/>
+        <ImageView android:id="@+id/transfer_details_header_image" android:background="@drawable/circle_image_background" android:padding="@dimen/loan_stroke_width" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:scaleType="centerCrop"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="@color/bog_black_text_color" android:layout_gravity="center_vertical" android:id="@+id/transfer_details_header_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:fontFamily="@font/bog_headline_medium"/>
+    </LinearLayout>
+    <View android:background="@color/payment_details_header_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/color_invert_background_layer" android:paddingBottom="@dimen/spacing_12" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <p341ge.bog.designsystem.components.creditcardsmallpicker.CreditCardSmallPickerView android:id="@+id/picker" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_12" android:layout_marginHorizontal="@dimen/spacing_16"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_4" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16">
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/secondary_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/spacing_12" app:button_type="13"/>
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/main_button" android:layout_width="match_parent" android:layout_height="wrap_content" app:button_type="0"/>
+    </LinearLayout>
+    <TextView android:textAppearance="@style/TextBody2Information500Left" android:layout_gravity="center" android:id="@+id/info_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" android:includeFontPadding="false"/>
+</LinearLayout>

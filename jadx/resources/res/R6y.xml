@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="32dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_marginTop="@dimen/loan_details_block_title_bottom_margin" android:text="@string/product_details_title_activation_date" style="@style/ProductDetailsSmallTitle"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:id="@+id/activation_date" style="@style/ProductDetailsValue"/>
+        <View style="@style/ProductDivider"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_plus_total_points" style="@style/ProductDetailsSmallTitle"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:id="@+id/collected_points" style="@style/ProductDetailsValue"/>
+        <View style="@style/ProductDivider"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_plus_spent_points" style="@style/ProductDetailsSmallTitle"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:id="@+id/spent_points" style="@style/ProductDetailsValue"/>
+        <View style="@style/ProductDivider"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_available" style="@style/ProductDetailsSmallTitle"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:id="@+id/available_points" style="@style/ProductDetailsValue"/>
+        <View style="@style/ProductDivider"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_number_ordered_gifts" style="@style/ProductDetailsSmallTitle"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:id="@+id/ordered_prize_count" android:layout_marginBottom="@dimen/loan_details_divided_margin" style="@style/ProductDetailsValue"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

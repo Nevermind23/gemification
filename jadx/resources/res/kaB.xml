@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" app:layerStyle="@style/LayerRadius16Shadow0" app:layout_constraintTop_toTopOf="0">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/activation_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layout_constraintTop_toTopOf="0"/>
+                <p341ge.bog.designsystem.components.input.Input android:id="@+id/name_input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:inputType="textAutoComplete" android:layout_marginStart="@dimen/spacing_16" android:layout_marginEnd="@dimen/spacing_16" app:layout_constraintEnd_toEndOf="@+id/gd_end" app:layout_constraintStart_toStartOf="@+id/gd_start" app:layout_constraintTop_toBottomOf="@+id/activation_description"/>
+                <p341ge.bog.designsystem.components.input.Input android:id="@+id/phone_input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" android:inputType="phone" android:layout_marginStart="@dimen/spacing_16" android:layout_marginEnd="@dimen/spacing_16" app:has_input_button="false" app:input_type="3"/>
+                <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/terms_description" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <p341ge.bog.designsystem.components.checkbox.CheckboxView android:id="@+id/terms_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_16"/>
+            </LinearLayout>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BigDividerView android:layout_width="match_parent" android:layout_height="1dp"/>
+            <p341ge.bog.designsystem.components.fixedbutton.FixedButtonView android:id="@+id/approve_button" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/bog_dialog_top_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/bog_dialog_focusable" android:focusable="true" android:layout_width="0dp" android:layout_height="0dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/error_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bog_dialog_margin" android:layout_marginTop="@dimen/bog_dialog_top_margin" android:layout_marginRight="@dimen/bog_dialog_margin">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/emoticon_image" android:layout_width="@dimen/bog_dialog_icon_height_width" android:layout_height="@dimen/bog_dialog_icon_height_width"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="@dimen/bog_dialog_title_text_size" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/error_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bog_dialog_title_margin" android:lineSpacingMultiplier="1.5" android:fontFamily="@font/bog_medium"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="@dimen/bog_dialog_text_size" android:textColor="@color/bog_black_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bog_dialog_text_margin" android:lineSpacingMultiplier="1.8" android:fontFamily="@font/bog_medium"/>
+    </LinearLayout>
+    <include layout="@layout/bog_dialog_buttons_container"/>
+</LinearLayout>

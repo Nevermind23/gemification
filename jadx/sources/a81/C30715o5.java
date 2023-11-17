@@ -1,0 +1,20 @@
+package a81;
+
+import jd1.C41399f;
+import p341ge.bog.mobilebank.p975ui.activities.MainActivityViewModel$ViewModel;
+import ue1.C43075l;
+
+/* renamed from: a81.o5 */
+public final /* synthetic */ class C30715o5 implements C41399f {
+
+    /* renamed from: d */
+    public final /* synthetic */ C43075l f76724d;
+
+    public /* synthetic */ C30715o5(C43075l lVar) {
+        this.f76724d = lVar;
+    }
+
+    public final void accept(Object obj) {
+        MainActivityViewModel$ViewModel.m104003jy(this.f76724d, obj);
+    }
+}

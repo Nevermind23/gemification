@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/color_invert_background_layer" android:paddingBottom="@dimen/spacing_8" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius12Shadow0">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_8" android:layout_marginHorizontal="@dimen/spacing_16" android:layout_marginVertical="@dimen/spacing_8">
+            <TextView android:textColor="?attr/color_primary_solid_df_500" android:id="@+id/summary_label" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/TextBody2"/>
+            <TextView android:textColor="?attr/color_primary_solid_df_500" android:id="@+id/summary_value" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@style/TextTitle1"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

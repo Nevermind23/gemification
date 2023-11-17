@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/component" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16">
+    <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/details_component" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:id="@+id/divider" android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

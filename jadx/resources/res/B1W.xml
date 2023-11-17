@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/selector_category_card" android:padding="@dimen/spacing_12" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="@dimen/category_card_view_height">
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/image_container" android:layout_width="@dimen/category_card_view_image_container_width" android:layout_height="@dimen/category_card_view_image_container_height" app:layerStyle="@style/LayerRadiusCircleShadow0">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/image" android:layout_width="@dimen/oval_icon_toggle_list_icon" android:layout_height="@dimen/oval_icon_toggle_list_icon" android:scaleType="centerCrop"/>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextBody2InvertComponents400Left" android:ellipsize="end" android:gravity="center" android:id="@+id/card_text" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginTop="@dimen/spacing_8" android:maxLines="2" android:includeFontPadding="false" android:layout_weight="1"/>
+    </LinearLayout>
+</FrameLayout>

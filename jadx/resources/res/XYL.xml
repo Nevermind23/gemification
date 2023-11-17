@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/gift_cards_nav_graph" app:startDestination="@+id/giftCardsFilterFragment">
+    <fragment android:label="GiftCardsFilterFragment" android:name="p341ge.bog.mobilebank.giftcards.presentation.filter.GiftCardsFilterFragment" android:id="@+id/giftCardsFilterFragment">
+        <action android:id="@+id/action_giftCardsFilterFragment_to_giftCardsFilteredOffersFragment" app:destination="@+id/giftCardsFilteredOffersFragment" app:popUpTo="@+id/gift_cards_nav_graph" app:popUpToInclusive="true"/>
+        <argument android:name="@string/gift_cards_flow_extra" app:argType="ge.bog.mobilebank.giftcards.presentation.activity.GiftCardsFlow"/>
+    </fragment>
+    <fragment android:label="GiftCardsFilteredOffersFragment" android:name="p341ge.bog.mobilebank.giftcards.presentation.filtered.GiftCardsFilteredOffersFragment" android:id="@+id/giftCardsFilteredOffersFragment">
+        <action android:id="@+id/action_giftCardsFilteredOffersFragment_to_giftCardsFilterFragment" app:destination="@+id/giftCardsFilterFragment"/>
+        <argument android:name="@string/gift_cards_flow_extra" app:argType="ge.bog.mobilebank.giftcards.presentation.activity.GiftCardsFlow"/>
+    </fragment>
+    <fragment android:label="GiftCardsFilteredOffersFragment" android:name="p341ge.bog.mobilebank.giftcards.presentation.chooseanimation.GiftCardsChooseAnimationFragment" android:id="@+id/giftCardsANimationsFragment">
+        <action android:id="@+id/action_giftCardsANimationsFragment_to_giftCardsChooseAmountFragment" app:destination="@+id/giftCardsChooseAmountFragment"/>
+        <action android:id="@+id/action_giftCardsANimationsFragment_to_giftCardNominationFragment" app:destination="@+id/giftCardNominationFragment"/>
+    </fragment>
+    <fragment android:label="GiftCardsChooseAmountFragment" android:name="p341ge.bog.mobilebank.giftcards.presentation.chooseamount.GiftCardsChooseAmountFragment" android:id="@+id/giftCardsChooseAmountFragment">
+        <action android:id="@+id/action_giftCardsChooseAmountFragment_to_giftCardNominationFragment" app:destination="@+id/giftCardNominationFragment"/>
+    </fragment>
+    <fragment android:label="GiftCardsNominationFragment" android:name="p341ge.bog.mobilebank.giftcards.presentation.nomination.GiftCardsNominationFragment" android:id="@+id/giftCardNominationFragment">
+        <action android:id="@+id/action_giftCardNominationFragment_to_giftCardsPurchaseFragment" app:destination="@+id/giftCardsPurchaseFragment"/>
+    </fragment>
+    <fragment android:label="GiftCardsSuccessFragment" android:name="p341ge.bog.mobilebank.giftcards.presentation.success.GiftCardsSuccessFragment" android:id="@+id/giftCardsSuccessFragment"/>
+    <fragment android:label="GiftCardsPurchaseFragment" android:name="p341ge.bog.mobilebank.giftcards.presentation.purchase.GiftCardsPurchaseFragment" android:id="@+id/giftCardsPurchaseFragment">
+        <action android:id="@+id/action_giftCardsPurchaseFragment_to_giftCardsSuccessFragment" app:destination="@+id/giftCardsSuccessFragment"/>
+        <action android:id="@+id/action_giftCardsPurchaseFragment_to_giftCardsANimationsFragment" app:destination="@+id/giftCardsANimationsFragment" app:popUpTo="@+id/giftCardsANimationsFragment" app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment android:label="GiftCardDetailsFragment" android:name="p341ge.bog.mobilebank.giftcards.presentation.details.GiftCardDetailsFragment" android:id="@+id/giftCardsDetailsFragment">
+        <action android:id="@+id/action_giftCardsDetailsFragment_to_giftCardsTermsAndConditionsFragment" app:destination="@+id/giftCardsTermsAndConditionsFragment"/>
+    </fragment>
+    <fragment android:label="GiftCardTermsAndConditionsFragment" android:name="p341ge.bog.mobilebank.giftcards.presentation.tersmsDescription.TermsAndConditionsFragment" android:id="@+id/giftCardsTermsAndConditionsFragment">
+        <action android:id="@+id/action_giftCardsTermsAndConditionsFragment_to_giftCardsDetailsFragment" app:destination="@+id/giftCardsDetailsFragment" app:popUpTo="@+id/giftCardsTermsAndConditionsFragment" app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment android:label="GiftCardOffersAndApplicationsFragment" android:name="p341ge.bog.mobilebank.giftcards.presentation.offersandapplications.OffersAndApplicationsDetailsFragment" android:id="@+id/giftCardsOffersAndApplications"/>
+</navigation>

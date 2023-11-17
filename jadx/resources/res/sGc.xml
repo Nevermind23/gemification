@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_canvas" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <include android:id="@+id/full_progress_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" layout="@layout/bog_full_progressbar"/>
+    <FrameLayout android:id="@+id/retry_button_container" android:background="@color/color_invert_background_canvas" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <include android:layout_gravity="center" android:id="@+id/retryBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/retry_button"/>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

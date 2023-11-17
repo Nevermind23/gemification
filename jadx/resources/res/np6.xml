@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/button_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:background="@drawable/above_shadow" android:layout_width="match_parent" android:layout_height="4dp"/>
+        <include android:id="@+id/pay_group" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/payments_pay_group"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/button_container">
+        <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/error_layout" android:paddingTop="@dimen/payment_pay_group_item_margin" android:paddingBottom="@dimen/payment_pay_group_item_margin" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/horizontal_error_layout" layout="@layout/layout_horizontal_error"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <include android:id="@+id/full_progress_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bog_full_progressbar"/>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/AppBarLayout">
+        <p341ge.bog.designsystem.components.toolbar.ToolbarView android:id="@+id/toolbar_new" android:layout_width="match_parent" android:layout_height="@dimen/height_toolbar" app:controlsFillAnimation="true" app:controlsFillColor="?attr/color_invert_component_tr_400" app:controlsUnfillColor="?attr/color_invert_component_tr_400" app:drawBottomLine="true" app:fillAnimation="true" app:fillColor="?attr/color_invert_background_layer" app:navigationEnabled="true" app:unfillColor="?attr/color_invert_background_canvas" style="@style/Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@+id/nested_scroll_view" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/app_bar_layout">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" app:layerStyle="@style/LayerRadiusTop16Shadow0">
+                <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.pagestate.PageState android:id="@+id/page_state" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_12" app:page_state_type="0"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/available_points" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/points_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_mr_points_round_bg"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineReverseTextItem android:id="@+id/points_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextTitle1" android:textColor="@color/color_positive_solid_df_500" android:gravity="right" android:id="@+id/points" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SingleLine.EllipsizeEnd"/>
+                            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextCaption1" android:textColor="@color/color_invert_component_tr_200" android:gravity="right" android:layout_gravity="right" android:id="@+id/points_in_gel" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SingleLine.EllipsizeEnd"/>
+                        </LinearLayout>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                    <com.facebook.shimmer.ShimmerFrameLayout android:id="@+id/points_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <include layout="@layout/skeleton_list_item"/>
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+                    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/home_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_16" app:button_icon="@drawable/icons_48_general_home_outline" app:button_type="2"/>
+                </LinearLayout>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow0">
+                <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/details_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineReverseTextItem android:id="@+id/points_from_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextTitle1" android:textColor="@color/color_invert_component_tr_400" android:gravity="right" android:id="@+id/points_from" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SingleLine"/>
+                            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextCaption1" android:textColor="@color/color_invert_component_tr_200" android:gravity="right" android:id="@+id/points_from_in_gel" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SingleLine"/>
+                        </LinearLayout>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BigDividerView android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineReverseTextItem android:id="@+id/points_to_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextTitle1" android:textColor="@color/color_invert_component_tr_400" android:gravity="right" android:id="@+id/points_to" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SingleLine"/>
+                            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextCaption1" android:textColor="@color/color_invert_component_tr_200" android:gravity="right" android:id="@+id/points_to_in_gel" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SingleLine"/>
+                        </LinearLayout>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                </LinearLayout>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

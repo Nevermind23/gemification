@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.notificationbadges.BadgeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="2dp" android:paddingBottom="0dp" android:duplicateParentState="true" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="0dp" android:paddingEnd="0dp" app:horizontal_offset="-10dp" app:vertical_offset="-10dp">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/inner_content_layout" android:background="@drawable/selector_button_icon_small" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadiusCircleShadow0">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/button_icon_image" android:duplicateParentState="true" android:layout_width="7.5dp" android:layout_height="7.5dp" android:layout_margin="4dp"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+</p341ge.bog.designsystem.components.notificationbadges.BadgeRelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/button_container" android:background="@color/color_invert_background_layer" android:padding="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <p341ge.bog.designsystem.components.inlinefeedback.InlineFeedback android:id="@+id/button_message_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:state="3" app:title="@string/calculator_no_ccy_accounts" app:type="linear"/>
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/convert_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" app:button_text="@string/calculator_convert"/>
+    </LinearLayout>
+    <ScrollView android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/button_container" android:layout_alignParentTop="true">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:id="@+id/calculator_container" android:background="@color/color_invert_background_layer" android:paddingLeft="@dimen/container_box_shadow_left_inset" android:paddingTop="@dimen/item_default_margin" android:paddingRight="@dimen/container_box_shadow_right_inset" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="202.5dp" android:layout_marginLeft="@dimen/exchange_side_margin" android:layout_marginRight="@dimen/exchange_side_margin">
+                    <RelativeLayout android:id="@+id/fragment_calculator_box" android:layout_width="match_parent" android:layout_height="160dp">
+                        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <FrameLayout android:paddingBottom="5dp" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="80dp">
+                                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:layout_alignParentLeft="true">
+                                        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextTitle3" android:textColor="@color/color_invert_component_tr_300" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_text_from" android:includeFontPadding="false"/>
+                                        <include android:id="@+id/exchange_from_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/exchange_from_to_layout"/>
+                                    </LinearLayout>
+                                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/item_default_margin" android:layout_alignParentRight="true">
+                                        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextTitle3" android:textColor="@color/color_invert_component_tr_300" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transfer_to" android:includeFontPadding="false"/>
+                                        <include android:id="@+id/exchange_to_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/exchange_from_to_layout"/>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </FrameLayout>
+                            <FrameLayout android:paddingBottom="5dp" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="80dp">
+                                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp">
+                                        <p341ge.bog.mobilebank.p975ui.views.widgets.BogEditText android:textSize="24sp" android:textColor="@color/color_invert_component_tr_300" android:textColorHint="@color/color_invert_component_tr_100" android:gravity="left" android:id="@+id/exchange_from_et" android:background="@android:color/transparent" android:paddingRight="14dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/item_default_margin" android:hint="0.00" android:layout_weight="1" android:inputType="numberDecimal" android:fontFamily="@font/bog_headline_medium"/>
+                                        <p341ge.bog.mobilebank.p975ui.views.widgets.BogEditText android:textSize="24sp" android:textColor="@color/color_invert_component_tr_300" android:textColorHint="@color/color_invert_component_tr_100" android:gravity="right" android:id="@+id/exchange_to_et" android:background="@android:color/transparent" android:paddingRight="14dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_default_margin" android:hint="0.00" android:layout_weight="1" android:inputType="numberDecimal" android:fontFamily="@font/bog_headline_medium"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                        <View android:id="@+id/exchange_divider" android:background="@color/default_list_stroke_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_centerInParent="true"/>
+                        <FrameLayout android:id="@+id/exchange_swap_button" android:background="?attr/convert_currency_switch_button_background" android:layout_width="@dimen/circle_shadow_width" android:layout_height="@dimen/circle_shadow_height" android:layout_centerInParent="true" android:elevation="5dp">
+                            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/exchange_swap_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icons_16_system_swap" android:scaleType="center" android:foregroundGravity="center" android:elevation="5dp" app:tint="@color/color_white_solid_df_500"/>
+                        </FrameLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.ProviderDetailTypeView android:id="@+id/mbank_rate_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.ProviderDetailTypeView android:id="@+id/standart_rate_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.ProviderDetailTypeView android:id="@+id/saved_amount_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <include android:id="@+id/exchange_fake_from_layout" android:visibility="invisible" layout="@layout/exchange_from_to_layout"/>
+            <include android:id="@+id/exchange_fake_to_layout" android:visibility="invisible" layout="@layout/exchange_from_to_layout"/>
+        </FrameLayout>
+    </ScrollView>
+    <FrameLayout android:background="@drawable/above_shadow" android:layout_width="match_parent" android:layout_height="4dp" android:layout_above="@+id/button_container"/>
+</RelativeLayout>

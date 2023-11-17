@@ -1,0 +1,10 @@
+package dk0;
+
+/* renamed from: dk0.f */
+public enum C20036f {
+    TOKEN_PROVIDER_AMEX,
+    TOKEN_PROVIDER_DISCOVER,
+    TOKEN_PROVIDER_JCB,
+    TOKEN_PROVIDER_MASTERCARD,
+    TOKEN_PROVIDER_VISA
+}

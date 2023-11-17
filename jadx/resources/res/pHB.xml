@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:background="@drawable/background_stroked_cornered_rectangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:backgroundTint="@color/color_invert_component_solid_500">
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="10sp" android:textColor="@color/color_invert_background_additional" android:layout_gravity="center" android:id="@+id/marker_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="@dimen/marker_view_margin" android:text="26 დეკ, 2.4219  " android:fontFamily="@font/bog_medium" android:textAlignment="center"/>
+</FrameLayout>

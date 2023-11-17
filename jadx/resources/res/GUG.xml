@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/banner_apps_container" android:paddingBottom="@dimen/bog_card_view_container_padding_bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/horizontal_scroll_header_layout"/>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogViewPager android:layout_gravity="bottom" android:id="@+id/banner_apps_view_pager" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/banner_dot_indicator_wrapper_margin">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/banner_apps_dot_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

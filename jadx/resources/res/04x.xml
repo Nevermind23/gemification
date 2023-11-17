@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" app:layerStyle="@style/LayerRadius16Shadow0">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_16">
+        <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <p341ge.bog.designsystem.components.checkbox.CheckboxView android:id="@+id/checkbox_agree" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:checkbox_type="1"/>
+        <View android:background="@color/color_invert_component_tr_5" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/spacing_8" android:layout_marginBottom="@dimen/spacing_8" android:layout_marginVertical="@dimen/spacing_8"/>
+        <p341ge.bog.designsystem.components.checkbox.CheckboxView android:id="@+id/checkbox_agree_terms" android:layout_width="match_parent" android:layout_height="wrap_content" app:checkbox_type="1"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

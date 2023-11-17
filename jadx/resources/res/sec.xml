@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="13sp" android:textColor="@color/bog_black_text_color" android:gravity="center_vertical" android:id="@+id/card_choose_item_last_four" android:layout_width="0dp" android:layout_height="match_parent" android:text="**** 1233" android:drawableLeft="@drawable/ic_visa" android:drawablePadding="5dp" android:layout_weight="1" android:fontFamily="@font/bog_medium"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="13sp" android:textColor="@color/bog_black_text_color" android:gravity="center_vertical" android:id="@+id/card_choose_item_date" android:layout_width="0dp" android:layout_height="match_parent" android:text="09 / 18" android:layout_weight="1" android:fontFamily="@font/bog_medium"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="13sp" android:textColor="@color/bog_black_text_color" android:gravity="center_vertical" android:id="@+id/card_choose_cvv" android:layout_width="0dp" android:layout_height="match_parent" android:text="•••" android:layout_weight="1" android:fontFamily="@font/bog_medium"/>
+    </LinearLayout>
+    <View android:id="@+id/card_choose_divider" android:background="@color/gray_alpha" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.5"/>
+</LinearLayout>

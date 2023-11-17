@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/main_panel" android:background="@drawable/identomat_agreement_background" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:elevation="1dp">
+        <ImageView android:id="@+id/result_icon_view" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="10dp" android:src="@drawable/identomat_success_icon"/>
+        <TextView android:textSize="18sp" android:textColor="@color/primary_color" android:id="@+id/result_message_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/identomat_upload_success" android:textAlignment="center"/>
+        <ImageView android:id="@+id/image_preview_view" android:layout_width="match_parent" android:layout_height="150dp" android:layout_margin="10dp"/>
+        <RelativeLayout android:id="@+id/continue_button" android:background="@drawable/identomat_button" android:layout_width="250dp" android:layout_height="50dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:elevation="1dp">
+            <TextView android:textColor="@color/white" android:id="@+id/continue_button_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identomat_continue" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/again_button" android:background="@drawable/identomat_button_white" android:layout_width="250dp" android:layout_height="50dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:elevation="1dp">
+            <TextView android:textColor="@color/primary_color" android:id="@+id/again_button_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identomat_upload_another_file" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

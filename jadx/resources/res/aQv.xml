@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/add_number_layout" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16">
+        <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/page_description" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <p341ge.bog.designsystem.components.input.Input android:id="@+id/number_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_20" app:input_type="3"/>
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/add_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:button_type="0"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/confirm_number_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.onetimepassword.OneTimePasswordView android:id="@+id/otp_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/confirm_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:button_type="0"/>
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/another_number_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_24" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:button_type="14"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/success_layout" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16">
+        <p341ge.bog.designsystem.components.pagestate.PageState android:id="@+id/success_state" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:page_state_type="0"/>
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/dismiss_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_32" app:button_type="0"/>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView android:id="@+id/progress_bar" android:background="#4dffffff" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintHeight_min="400dp">
+        <p341ge.bog.mobilebank.p975ui.components.BogProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:progressStyle="0"/>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

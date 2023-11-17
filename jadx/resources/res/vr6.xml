@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/payment_wizard_left_margin" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="62dp">
+        <ImageView android:id="@+id/card_icon" android:layout_width="42dp" android:layout_height="27dp" android:layout_marginRight="14dp" android:src="@drawable/ic_express"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_weight="1">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="?attr/color_invert_component_tr_200" android:id="@+id/account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bog_medium"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="10.3sp" android:textColor="?attr/color_invert_component_tr_400" android:id="@+id/card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bog_medium"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/tick_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tick"/>
+    </LinearLayout>
+    <View android:id="@+id/payment_wizard_selector_divider" android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1px" android:alpha="0.3"/>
+</LinearLayout>

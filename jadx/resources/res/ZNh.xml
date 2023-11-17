@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root" android:background="@color/color_invert_background_layer" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:id="@+id/scrollView" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/customToolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/faqHeader" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="14sp" android:textColor="@color/color_invert_component_tr_400" android:id="@+id/faqTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_default_margin" android:layout_marginTop="@dimen/item_default_margin" android:layout_marginRight="@dimen/item_default_margin" android:fontFamily="@font/bog_headline_semi_bold"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@color/color_invert_component_tr_200" android:id="@+id/faqDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_default_margin" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/item_default_margin" android:fontFamily="@font/bog_medium"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@color/color_invert_component_tr_400" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_default_margin" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/item_default_margin" android:text="@string/faq_title_can_do" android:fontFamily="@font/bog_bold"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/viewContainer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:id="@+id/customToolbar" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/transparent_toolbar"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

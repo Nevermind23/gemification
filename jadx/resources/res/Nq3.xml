@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/spacing_16" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:layout_constraintBottom_toTopOf="@+id/button_container" app:layout_constraintTop_toTopOf="0">
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/category_filter" android:background="?attr/color_invert_background_layer" android:paddingBottom="@dimen/spacing_16" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow20" app:layout_constraintTop_toTopOf="0">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/category_header" android:layout_width="match_parent" android:layout_height="wrap_content" app:empty_widget_enable_twoLine_text="true"/>
+                <com.google.android.flexbox.FlexboxLayout android:id="@+id/category_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:dividerDrawable="@drawable/gift_cards_filter_flexbox_divider" app:flexWrap="1" app:showDividerHorizontal="2"/>
+            </LinearLayout>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.cardview.widget.CardView android:id="@+id/button_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+        <LinearLayout android:orientation="vertical" android:background="?attr/color_invert_background_layer" android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16" android:paddingVertical="@dimen/spacing_16">
+            <p341ge.bog.designsystem.components.buttons.Button android:enabled="false" android:id="@+id/filter_button" android:background="?attr/color_white_solid_df_500" android:layout_width="match_parent" android:layout_height="wrap_content" app:button_type="0"/>
+            <p341ge.bog.designsystem.components.buttons.Button android:enabled="false" android:id="@+id/reset_filter_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:button_icon="@drawable/icons_24_system_retry" app:button_type="19"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

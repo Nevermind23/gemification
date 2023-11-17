@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/how_to_collect_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_m" android:layout_marginTop="@dimen/spacing_2xs" android:layout_marginRight="@dimen/spacing_m" android:layout_marginHorizontal="@dimen/spacing_m"/>
+        <p341ge.bog.designsystem.components.inlinefeedback.InlineFeedback android:id="@+id/product_feedback" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_m" android:layout_marginTop="@dimen/spacing_xs" android:layout_marginRight="@dimen/spacing_m" android:layout_marginBottom="@dimen/spacing_xs" android:layout_marginHorizontal="@dimen/spacing_m" android:layout_marginVertical="@dimen/spacing_xs" app:state="2" app:type="radial"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/guides_recycler" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

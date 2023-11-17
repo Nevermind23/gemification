@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.inlinefeedback.InlineFeedback android:id="@+id/feedback_acc_package" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0" app:state="3" app:type="radial"/>
+</FrameLayout>

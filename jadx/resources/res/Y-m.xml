@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="@dimen/spacing_xs" android:paddingBottom="@dimen/spacing_xs" android:layout_width="match_parent" android:layout_height="@dimen/height_thumbnail" android:backgroundTint="@color/color_invert_background_layer" android:paddingVertical="@dimen/spacing_xs">
+    <TextView android:textAppearance="@style/TextBody2" android:textColor="@color/color_invert_component_tr_200" android:gravity="center_vertical" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

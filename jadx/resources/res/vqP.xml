@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/chart_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/gt_portfolio_chart_height">
+        <com.github.mikephil.charting.charts.LineChart android:id="@+id/chartView" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/loaderView" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateTint="?attr/color_primary_solid_df_500"/>
+        </FrameLayout>
+    </FrameLayout>
+    <p341ge.bog.designsystem.components.chips.ChipGroup android:id="@+id/rangeGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_xs" android:layout_marginBottom="@dimen/spacing_m">
+        <p341ge.bog.designsystem.components.chips.Chip android:id="@+id/rangeOneDayChip" android:tag="1d" android:layout_width="wrap_content" android:layout_height="wrap_content" app:chip_title="@string/gt_chart_filter_one_day"/>
+        <p341ge.bog.designsystem.components.chips.Chip android:id="@+id/rangeOneWeekChip" android:tag="1w" android:layout_width="wrap_content" android:layout_height="wrap_content" app:chip_title="@string/gt_chart_filter_one_week"/>
+        <p341ge.bog.designsystem.components.chips.Chip android:id="@+id/rangeOneMonthChip" android:tag="1m" android:layout_width="wrap_content" android:layout_height="wrap_content" app:chip_title="@string/gt_chart_filter_one_month"/>
+        <p341ge.bog.designsystem.components.chips.Chip android:id="@+id/range3MonthChip" android:tag="3m" android:layout_width="wrap_content" android:layout_height="wrap_content" app:chip_title="@string/gt_chart_filter_three_months"/>
+        <p341ge.bog.designsystem.components.chips.Chip android:id="@+id/rangeSixMonthChip" android:tag="6m" android:layout_width="wrap_content" android:layout_height="wrap_content" app:chip_title="@string/gt_chart_filter_six_months"/>
+        <p341ge.bog.designsystem.components.chips.Chip android:id="@+id/rangeOneYearChip" android:tag="1y" android:layout_width="wrap_content" android:layout_height="wrap_content" app:chip_title="@string/gt_chart_filter_one_year"/>
+        <p341ge.bog.designsystem.components.chips.Chip android:id="@+id/rangeTwoYearChip" android:tag="2y" android:layout_width="wrap_content" android:layout_height="wrap_content" app:chip_title="@string/gt_chart_filter_two_years"/>
+        <p341ge.bog.designsystem.components.chips.Chip android:id="@+id/rangeFiveYearChip" android:tag="5y" android:layout_width="wrap_content" android:layout_height="wrap_content" app:chip_title="@string/gt_chart_filter_five_years"/>
+        <p341ge.bog.designsystem.components.chips.Chip android:id="@+id/rangeAllHistoryChip" android:tag="ALL" android:layout_width="wrap_content" android:layout_height="wrap_content" app:chip_title="@string/gt_chart_filter_all"/>
+    </p341ge.bog.designsystem.components.chips.ChipGroup>
+</LinearLayout>

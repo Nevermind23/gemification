@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/bottom_nav_bar_home" android:id="@+id/navigation_home" android:title="@string/navigation_title_home"/>
+    <item android:icon="@drawable/bottom_nav_bar_cards_or_products" android:id="@+id/navigation_cards_or_products" android:title="@string/navigation_title_cards"/>
+    <item android:icon="@android:color/transparent" android:id="@+id/navigation_payments_or_transfers" android:title="@null"/>
+    <item android:icon="@drawable/bottom_nav_bar_statements" android:id="@+id/navigation_payment_transfers_or_offers" android:title="@string/navigation_title_statements"/>
+    <item android:icon="@drawable/bottom_nav_bar_hub" android:id="@+id/navigation_hub" android:title="@string/navigation_title_hub"/>
+</menu>

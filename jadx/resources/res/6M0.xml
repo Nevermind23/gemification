@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadiusTop16Shadow0">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/list_item_header_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/loan_start_icon_image" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <p341ge.bog.designsystem.components.list.TwoLineReverseTextItem android:id="@+id/loan_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="15 სექტემბერი, 2022"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8">
+                <TextView android:textAppearance="@style/TextSubtitle1InvertComponents400Left" android:textColor="@color/color_invert_component_tr_400" android:id="@+id/loans_details_amount_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_2" android:layout_marginEnd="@dimen/spacing_14dp" app:layout_constraintBottom_toBottomOf="@+id/loans_details_date_text" app:layout_constraintEnd_toStartOf="@+id/loan_end_icon_image" app:layout_constraintTop_toTopOf="@+id/loans_details_date_text"/>
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/loan_end_icon_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_24_system_chevron_up" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" app:tint="?attr/color_invert_component_solid_500"/>
+            </LinearLayout>
+        </p341ge.bog.designsystem.components.list.ListItem>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/first_item_details_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <View android:id="@+id/loan_divider_view" android:background="@color/color_invert_component_tr_25" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_8" android:layout_marginHorizontal="@dimen/spacing_16"/>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

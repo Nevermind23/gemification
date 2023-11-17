@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.buttons.Button xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" app:button_icon="@drawable/icons_24_gt_buying_power" app:button_icon_tint="?attr/color_primary_solid_df_500" app:button_type="9"/>

@@ -1,0 +1,22 @@
+[
+  {
+    "propertyKey": "EID_SDK_ENDPOINT",
+    "propertyValue": "https://etrust-sandbox.electronicid.eu/v2"
+  },
+  {
+    "propertyKey": "IS_NEW_FINANCIAL_CONTACT_ADDITION_IN_REGISTRATION_ALLOWED",
+    "propertyValue": "true"
+  },
+  {
+    "propertyKey": "DEVICE_MGMT_ENDPOINT_PREFIX",
+    "propertyValue": "https://publisher.bog.ge/account-api-1.0/"
+  },
+  {
+    "propertyKey": "EID_DOCUMENT_TYPES",
+    "propertyValue": "{\"documentTypes\":[{\"id\":238,\"dctKey\":\"text.eid.doc.type.identity.card.new\",\"orderNo\":2,\"docType\":\"ID_CARD\",\"docType2\":\"E_ID_CARD\",\"processFlow\":[\"IDENTIFY_BY_DOCUMENT\",\"IDENTIFY_BY_CARD\",\"REGISTER_NEW_CLIENT\",\"ADD_FINANCIAL_CONTACT\"],\"frontFaceExplanationImageURL\":\"https://api.bog.ge/rb-middleware-api-connector?serviceId=COMMON_GET_FILE&channel=MOBILE&id=77724387\",\"backFaceExplanationImageURL\":\"https://api.bog.ge/rb-middleware-api-connector?serviceId=COMMON_GET_FILE&channel=MOBILE&id=77724388\",\"selfieExplanationImageURL\":\"https://api.bog.ge/rb-middleware-api-connector?serviceId=COMMON_GET_FILE&channel=MOBILE&id=77724390\",\"frontFaceHeaderTextDctKey\":\"text.eid.video.id.card.front.header\",\"frontFaceBodyTextDctKey\":\"text.eid.video.id.card.front.desc\",\"backFaceHeaderTextDctKey\":\"text.eid.video.id.card.back.header\",\"backFaceBodyTextDctKey\":\"text.eid.video.id.card.back.desc\",\"selfieHeaderTextDctKey\":\"text.eid.video.id.selfie.header\",\"selfieBodyTextDctKey\":\"text.eid.video.id.selfie.desc\"},{\"id\":72,\"dctKey\":\"text.eid.doc.type.passport\",\"orderNo\":3,\"docType\":\"PASSPORT\",\"docType2\":\"CIT.PSP.\",\"processFlow\":[\"IDENTIFY_BY_DOCUMENT\",\"IDENTIFY_BY_CARD\",\"REGISTER_NEW_CLIENT\",\"ADD_FINANCIAL_CONTACT\"],\"frontFaceExplanationImageURL\":\"https://api.bog.ge/rb-middleware-api-connector?serviceId=COMMON_GET_FILE&channel=MOBILE&id=77724389\",\"backFaceExplanationImageURL\":null,\"selfieExplanationImageURL\":\"https://api.bog.ge/rb-middleware-api-connector?serviceId=COMMON_GET_FILE&channel=MOBILE&id=77724390\",\"frontFaceHeaderTextDctKey\":\"text.eid.video.passport.front.header\",\"frontFaceBodyTextDctKey\":\"text.eid.video.passport.front.desc\",\"backFaceHeaderTextDctKey\":null,\"backFaceBodyTextDctKey\":null,\"selfieHeaderTextDctKey\":\"text.eid.video.id.selfie.header\",\"selfieBodyTextDctKey\":\"text.eid.video.id.selfie.desc\"},{\"id\":3,\"dctKey\":\"text.eid.doc.type.identity.card.old\",\"orderNo\":1,\"docType\":\"ID_CARD_OLD\",\"docType2\":\"ID_CARD\",\"processFlow\":[\"IDENTIFY_BY_DOCUMENT\"],\"frontFaceExplanationImageURL\":null,\"backFaceExplanationImageURL\":null,\"selfieExplanationImageURL\":null,\"frontFaceHeaderTextDctKey\":null,\"frontFaceBodyTextDctKey\":null,\"backFaceHeaderTextDctKey\":null,\"backFaceBodyTextDctKey\":null,\"selfieHeaderTextDctKey\":null,\"selfieBodyTextDctKey\":null}]}"
+  },
+  {
+    "propertyKey": "SESSION_TIMEOUT_IN_SEC",
+    "propertyValue": "300"
+  }
+]

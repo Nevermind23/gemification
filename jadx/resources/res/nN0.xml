@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.productgroup.ProductGroupView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="156dp" app:product_drawable_type="1" app:product_group_type="1"/>

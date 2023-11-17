@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="@dimen/story_thumbnail_width" android:layout_height="@dimen/story_thumbnail_height" android:foreground="@drawable/rounded_stroke_radius_16_invert_component_50_2dp">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_primary_solid_50" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/story_thumbnail_border_margin" app:layerStyle="@style/LayerRadius12Shadow0">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.airbnb.lottie.LottieAnimationView android:id="@+id/thumbnail" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/gradient" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/gradient_dim"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextCaption2" android:textColor="@color/color_white_solid_df_500" android:id="@+id/story_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/story_thumbnail_inner_margin" app:autoSizeMaxTextSize="11sp" app:autoSizeMinTextSize="8sp" app:autoSizeStepGranularity="1sp" app:autoSizeTextType="1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" style="@style/ThreeLine.EllipsizeEnd"/>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/badge_container" android:background="@color/color_white_solid_df_500" android:layout_width="@dimen/story_thumbnail_badge_size" android:layout_height="@dimen/story_thumbnail_badge_size" android:layout_margin="@dimen/story_thumbnail_inner_margin" app:layerStyle="@style/LayerRadius24Shadow0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/badge_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/spacing_4"/>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+</FrameLayout>

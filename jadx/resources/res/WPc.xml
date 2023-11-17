@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/bog_activity_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/main_container" android:background="@color/bog_activity_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:gravity="center" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notifications_no_push_contacts" android:layout_centerInParent="true" android:fontFamily="@font/bog_regular"/>
+</RelativeLayout>

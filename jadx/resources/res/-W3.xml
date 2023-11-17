@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.emptywidget.EmptyWidget xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/empty_widget" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/icon_layer_view" android:layout_width="@dimen/lifestyle_offers_empty_widget_left_layer_size" android:layout_height="@dimen/lifestyle_offers_empty_widget_left_layer_size" app:layerStyle="@style/LayerRadiusCircleShadow0">
+        <ImageView android:layout_gravity="center" android:id="@+id/image_view" android:layout_width="@dimen/lifestyle_offers_empty_widget_left_image_size" android:layout_height="@dimen/lifestyle_offers_empty_widget_left_image_size" android:src="@drawable/icons_16_general_offer"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+</p341ge.bog.designsystem.components.emptywidget.EmptyWidget>

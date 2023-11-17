@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow0">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16">
+        <TextView android:textColor="@color/color_invert_component_solid_500" android:id="@+id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextTitle1"/>
+        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/loan_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16"/>
+        <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/loan_amount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/loan_term" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

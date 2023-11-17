@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/parent" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="@dimen/transaction_category_item_height">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/create_new_layout" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="6dp">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:layout_gravity="center" android:background="?attr/oval_stroke_orange" android:padding="14dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_add" app:tintType="0"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textStyle="bold" android:textColor="?attr/colorAccent" android:layout_gravity="center" android:id="@+id/add_item_layout_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_list_item_text_left_margin" android:text="@string/transaction_categories_add_category" android:fontFamily="@font/bog_bold"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@+id/divider" android:background="@color/default_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+</FrameLayout>

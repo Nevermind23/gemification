@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="@dimen/width_action_logo" android:layout_height="wrap_content" android:minHeight="@dimen/height_action_logo">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:layout_gravity="center_horizontal" android:background="@drawable/selector_button_action_logo" android:padding="@dimen/spacing_8" android:layout_width="@dimen/width_action_logo_layer" android:layout_height="@dimen/height_action_logo_layer" app:layerStyle="@style/LayerRadius24Shadow0">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/logo" android:layout_width="match_parent" android:layout_height="match_parent" app:srcCompat="@drawable/thumbnail_circle"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextCaption1InvertComponents400Left" android:ellipsize="end" android:gravity="center" android:id="@+id/button_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" android:maxLines="2"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextButton2Negative500Left" android:gravity="center" android:id="@+id/amount_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" style="@style/SingleLine.EllipsizeEnd"/>
+</LinearLayout>

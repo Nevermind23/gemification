@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.list.ListItem android:layout_gravity="center" android:id="@+id/edit_list_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground">
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_component_tr_25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_s" android:layout_marginBottom="@dimen/spacing_s" android:layout_marginVertical="@dimen/spacing_s" app:layerStyle="@style/LayerRadiusCircleShadow0">
+            <androidx.appcompat.widget.AppCompatImageView android:padding="@dimen/spacing_8" android:layout_width="@dimen/height_thumbnail" android:layout_height="@dimen/width_thumbnail" android:src="@drawable/icons_24_system_edit_outline" app:tint="@color/color_invert_component_tr_400"/>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gt_edit_watchlist_item_change_name" style="@style/TextBody1InvertComponents400Left"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <View android:background="@drawable/list_divider_1dp" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <p341ge.bog.designsystem.components.list.ListItem android:layout_gravity="center" android:id="@+id/delete_list_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground">
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_negative_tr_25" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_s" android:layout_marginBottom="@dimen/spacing_s" android:layout_marginVertical="@dimen/spacing_s" app:layerStyle="@style/LayerRadiusCircleShadow0">
+            <androidx.appcompat.widget.AppCompatImageView android:padding="@dimen/spacing_8" android:layout_width="@dimen/height_thumbnail" android:layout_height="@dimen/width_thumbnail" android:src="@drawable/icons_24_system_delete" app:tint="@color/color_negative_solid_df_500"/>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gt_edit_watchlist_item_delete" style="@style/TextBody1Negative500Left"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+</LinearLayout>

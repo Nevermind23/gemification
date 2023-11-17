@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layer_container" android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadiusTop16Shadow0">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/gift_card_empty_widget" android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/text_group_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_4" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16">
+            <p341ge.bog.designsystem.components.textgroup.TextGroupView android:id="@+id/tgRemainingAmount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/spacing_8" app:icon_state="1"/>
+            <p341ge.bog.designsystem.components.textgroup.TextGroupView android:id="@+id/tgSpentAmount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:icon_state="2"/>
+        </LinearLayout>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

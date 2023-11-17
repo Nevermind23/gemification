@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextButton1InvertComponents400Left" android:layout_gravity="center_vertical" android:id="@+id/titleView" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/SingleLine.EllipsizeEnd"/>
+    <p341ge.bog.designsystem.components.buttons.Button android:layout_gravity="center_vertical" android:id="@+id/navigateButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_16" app:button_icon="@drawable/icons_24_system_close" app:button_type="9"/>
+</LinearLayout>

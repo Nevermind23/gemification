@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/combined_offer_nav_graph" app:startDestination="@+id/first_step">
+    <fragment android:label="" android:name="p341ge.bog.mobilebank.depositapplication.presentation.combinedoffer.fragments.firststep.CombinedOfferFirstStepFragment" android:id="@+id/first_step">
+        <argument android:name="first_step_args" app:argType="ge.bog.mobilebank.depositapplication.presentation.combinedoffer.fragments.firststep.CombinedOfferFirstStepArgs"/>
+        <action android:id="@+id/action_first_step_to_second_step" app:destination="@+id/second_step">
+            <argument android:name="nav_data" app:argType="ge.bog.mobilebank.depositapplication.presentation.depositsubmission.model.DepositSubmissionNavData"/>
+            <argument android:name="sto_data" app:argType="ge.bog.mobilebank.depositapplication.presentation.depositsubmission.fragment.onspecificdate.AccumulateOnSpecificDateModel"/>
+            <argument android:name="cas_data" app:argType="ge.bog.mobilebank.depositapplication.presentation.depositsubmission.fragment.onpayment.AccumulateOnPaymentModel"/>
+            <argument android:name="src_acct_key" app:argType="long"/>
+        </action>
+    </fragment>
+    <fragment android:label="" android:name="p341ge.bog.mobilebank.depositapplication.presentation.combinedoffer.fragments.secondstep.CombinedOfferSecondStepFragment" android:id="@+id/second_step">
+        <argument android:name="nav_data" app:argType="ge.bog.mobilebank.depositapplication.presentation.depositsubmission.model.DepositSubmissionNavData"/>
+        <argument android:name="sto_data" app:argType="ge.bog.mobilebank.depositapplication.presentation.depositsubmission.fragment.onspecificdate.AccumulateOnSpecificDateModel"/>
+        <argument android:name="cas_data" app:argType="ge.bog.mobilebank.depositapplication.presentation.depositsubmission.fragment.onpayment.AccumulateOnPaymentModel"/>
+        <argument android:name="src_acct_key" app:argType="long"/>
+    </fragment>
+</navigation>

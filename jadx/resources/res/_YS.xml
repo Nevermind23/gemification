@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_canvas" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/toolbar"/>
+    <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment" android:id="@+id/nav_host_fragment" android:layout_width="0dp" android:layout_height="0dp" app:defaultNavHost="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+    <FrameLayout android:id="@+id/loader_container" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:foreground="@color/color_invert_component_tr_25" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar" app:layout_constraintTop_toTopOf="0">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/error_container" android:background="@color/color_white_solid_df_500" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.pagestate.PageState android:id="@+id/status_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mbank_spacing_2xs" app:page_state_type="1"/>
+            <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/retry_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mbank_spacing_2xs" app:button_icon="@drawable/icons_24_system_retry" app:button_icon_tint="@color/color_negative_solid_df_500" app:button_text="@string/button_text_retry" app:button_type="2"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

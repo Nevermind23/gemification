@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="6">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="@dimen/save_cards_header_txt_size" android:textColor="@color/color_invert_component_tr_150" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_xxlarge" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" android:text="@string/common_text_card_number" android:maxLines="1" android:layout_weight="4" android:fontFamily="@font/bog_medium"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="@dimen/save_cards_header_txt_size" android:textColor="@color/color_invert_component_tr_150" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" android:layout_marginBottom="@dimen/margin_medium" android:text="@string/common_text_card_valid_until" android:maxLines="1" android:layout_weight="2" android:fontFamily="@font/bog_medium"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/no_data_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:background="@drawable/ic_operations_with_gray_back" android:layout_width="@dimen/saved_cards_no_data_icon_size" android:layout_height="@dimen/saved_cards_no_data_icon_size" android:layout_marginBottom="@dimen/margin_large"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="@color/color_invert_component_tr_25" android:gravity="center" android:padding="50dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/payments_cards_are_not_added" android:fontFamily="@font/bog_medium"/>
+    </LinearLayout>
+</FrameLayout>

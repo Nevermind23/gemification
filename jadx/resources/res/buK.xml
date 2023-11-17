@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextSmallButtonInvertComponents500Left" android:id="@+id/strength_title_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:layout_marginStart="@dimen/spacing_24" android:layout_marginEnd="@dimen/spacing_16"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/progress_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_24" android:layout_marginEnd="@dimen/spacing_16">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8">
+            <p341ge.bog.designsystem.components.progressbadge.ProgressBadgeView android:id="@+id/first_progress_bar" android:layout_width="@dimen/strength_progress_badge_width" android:layout_height="match_parent" app:progress_badge_type="3"/>
+            <p341ge.bog.designsystem.components.progressbadge.ProgressBadgeView android:id="@+id/second_progress_bar" android:layout_width="@dimen/strength_progress_badge_width" android:layout_height="match_parent" android:layout_marginStart="@dimen/spacing_4" app:progress_badge_type="3"/>
+            <p341ge.bog.designsystem.components.progressbadge.ProgressBadgeView android:id="@+id/third_progress_bar" android:layout_width="@dimen/strength_progress_badge_width" android:layout_height="match_parent" android:layout_marginStart="@dimen/spacing_4" app:progress_badge_type="3"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextCaption1InvertComponents400Left" android:id="@+id/strength_info_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/status_list_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:layout_marginBottom="@dimen/spacing_8" android:overScrollMode="never" android:nestedScrollingEnabled="false" android:layout_marginVertical="@dimen/spacing_8" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</merge>

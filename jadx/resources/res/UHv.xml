@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/account_sub_item_ccy_logo_tv" android:background="?attr/account_orange_circle" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:foreground="?attr/selectableItemBackgroundBorderless" android:fontFamily="@font/bog_medium"/>
+    <View android:id="@+id/account_sub_item_divider" android:layout_width="16dp" android:layout_height="0dp"/>
+</LinearLayout>

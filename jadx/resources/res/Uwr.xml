@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/details_card" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" app:layerStyle="@style/LayerRadius12Shadow10">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textAppearance="@style/TextBody1" android:textColor="@color/color_invert_component_tr_400" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:text="@string/common_text_details"/>
+                            <p341ge.bog.designsystem.components.input.Input android:id="@+id/mobile_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" app:hint="@string/cards_mobile_phone_number" app:input_type="3"/>
+                            <p341ge.bog.designsystem.components.input.Input android:id="@+id/language" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" app:hint="@string/cards_language" app:input_type="2"/>
+                        </LinearLayout>
+                    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+                    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/digipass_card" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" app:layerStyle="@style/LayerRadius12Shadow10">
+                        <p341ge.bog.mobilebank.p975ui.views.widgets.CustomSwitch android:textAppearance="@style/TextBody1" android:textColor="@color/color_invert_component_tr_400" android:id="@+id/digipass_switch" android:paddingLeft="16dp" android:paddingTop="20dp" android:paddingRight="16dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cards_digipass" android:fontFamily="@font/bog_medium"/>
+                    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+                </LinearLayout>
+            </ScrollView>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius12Shadow10">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/thee_d_security_agreement_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                        <p341ge.bog.mobilebank.p975ui.views.widgets.CustomCheckBox android:textAppearance="@style/TextBody1" android:textColor="@color/color_invert_component_tr_400" android:layout_gravity="center_vertical" android:id="@+id/agreement_checkbox" android:paddingLeft="@dimen/spacing_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_4" android:button="@drawable/custom_checkbox_button" android:text="@string/button_text_agree_to"/>
+                        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textAppearance="@style/TextBody1" android:textColor="@color/color_primary_solid_df_500" android:layout_gravity="center_vertical" android:id="@+id/three_d_security_conditions_btn" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cards_conditions"/>
+                    </LinearLayout>
+                    <View android:background="@color/color_invert_component_tr_50" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/save_btn" android:layout_width="match_parent" android:layout_height="@dimen/payments_pay_btn_height" android:layout_margin="@dimen/payment_pay_group_item_margin" app:button_text="@string/button_text_save_remember"/>
+                </LinearLayout>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/progress_bar" android:background="@color/color_invert_component_tr_25" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <p341ge.bog.mobilebank.p975ui.components.BogProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

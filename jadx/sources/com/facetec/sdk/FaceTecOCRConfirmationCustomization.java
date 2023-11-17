@@ -1,0 +1,52 @@
+package com.facetec.sdk;
+
+import android.graphics.Color;
+import android.graphics.Typeface;
+
+public final class FaceTecOCRConfirmationCustomization {
+    public int backgroundColors = -1;
+    public int buttonBackgroundDisabledColor = Color.parseColor("#66417FB2");
+    public int buttonBackgroundHighlightColor = Color.parseColor("#396E99");
+    public int buttonBackgroundNormalColor = Color.parseColor("#417FB2");
+    public int buttonBorderColor = 0;
+    public int buttonBorderWidth = -1;
+    public int buttonCornerRadius = -1;
+    public Typeface buttonFont = null;
+    public int buttonTextDisabledColor = -1;
+    public int buttonTextHighlightColor = -1;
+    public int buttonTextNormalColor = -1;
+    public int customScrollIndicatorAnimation = 0;
+    public int customStaticScrollIndicatorAnimation = 0;
+    public boolean enableFixedConfirmButton = false;
+    public boolean enableScrollIndicator = true;
+    public boolean enableScrollIndicatorTextAnimation = true;
+    public Typeface fieldLabelFont = null;
+    public int fieldLabelTextColor = Color.parseColor("#333333");
+    public Typeface fieldValueFont = null;
+    public int fieldValueTextColor = Color.parseColor("#333333");
+    public int inputFieldBackgroundColor = 0;
+    public int inputFieldBorderColor = Color.parseColor("#333333");
+    public int inputFieldBorderWidth = -1;
+    public int inputFieldCornerRadius = -1;
+    public Typeface inputFieldFont = null;
+    public Typeface inputFieldPlaceholderFont = null;
+    public int inputFieldPlaceholderTextColor = 0;
+    public int inputFieldTextColor = 0;
+    public int mainHeaderDividerLineColor = Color.parseColor("#417FB2");
+    public int mainHeaderDividerLineWidth = -1;
+    public Typeface mainHeaderFont = null;
+    public int mainHeaderTextColor = Color.parseColor("#417FB2");
+    public int scrollIndicatorBackgroundHighlightColor = Color.parseColor("#396E99");
+    public int scrollIndicatorBackgroundNormalColor = Color.parseColor("#417FB2");
+    public int scrollIndicatorBorderColor = 0;
+    public int scrollIndicatorBorderWidth = -1;
+    public int scrollIndicatorCornerRadius = -1;
+    public int scrollIndicatorElevation = 10;
+    public Typeface scrollIndicatorFont = null;
+    public int scrollIndicatorForegroundHighlightColor = -1;
+    public int scrollIndicatorForegroundNormalColor = -1;
+    public Typeface sectionHeaderFont = null;
+    public int sectionHeaderTextColor = Color.parseColor("#333333");
+    public boolean showInputFieldBottomBorderOnly = false;
+    public boolean showScrollIndicatorImage = true;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/color_invert_background_layer" android:padding="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius16Shadow0">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextTitle2" android:textColor="@color/bog_default_text_color" android:id="@+id/headerTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/statement_calendar_chooser_select_period"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/date_picker_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextBody1" android:textColor="?attr/color_invert_component_tr_300" android:id="@+id/date_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="12dp" android:layout_height="13.25dp" android:src="@drawable/ic_calendar" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:tint="?attr/color_invert_component_tr_150"/>
+            </RelativeLayout>
+            <View android:id="@+id/bottom_divider" android:background="@color/default_divider_color" android:layout_width="match_parent" android:layout_height="0.75dp" android:layout_marginTop="12dp"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/bottom_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/button_container" android:layout_width="wrap_content" android:layout_height="@dimen/bog_flat_button_height" android:layout_marginTop="20dp" android:layout_marginBottom="4dp" android:layout_alignParentRight="true"/>
+            <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/filtration_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_20" android:layout_marginBottom="@dimen/spacing_4" android:layout_toRightOf="@+id/button_container" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:button_text="@string/statement_calendar_chooser_remove_filtration" app:button_type="1"/>
+        </RelativeLayout>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.SuccessScreenView android:id="@+id/successScreen" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/button_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/buttons_divider" android:background="@color/success_screen_separator_color" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_marginBottom="50dp">
+            <LinearLayout android:orientation="vertical" android:id="@+id/share_payment_result" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:layout_gravity="center" android:id="@+id/share_payment_iv" android:background="@drawable/circle_image_background" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/ic_download_active"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="10sp" android:textColor="@color/color_invert_component_solid_500" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/download_receipt" android:maxLines="2" android:fontFamily="@font/bog_regular"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/cancel_transaction" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp">
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:layout_gravity="center" android:background="@drawable/circle_image_background" android:layout_width="80dp" android:layout_height="80dp" android:src="@drawable/ic_qr_pay_cancel_transaction" app:tintType="0"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="10sp" android:textColor="@color/color_invert_component_solid_500" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/qr_pay_cancel_transaction" android:maxLines="2" android:fontFamily="@font/bog_regular"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

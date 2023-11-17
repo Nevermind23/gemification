@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/benef_icon_layer" android:layout_width="36dp" android:layout_height="36dp" app:layerStyle="@style/LayerRadiusCircleShadow0">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/preference_image" android:layout_width="16dp" android:layout_height="16dp"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/preference_texts" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</p341ge.bog.designsystem.components.list.ListItem>

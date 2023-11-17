@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_pressed="true">
+        <color android:color="?attr/color_primary_tr_50"/>
+    </item>
+    <item android:state_enabled="false">
+        <color android:color="?attr/color_primary_tr_5"/>
+    </item>
+    <item>
+        <color android:color="?attr/color_primary_tr_25"/>
+    </item>
+</selector>

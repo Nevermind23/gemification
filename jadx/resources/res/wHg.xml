@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/transport_card_nav_graph" app:startDestination="@+id/TransportCardInfoFragment">
+    <fragment android:label="@string/tc_manage_travel_card" android:name="p341ge.bog.mobilebank.transportcard.presentation.transportcardinfo.TransportCardInfoFragment" android:id="@+id/TransportCardInfoFragment">
+        <action android:id="@+id/action_transportCardInfoFragment_to_selectTransportCardPassTypeDialogFragment" app:destination="@+id/SelectTransportCardPassTypeDialogFragment"/>
+        <action android:id="@+id/action_transportCardInfoFragment_to_passMigrateActionSheet" app:destination="@+id/PassMigrateActionSheet"/>
+    </fragment>
+    <dialog android:name="p341ge.bog.mobilebank.transportcard.presentation.passmigrate.PassMigrateActionSheet" android:id="@+id/PassMigrateActionSheet"/>
+    <dialog android:name="p341ge.bog.mobilebank.transportcard.presentation.selecttransportcardpasstype.SelectTransportCardPassTypeDialogFragment" android:id="@+id/SelectTransportCardPassTypeDialogFragment">
+        <action android:id="@+id/action_selectTransportCardPassTypeDialogFragment_to_selectTransportCardDetailsFragment" app:destination="@+id/SelectTransportCardDetailsFragment"/>
+    </dialog>
+    <fragment android:label="@string/tc_details" android:name="p341ge.bog.mobilebank.transportcard.presentation.selecttransportcarddetails.SelectTransportCardDetailsFragment" android:id="@+id/SelectTransportCardDetailsFragment">
+        <action android:id="@+id/action_selectTransportCardDetailsFragment_to_chooseCardDialogFragment" app:destination="@+id/chooseCardDialogFragment"/>
+        <action android:id="@+id/action_selectTransportCardDetailsFragment_to_successTransportCardFragment" app:destination="@+id/successTransportCardFragment" app:popUpTo="@+id/TransportCardInfoFragment" app:popUpToInclusive="false"/>
+        <action android:id="@+id/action_selectTransportCardDetailsFragment_to_selectTransportCardPassDevicesDialogFragment" app:destination="@+id/selectTransportCardPassDevicesDialogFragment"/>
+        <action android:id="@+id/action_SelectTransportCardDetailsFragment_to_SelectTransportCardPassTypeDialogFragment" app:destination="@+id/SelectTransportCardPassTypeDialogFragment"/>
+    </fragment>
+    <dialog android:label="@string/tc_details" android:name="p341ge.bog.mobilebank.transportcard.presentation.selecttransportcardpassdevices.SelectTransportCardPassDevicesDialogFragment" android:id="@+id/selectTransportCardPassDevicesDialogFragment"/>
+    <dialog android:name="p341ge.bog.mobilebank.transportcard.presentation.choosecard.ChooseCardDialogFragment" android:id="@+id/chooseCardDialogFragment"/>
+    <fragment android:label="@string/tc_travel_card" android:name="p341ge.bog.mobilebank.transportcard.presentation.transportcardsuccess.SuccessTransportCardFragment" android:id="@+id/successTransportCardFragment">
+        <action android:id="@+id/action_successTransportCardFragment_to_TransportCardInfoFragment" app:destination="@+id/TransportCardInfoFragment" app:popUpTo="@+id/transport_card_nav_graph" app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

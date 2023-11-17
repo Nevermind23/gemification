@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/term_icon" android:background="@drawable/transparent_ellipse_background" android:padding="@dimen/term_icon_padding" android:layout_width="@dimen/term_icon_size" android:layout_height="@dimen/term_icon_size" android:src="@drawable/icons_24_system_info_outline" android:tint="?attr/color_primary_solid_df_500" android:backgroundTint="?attr/color_primary_tr_25"/>
+    <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/card_term_description" android:layout_width="match_parent" android:layout_height="match_parent" app:multiline_text="true"/>
+    <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="match_parent" android:layout_height="match_parent"/>
+</p341ge.bog.designsystem.components.list.ListItem>

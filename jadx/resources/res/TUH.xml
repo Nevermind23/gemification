@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:textSize="12sp" android:textColor="@color/color_invert_component_solid_500" android:id="@+id/transfer_list_type_header_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/bog_headline_semi_bold"/>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

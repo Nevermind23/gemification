@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/layer_view" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_32" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow30">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/icon_layer_view" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="@dimen/spacing_24" android:layout_marginBottom="@dimen/spacing_24" android:layout_marginVertical="@dimen/spacing_24" app:layerStyle="@style/LayerRadiusCircleShadow0" app:layout_constraintStart_toStartOf="0">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/icon_image" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/icons_24_system_warning_fill"/>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+            <androidx.appcompat.widget.AppCompatTextView android:id="@+id/message_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" android:layout_marginStart="@dimen/spacing_12" android:layout_marginEnd="@dimen/spacing_16"/>
+        </LinearLayout>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+</merge>

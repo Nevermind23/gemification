@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="64dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="63.5dp">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="15sp" android:textColor="?attr/color_invert_component_tr_200" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/product_details_title_loan_schedule_all" android:fontFamily="@font/bog_regular"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="10sp" android:textColor="?attr/color_invert_component_tr_200" android:id="@+id/history_summery_left_amount_label_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/product_details_title_loan_amount_to_be_paid" android:fontFamily="@font/bog_regular"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="18sp" android:textColor="?attr/color_invert_component_solid_500" android:id="@+id/history_summery_left_amount_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="88,710.00 ლ" android:fontFamily="@font/bog_regular"/>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/pdf_button" android:background="?attr/orange_circle" android:focusable="true" android:clickable="true" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:elevation="3dp">
+            <View android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ImageView android:layout_gravity="center" android:layout_width="16dp" android:layout_height="18dp" android:src="@drawable/ic_pdf" android:scaleType="fitXY"/>
+        </FrameLayout>
+    </LinearLayout>
+    <View android:layout_marginTop="0dp" android:layout_marginBottom="0dp" style="@style/ProductDivider"/>
+</LinearLayout>

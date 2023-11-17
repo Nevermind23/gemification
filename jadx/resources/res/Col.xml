@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <p341ge.bog.designsystem.components.list.SingleLineTextItem android:id="@+id/single_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/double_text" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <p341ge.bog.designsystem.components.list.TwoLineReverseTextItem android:id="@+id/double_text_reversed" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextTitle1" android:textColor="@color/color_invert_component_solid_500" android:id="@+id/right_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</p341ge.bog.designsystem.components.list.ListItem>

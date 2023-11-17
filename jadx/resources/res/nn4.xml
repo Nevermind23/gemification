@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_black_tr_400" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/close_button_layout" layout="@layout/wizard_close_button"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="7dp" android:layout_marginRight="@dimen/payment_wizard_close_width_height">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@color/color_white_tr_400" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_option_wizard_all_bills_due" android:fontFamily="@font/bog_regular"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="21sp" android:textColor="@color/color_white_tr_400" android:layout_gravity="center_horizontal" android:id="@+id/choose_payment_amount_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dp" android:text="55.50 £" android:fontFamily="@font/bog_medium"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp">
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="11sp" android:textColor="@color/color_white_tr_400" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_option_wizard_whole_including_fee" android:fontFamily="@font/bog_regular"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="15sp" android:textColor="@color/color_white_tr_400" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/choose_payment_commission_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.5dp" android:text="55.50 £" android:fontFamily="@font/bog_medium"/>
+            </LinearLayout>
+            <TextView android:textSize="11sp" android:textColor="@color/color_white_tr_400" android:layout_gravity="center_horizontal" android:id="@+id/saved_commission" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:fontFamily="@font/bog_regular"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="15sp" android:textColor="@color/color_white_tr_400" android:gravity="center" android:id="@+id/choose_payment_method_label_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="19dp" android:text="@string/payment_option_wizard_choose_payment_method" android:fontFamily="@font/bog_medium"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/choose_payment_authorized_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@+id/retry_btn_container" android:background="@color/color_invert_background_layer" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <include android:layout_gravity="center" android:id="@+id/retryBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/retry_button"/>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/payment_option_progress_bar_layout" android:background="@color/color_invert_background_layer" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <include android:id="@+id/full_progress_bar" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bog_full_progressbar"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="20dp" android:layout_weight="1">
+                    <LinearLayout android:orientation="vertical" android:background="@color/color_invert_background_layer" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView android:id="@+id/choose_payment_recyclerview" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/login_wizard_next_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_m" android:layout_marginTop="@dimen/spacing_l" android:layout_marginRight="@dimen/spacing_m" android:layout_marginBottom="@dimen/spacing_l" android:layout_marginHorizontal="@dimen/spacing_m" android:layout_marginVertical="@dimen/spacing_l" app:button_text="@string/button_text_payment" app:button_type="0"/>
+                    </LinearLayout>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.ErrorLoadingView android:id="@+id/error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </FrameLayout>
+                <LinearLayout android:theme="@style/Theme.Material.Light.DarkActionBar" android:gravity="center" android:orientation="horizontal" android:id="@+id/dialog_base_authorize" android:background="@drawable/or_authorize_box" android:padding="15dp" android:layout_width="match_parent" android:layout_height="65dp" android:layout_marginLeft="@dimen/drop_dialog_content_padding" android:layout_marginRight="@dimen/drop_dialog_content_padding" android:layout_marginBottom="15dp" android:foreground="?attr/selectableItemBackground">
+                    <ImageView android:id="@+id/imageView" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ic_empty_avatar"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp">
+                        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@color/color_white_tr_300" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_option_wizard_or_log_in" android:fontFamily="@font/bog_headline_medium"/>
+                        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@color/color_white_tr_300" android:id="@+id/authorize_box_commission_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_option_wizard_comission" android:fontFamily="@font/bog_regular"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <WebView android:id="@+id/payment_option_webview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

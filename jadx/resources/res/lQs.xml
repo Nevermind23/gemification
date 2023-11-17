@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root" android:background="@color/activity_background_default_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/bog_white_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+        <ImageView android:id="@+id/icon_image" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="66dp" android:src="@drawable/ic_result_process" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+        <TextView android:textSize="16sp" android:textColor="@color/success_screen_pending_title_color" android:id="@+id/message_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="28dp" android:layout_marginRight="30dp" android:layout_marginBottom="58dp" android:fontFamily="@font/bog_medium" android:textAlignment="center" android:layout_marginHorizontal="30dp" android:lineHeight="21sp" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/icon_image"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

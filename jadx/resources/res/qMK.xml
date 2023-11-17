@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:layerStyle="@style/LayerRadius12Shadow0">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/widget" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.notificationbadges.NotificationBadgeView android:id="@+id/leftViewContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" app:badge_color="@color/color_positive_solid_df_500" app:badge_icon="@drawable/icons_24_system_check" app:badge_type="1" app:border_color="@color/color_invert_background_canvas"/>
+            <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/more_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:button_icon="@drawable/icons_24_system_more_horizontal" app:button_type="9"/>
+        </p341ge.bog.designsystem.components.emptywidget.EmptyWidget>
+        <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/pending_widget" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.notificationbadges.NotificationBadgeView android:layout_width="wrap_content" android:layout_height="wrap_content" app:badge_color="@color/color_pending_solid_df_500" app:badge_icon="@drawable/icons_24_system_arrow_right" app:badge_type="1" app:border_color="@color/color_invert_background_canvas"/>
+        </p341ge.bog.designsystem.components.emptywidget.EmptyWidget>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

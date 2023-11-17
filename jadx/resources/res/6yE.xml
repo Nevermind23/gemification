@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/selector_thumbnail_group_text" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius12Shadow20">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_8" android:layout_marginEnd="@dimen/spacing_8">
+            <ImageView android:id="@+id/icon" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:scaleType="fitCenter" android:contentDescription="logo" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/topLeft" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/spacing_4" android:layout_marginEnd="@dimen/spacing_24">
+                <TextView android:textAppearance="@style/TextCaption1" android:textColor="?attr/color_invert_component_tr_200" android:id="@+id/topLeftTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_2" style="@style/SingleLine.EllipsizeEnd"/>
+                <TextView android:textAppearance="@style/TextBody1" android:textColor="?attr/color_invert_component_tr_400" android:id="@+id/topLeftText" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SingleLine.EllipsizeEnd"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/TextCaption1" android:textColor="?attr/color_invert_component_tr_200" android:id="@+id/topRightTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_2" style="@style/SingleLine.EllipsizeEnd"/>
+                <TextView android:textAppearance="@style/TextTitle1" android:textColor="?attr/color_invert_component_tr_400" android:id="@+id/topRightText" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SingleLine.EllipsizeEnd"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="@dimen/spacing_8"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_8" android:baselineAligned="false" android:layout_marginHorizontal="@dimen/spacing_8">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/spacing_24">
+                <TextView android:textAppearance="@style/TextCaption1" android:textColor="?attr/color_invert_component_tr_200" android:id="@+id/bottomLeftTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_4" android:baselineAligned="false" style="@style/SingleLine.EllipsizeEnd"/>
+                <TextView android:textAppearance="@style/TextSmallTitle1" android:id="@+id/bottomLeftText" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SingleLine.EllipsizeEnd"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/TextCaption1" android:textColor="?attr/color_invert_component_tr_200" android:id="@+id/bottomRightTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_4" style="@style/SingleLine.EllipsizeEnd"/>
+                <TextView android:textAppearance="@style/TextSmallTitle1" android:id="@+id/bottomRightText" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SingleLine.EllipsizeEnd"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

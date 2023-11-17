@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginTop="@dimen/margin_medium" android:layout_marginRight="16dp" android:layout_marginBottom="@dimen/margin_medium" android:weightSum="8">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@color/color_invert_component_tr_150" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/manage_select_favorite_card" android:maxLines="1" android:layout_weight="6" android:textAllCaps="true" android:fontFamily="@font/bog_headline_light"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="9sp" android:textColor="@color/color_invert_component_tr_150" android:gravity="center" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/manage_favorite_card" android:maxLines="1" android:layout_weight="2" android:fontFamily="@font/bog_medium"/>
+    </LinearLayout>
+</LinearLayout>

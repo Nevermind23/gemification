@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_8" android:layout_marginHorizontal="@dimen/spacing_16" android:layout_marginVertical="@dimen/spacing_8">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/spacing_12" android:layout_weight="1">
+        <TextView android:textSize="7.5sp" android:textColor="@color/color_invert_component_tr_200" android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bog_medium"/>
+        <TextView android:ellipsize="end" android:id="@+id/comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:maxLines="1" style="@style/TextBody2InvertComponents200Left"/>
+    </LinearLayout>
+    <TextView android:layout_gravity="center_vertical" android:id="@+id/bonus_points" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextH3InvertComponents200Left"/>
+</LinearLayout>

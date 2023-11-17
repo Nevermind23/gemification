@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.header.statementheader.StatementHeaderView android:id="@+id/tc_success_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tr_spacing_minus_80" app:layerStyle="@style/LayerRadius16Shadow0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" app:layerStyle="@style/LayerRadius16Shadow0">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/tc_emptyWidget_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" app:empty_widget_title="@string/details" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tc_success_header"/>
+                <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tc_emptyWidget_2">
+                    <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/tc_pass_type" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/tc_travel_card"/>
+                </p341ge.bog.designsystem.components.list.ListItem>
+                <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/tr_spacing_1" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tc_emptyWidget_2">
+                    <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/transport_card_price" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/tc_price"/>
+                </p341ge.bog.designsystem.components.list.ListItem>
+                <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/tr_spacing_1" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/transport_card_pass_type" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/tc_usage_method"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/color_invert_component_tr_400" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/transport_card_last_four_digit" android:layout_width="match_parent" android:layout_height="wrap_content" android:textFontWeight="700"/>
+                </p341ge.bog.designsystem.components.list.ListItem>
+                <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/tr_spacing_1" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tc_emptyWidget_2">
+                    <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/tc_activation_date" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/tc_activation_date"/>
+                </p341ge.bog.designsystem.components.list.ListItem>
+                <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/tr_spacing_1" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tc_emptyWidget_2">
+                    <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/tc_end_date" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/tc_end_date"/>
+                </p341ge.bog.designsystem.components.list.ListItem>
+            </LinearLayout>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    </LinearLayout>
+</ScrollView>

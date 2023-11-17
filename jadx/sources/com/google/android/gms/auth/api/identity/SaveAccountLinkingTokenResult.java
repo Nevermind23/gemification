@@ -1,0 +1,42 @@
+package com.google.android.gms.auth.api.identity;
+
+import android.app.PendingIntent;
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
+import p037c6.C2266b;
+import p182n6.C7258g;
+import p195o6.C7461a;
+
+public class SaveAccountLinkingTokenResult extends AbstractSafeParcelable {
+    public static final Parcelable.Creator<SaveAccountLinkingTokenResult> CREATOR = new C2266b();
+
+    /* renamed from: d */
+    private final PendingIntent f12107d;
+
+    public SaveAccountLinkingTokenResult(PendingIntent pendingIntent) {
+        this.f12107d = pendingIntent;
+    }
+
+    public boolean equals(Object obj) {
+        if (!(obj instanceof SaveAccountLinkingTokenResult)) {
+            return false;
+        }
+        return C7258g.m27880a(this.f12107d, ((SaveAccountLinkingTokenResult) obj).f12107d);
+    }
+
+    public int hashCode() {
+        return C7258g.m27881b(this.f12107d);
+    }
+
+    /* renamed from: v */
+    public PendingIntent mo11707v() {
+        return this.f12107d;
+    }
+
+    public void writeToParcel(Parcel parcel, int i) {
+        int a = C7461a.m28369a(parcel);
+        C7461a.m28390v(parcel, 1, mo11707v(), i, false);
+        C7461a.m28370b(parcel, a);
+    }
+}

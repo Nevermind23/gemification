@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt">
+    <translate android:interpolator="@android:anim/overshoot_interpolator" android:duration="50" android:repeatCount="4" android:repeatMode="reverse" android:fromXDelta="-10" android:toXDelta="10"/>
+</set>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/AppBarLayout">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.toolbar.ToolbarView android:id="@+id/toolbar_new" android:layout_width="0dp" android:layout_height="@dimen/height_toolbar" app:layout_constraintEnd_toStartOf="@+id/timer" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:navigationEnabled="true" style="@style/Toolbar"/>
+        <p341ge.bog.designsystem.components.countdowntimer.CountDownTimerView android:id="@+id/timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.appbar.AppBarLayout>

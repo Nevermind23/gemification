@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/card_icon" android:layout_width="@dimen/list_item_rounded_container_width_height" android:layout_height="@dimen/statements_icon_height"/>
+    <p341ge.bog.designsystem.components.list.TwoLineReverseTextItem android:id="@+id/card_texts" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <p341ge.bog.designsystem.components.checkbox.CheckboxView android:id="@+id/select_check_boxx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/spacing_m"/>
+</p341ge.bog.designsystem.components.list.ListItem>

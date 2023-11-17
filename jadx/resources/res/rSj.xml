@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/item_container" android:layout_width="match_parent" android:layout_height="@dimen/payments_last_operations_item_height">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/background_container" android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="@dimen/payments_last_operations_item_height_without_divider">
+        <FrameLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/rounded_container" android:background="@drawable/grey_circle_last_operations" android:padding="@dimen/loan_stroke_width" android:layout_width="@dimen/list_item_rounded_container_width_height" android:layout_height="@dimen/list_item_rounded_container_width_height" android:layout_marginStart="@dimen/item_default_margin">
+            <ImageView android:layout_gravity="center" android:id="@+id/rounded_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside"/>
+        </FrameLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/item_default_margin" android:layout_marginRight="@dimen/item_default_margin">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/payments_last_operations_item_small_text_size" android:textStyle="bold" android:textColor="?attr/color_invert_component_tr_150" android:ellipsize="end" android:id="@+id/time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:maxLines="1" android:fontFamily="@font/bog_regular"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/payments_last_operations_item_medium_text_size" android:textStyle="bold" android:textColor="?attr/color_invert_component_tr_300" android:ellipsize="end" android:id="@+id/provider_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/bog_medium"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/divider_height" layout="@layout/payments_last_operations_list_divider"/>
+</LinearLayout>

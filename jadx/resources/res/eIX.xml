@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="@dimen/image_selector_size" android:layout_height="match_parent" android:layout_marginStart="@dimen/spacing_xs" layout="@layout/list_item_purpose"/>
+    <include android:layout_width="@dimen/image_selector_size" android:layout_height="match_parent" android:layout_marginStart="@dimen/spacing_2xs" layout="@layout/list_item_purpose"/>
+    <include android:layout_width="@dimen/image_selector_size" android:layout_height="match_parent" android:layout_marginStart="@dimen/spacing_2xs" layout="@layout/list_item_purpose"/>
+    <include android:layout_width="@dimen/image_selector_size" android:layout_height="match_parent" android:layout_marginStart="@dimen/spacing_2xs" android:layout_marginEnd="@dimen/spacing_xs" layout="@layout/list_item_purpose"/>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/skeleton_header"/>
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/spacing_16">
+        <include android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/skeleton_action_button"/>
+        <include android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/skeleton_action_button"/>
+        <include android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" layout="@layout/skeleton_action_button"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <include android:layout_width="175dp" android:layout_height="@dimen/spacing_20" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_24" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" layout="@layout/skeleton_header_text"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/skeleton_list_item_height" android:layout_marginTop="@dimen/spacing_8" layout="@layout/skeleton_list_item"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/skeleton_list_item_height" android:layout_marginTop="@dimen/spacing_8" layout="@layout/skeleton_list_item"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/skeleton_list_item_height" android:layout_marginTop="@dimen/spacing_8" layout="@layout/skeleton_list_item"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/skeleton_list_item_height" android:layout_marginTop="@dimen/spacing_8" layout="@layout/skeleton_list_item"/>
+    <include android:layout_width="175dp" android:layout_height="@dimen/spacing_20" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_24" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" layout="@layout/skeleton_header_text"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/skeleton_list_item_height" android:layout_marginTop="@dimen/spacing_8" layout="@layout/skeleton_list_item"/>
+    <include android:layout_width="175dp" android:layout_height="@dimen/spacing_20" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_24" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" layout="@layout/skeleton_header_text"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/skeleton_list_item_height" android:layout_marginTop="@dimen/spacing_8" layout="@layout/skeleton_list_item"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/skeleton_list_item_height" android:layout_marginTop="@dimen/spacing_8" layout="@layout/skeleton_list_item"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/skeleton_list_item_height" android:layout_marginTop="@dimen/spacing_8" layout="@layout/skeleton_list_item"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/skeleton_list_item_height" android:layout_marginTop="@dimen/spacing_8" layout="@layout/skeleton_list_item"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

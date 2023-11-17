@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:height="20dp" android:width="20dp" android:viewportWidth="20" android:viewportHeight="20">
+    <path android:fillColor="@color/color_invert_background_layer" android:pathData="M10,10m-10,0a10,10 0,1 1,20 0a10,10 0,1 1,-20 0" android:strokeColor="@color/color_invert_background_popup"/>
+    <path android:fillColor="@color/color_invert_background_layer" android:pathData="M10,10m-9.5,0a9.5,9.5 0,1 1,19 0a9.5,9.5 0,1 1,-19 0" android:strokeColor="@color/color_invert_background_popup" android:strokeWidth="1"/>
+    <path android:fillColor="@color/color_invert_component_tr_300" android:pathData="M7.143,6.786a0.357,0.357 0,0 0,-0.357 0.357v5.714a0.357,0.357 0,0 0,0.714 0v-5.714a0.357,0.357 0,0 0,-0.357 -0.357z"/>
+    <path android:fillColor="@color/color_invert_component_tr_300" android:pathData="M8.928,6.786a0.357,0.357 0,0 0,-0.357 0.357v5.714a0.357,0.357 0,0 0,0.714 0v-5.714a0.357,0.357 0,0 0,-0.357 -0.357z"/>
+    <path android:fillColor="@color/color_invert_component_tr_300" android:pathData="M14.286,9.107L12.143,9.107a0.357,0.357 0,0 0,0 0.714h2.143v4.465L11.071,14.286L11.071,5.714A0.714,0.714 0,0 0,10.357 5L5.714,5A0.714,0.714 0,0 0,5 5.714v8.572A0.714,0.714 0,0 0,5.714 15h8.572A0.714,0.714 0,0 0,15 14.286L15,9.821a0.714,0.714 0,0 0,-0.714 -0.714zM5.714,5.714h4.643v8.572L5.714,14.286z"/>
+    <path android:fillColor="@color/color_invert_component_tr_300" android:pathData="M12.143,11.785h1.071a0.357,0.357 0,1 0,0 -0.714h-1.071a0.357,0.357 0,1 0,0 0.714z"/>
+    <path android:fillColor="@color/color_invert_component_tr_300" android:pathData="M12.143,13.214h1.071a0.357,0.357 0,1 0,0 -0.714h-1.071a0.357,0.357 0,1 0,0 0.714z"/>
+</vector>

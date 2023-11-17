@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="@drawable/forgiven_fund_icon_background" android:layout_width="@dimen/forgiven_fund_icon_background_size" android:layout_height="@dimen/forgiven_fund_icon_background_size">
+        <ImageView android:layout_gravity="center" android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tint="@color/color_primary_solid_df_500"/>
+    </FrameLayout>
+    <TextView android:textColor="@color/color_invert_component_tr_400" android:id="@+id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextBody1"/>
+    <TextView android:textColor="@color/color_invert_component_tr_400" android:id="@+id/amount_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextTitle1"/>
+    <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+</p341ge.bog.designsystem.components.list.ListItem>

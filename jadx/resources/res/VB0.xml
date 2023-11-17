@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/payment_wizard_input_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/wizard_text_input_layout" layout="@layout/layout_wizard_text_input"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/payment_wizard_selector_container" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@+id/payment_wizard_selector_title_layout" android:background="@color/bog_dialog_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="15sp" android:textColor="@color/bog_title_light_gray" android:id="@+id/payment_wizard_selector_title" android:padding="@dimen/bog_input_dialog_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/bog_headline_medium"/>
+                </FrameLayout>
+                <LinearLayout android:id="@+id/payment_wizard_selector_recycler_layout" android:background="@color/bog_dialog_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView android:id="@+id/payment_wizard_selector_recycler" android:paddingLeft="@dimen/bog_input_dialog_padding" android:paddingRight="@dimen/bog_input_dialog_padding" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/payment_wizard_input_container">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="@color/bog_white_color" android:layout_gravity="center_horizontal" android:id="@+id/payment_wizard_error_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="@string/payments_wizard_account_was_not_found" android:fontFamily="@font/bog_regular"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="15sp" android:textColor="@color/bog_white_color" android:id="@+id/payment_wizard_contacts_tv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="15dp" android:text="@string/payments_wizard_mobile_contacts_title_capital" android:fontFamily="@font/bog_headline_light"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/payment_wizard_recycler" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

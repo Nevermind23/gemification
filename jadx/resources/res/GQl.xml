@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.mobilebank.p975ui.components.BogSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/swipe_refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/content_recycler_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</p341ge.bog.mobilebank.p975ui.components.BogSwipeRefreshLayout>

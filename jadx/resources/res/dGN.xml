@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <bitmap android:src="@drawable/circle_shadow"/>
+    </item>
+    <item android:left="@dimen/container_box_shadow_left_inset" android:top="@dimen/container_box_shadow_top_inset" android:right="@dimen/container_box_shadow_right_inset" android:bottom="@dimen/container_box_shadow_bottom_inset">
+        <shape android:shape="oval">
+            <corners android:radius="5dp"/>
+            <solid android:color="@color/bog_button_clickable_darker"/>
+        </shape>
+    </item>
+</layer-list>

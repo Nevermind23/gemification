@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="@dimen/spacing_8" android:paddingBottom="@dimen/spacing_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/spacing_8">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/icon_img" style="@style/PiggyBankListItemIcon"/>
+    <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextBody2" android:textColor="@color/color_invert_component_solid_500" android:id="@+id/info_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</p341ge.bog.designsystem.components.list.ListItem>

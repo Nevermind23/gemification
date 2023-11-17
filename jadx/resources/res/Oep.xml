@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/bog_logo" android:layout_width="@dimen/launcher_logo_size" android:layout_height="@dimen/launcher_logo_size" android:src="@drawable/ic_wide_logo_dark" android:contentDescription="@null"/>
+        <include android:id="@+id/error_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/layout_horizontal_error"/>
+    </LinearLayout>
+    <include android:id="@+id/full_progress_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bog_full_progressbar"/>
+    <p341ge.bog.mobilebank.p975ui.components.UserTipPagerHelper android:id="@+id/user_tip_helper_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

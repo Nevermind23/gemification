@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/car_number_container" android:layout_width="@dimen/payments_circular_view_image_size" android:layout_height="@dimen/payments_circular_view_image_size">
+    <ImageView android:layout_gravity="center" android:id="@+id/semi_circle_view" android:background="@drawable/clip_semi_circle" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="3">
+            <ImageView android:layout_gravity="center" android:background="@drawable/ic_ge" android:layout_width="@dimen/car_number_view_flag_size_small" android:layout_height="@dimen/car_number_view_flag_size_small"/>
+            <TextView android:textSize="@dimen/car_number_view_flag_sub_text_size_small" android:textColor="@color/bog_white_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="@string/ge" android:textAlignment="center" android:layout_marginStart="2dp"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/car_number_view_text_size_small" android:textStyle="bold" android:textColor="@color/bog_black_color" android:gravity="top" android:layout_gravity="center" android:id="@+id/car_number_tv" android:paddingTop="8dp" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="7"/>
+    </LinearLayout>
+</FrameLayout>

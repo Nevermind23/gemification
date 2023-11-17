@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:orientation="vertical" android:id="@+id/linearLayout" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextBody1InvertComponents400Left" android:id="@+id/textView" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SingleLine.EllipsizeEnd"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextCaption1InvertComponents200Left" android:id="@+id/titleView" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" style="@style/SingleLine.EllipsizeEnd"/>
+    </LinearLayout>
+</merge>

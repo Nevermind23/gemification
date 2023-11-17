@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/star_image_view" android:padding="@dimen/spacing_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_48_system_star_outline" app:tint="?attr/color_invert_component_tr_50"/>

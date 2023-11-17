@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.notificationbadges.BadgeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="2dp" android:paddingBottom="2dp" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="0dp" android:paddingEnd="16dp" app:horizontal_offset="-11dp" app:is_badge_visible="false" app:vertical_offset="-11dp">
+    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/actionButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:button_type="9"/>
+</p341ge.bog.designsystem.components.notificationbadges.BadgeRelativeLayout>

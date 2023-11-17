@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.cardobjective.CardObjectiveView android:id="@+id/info_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_16"/>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius12Shadow0">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/header_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <TextView android:textAppearance="@style/TextBody1" android:textColor="?attr/color_invert_component_solid_500" android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:layout_constrainedWidth="true"/>
+                    <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/merchants_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/merchants_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/loader" android:background="?attr/color_invert_background_canvas" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/spacing_0" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <p341ge.bog.designsystem.components.loading.LoadingView android:id="@+id/card_loader" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:item_count="1" app:item_layout="@layout/skeleton_progress_details"/>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView android:id="@+id/retry_button_container" android:background="?attr/color_invert_background_canvas" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/spacing_0" android:layout_height="@dimen/spacing_0" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <include android:layout_gravity="center" android:id="@+id/retry_button" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/retry_button"/>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

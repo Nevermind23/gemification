@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/page_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" app:drawable_src="@drawable/ic_link_generate" app:drawable_type="2"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16">
+        <TextView android:textAppearance="@style/TextBody1InvertComponents500Left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bullet_symbol" android:layout_marginStart="@dimen/spacing_8"/>
+        <TextView android:textAppearance="@style/TextBody1InvertComponents500Left" android:id="@+id/text_bullets_description_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_8"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16">
+        <TextView android:textAppearance="@style/TextBody1InvertComponents500Left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bullet_symbol" android:layout_marginStart="@dimen/spacing_8"/>
+        <TextView android:textAppearance="@style/TextBody1InvertComponents500Left" android:id="@+id/text_bullets_description_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_8"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16">
+        <TextView android:textAppearance="@style/TextBody1InvertComponents500Left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bullet_symbol" android:layout_marginStart="@dimen/spacing_8"/>
+        <TextView android:textAppearance="@style/TextBody1InvertComponents500Left" android:id="@+id/text_bullets_description_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_8"/>
+    </LinearLayout>
+    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/btn_close" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_16"/>
+</LinearLayout>

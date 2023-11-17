@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/loader_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/animation_container" android:layout_width="match_parent" android:layout_height="@dimen/payments_last_operations_item_height_without_divider">
+        <View android:id="@+id/color_container" android:layout_width="@dimen/payments_last_operations_item_color_container_width" android:layout_height="match_parent"/>
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_default_margin" android:layout_marginRight="@dimen/item_default_margin">
+            <View android:textColor="@color/bog_black_color" android:background="@color/bog_circular_image_container_grey_color" android:layout_width="wrap_content" android:layout_height="@dimen/payments_last_operations_item_loader_height" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

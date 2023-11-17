@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:textAppearance="@style/TextButton1Primary500Left" android:textColor="@color/selector_tab_text_color" android:gravity="center" android:id="@android:id/text1" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/SingleLine.EllipsizeEnd"/>

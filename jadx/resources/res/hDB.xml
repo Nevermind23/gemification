@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/selected_list_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_24_general_user_business_outline" android:tint="@color/color_primary_solid_df_500" android:layout_marginEnd="@dimen/spacing_8"/>
+        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/selected" android:layout_width="wrap_content" android:layout_height="wrap_content" app:text_color="@color/color_invert_component_tr_400" app:title_color="@color/color_positive_solid_df_500"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/unselected_list_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_24_general_user_business_outline" android:tint="@color/color_primary_solid_df_500" android:layout_marginEnd="@dimen/spacing_8"/>
+        <p341ge.bog.designsystem.components.list.SingleLineTextItem android:id="@+id/unselected" android:layout_width="wrap_content" android:layout_height="wrap_content" app:text_color="@color/color_invert_component_tr_400"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BigDividerView android:id="@+id/divider" android:layout_width="match_parent" android:layout_height="1dp" app:layout_constraintBottom_toBottomOf="0"/>
+</LinearLayout>

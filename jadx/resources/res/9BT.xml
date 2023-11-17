@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.buttons.Button android:layout_gravity="center" android:id="@+id/all_operations_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_16" app:button_icon="@drawable/icons_24_system_chevron_right" app:button_type="7"/>
+</FrameLayout>

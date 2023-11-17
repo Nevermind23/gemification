@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="?attr/colorAccent" android:id="@+id/file_name" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:fontFamily="@font/bog_headline_medium"/>
+        <ImageButton android:id="@+id/remove_button" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="8dp" android:layout_marginRight="10dp" android:src="@drawable/ic_wizard_close" style="@style/Widget.AppCompat.Button.Borderless"/>
+    </LinearLayout>
+    <View android:background="@color/invoice_files_divider_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

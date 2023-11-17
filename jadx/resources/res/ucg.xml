@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_pressed="true" android:drawable="@drawable/tab_item_pressed_background"/>
+    <item android:drawable="@drawable/tab_item_activated_background" android:state_activated="true"/>
+    <item android:state_enabled="false" android:drawable="@drawable/tab_item_disabled_background"/>
+    <item android:drawable="@drawable/tab_item_initial_background"/>
+</selector>

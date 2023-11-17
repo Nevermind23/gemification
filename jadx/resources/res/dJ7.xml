@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@+id/introduction_slider" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@+id/fixed_button" app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@+id/fixed_button" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+        <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/scrolling_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/action_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_16"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/initial_amount_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/amount_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextSubtitle1InvertComponents400Left" android:layout_gravity="end" android:id="@+id/amount_value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/accrued_interest_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextSubtitle1InvertComponents400Left" android:layout_gravity="end" android:id="@+id/accrued_interest_value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+</androidx.appcompat.widget.LinearLayoutCompat>

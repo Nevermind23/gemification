@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/bog_white_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/item_default_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/horizontal_scroll_header_layout"/>
+        <p341ge.bog.mobilebank.p975ui.components.BogProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="@dimen/payments_circular_view_container_height" android:layout_height="@dimen/payments_circular_view_container_height"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.HorizontalRecyclerViewHolder android:id="@+id/horizontal_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/payments_circular_view_container_height"/>
+    </LinearLayout>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BigDividerView android:layout_width="match_parent" android:layout_height="12dp"/>
+</LinearLayout>

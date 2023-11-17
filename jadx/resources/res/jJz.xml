@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/phone_contacts_list_item_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/contacts_image_view_layer_container" android:background="?attr/color_invert_background_canvas" android:layout_width="@dimen/icon_size_40" android:layout_height="@dimen/icon_size_40" app:layerStyle="@style/LayerRadiusCircleShadow0">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/phone_contact_image_view" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/contact" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</p341ge.bog.designsystem.components.list.ListItem>

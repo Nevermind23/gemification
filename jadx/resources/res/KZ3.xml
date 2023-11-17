@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/background_low" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/upload_preview" android:visibility="gone" android:layout_width="200dp" android:layout_height="200dp"/>
+    <androidx.fragment.app.FragmentContainerView android:id="@+id/fragment_container_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/back_button" android:layout_width="30dp" android:layout_height="match_parent" android:src="@drawable/identomat_back_arrow"/>
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/back_button_title_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="" android:textAlignment="center"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@+id/loading_panel" android:layout_width="150dp" android:layout_height="150dp" android:layout_marginTop="10dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <com.identomat.subfragments.views.LoadingView android:id="@+id/loading_view_icon" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <TextView android:textColor="@color/blue_dark" android:id="@+id/loading_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Uploading..."/>
+    </LinearLayout>
+</RelativeLayout>

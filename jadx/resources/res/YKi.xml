@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <FrameLayout android:orientation="vertical" android:id="@+id/root_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/acct_and_cards_tab_holder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="@dimen/payments_top_menu_text_size" android:textColor="@color/bog_white_color" android:gravity="center" android:id="@+id/acct_tab" android:background="?attr/tag_tab_selection_transition" android:paddingTop="@dimen/payments_top_menu_button_text_padding_top" android:paddingBottom="@dimen/payments_top_menu_button_text_padding_top" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/payments_top_menu_button_text_padding_side" android:text="@string/tab_name_accounts" android:maxLines="1" android:singleLine="true" android:layout_weight="1" android:fontFamily="@font/bog_headline_medium"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="@dimen/payments_top_menu_text_size" android:textColor="@color/bog_white_color" android:gravity="center" android:id="@+id/cards_tab" android:background="?attr/tag_tab_selection_transition" android:paddingTop="@dimen/payments_top_menu_button_text_padding_top" android:paddingBottom="@dimen/payments_top_menu_button_text_padding_top" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/payments_top_menu_button_margin_side" android:layout_marginRight="@dimen/payments_top_menu_button_text_padding_side" android:text="@string/tab_name_cards" android:maxLines="1" android:singleLine="true" android:layout_weight="1" android:fontFamily="@font/bog_headline_medium"/>
+            </LinearLayout>
+            <FrameLayout android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogViewPager android:id="@+id/manage_acct_and_cards_viewpager" android:layout_width="match_parent" android:layout_height="wrap_content" app:calculateHeight="false"/>
+                <FrameLayout android:id="@+id/error_layout" android:background="@color/color_invert_background_layer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <include android:id="@+id/horizontal_error" layout="@layout/layout_horizontal_error"/>
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <include android:id="@+id/full_progress_bar" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bog_full_progressbar"/>
+    </FrameLayout>
+</LinearLayout>

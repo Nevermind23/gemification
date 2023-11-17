@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/wizard_input_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/wizard_selector_recycler_layout" android:background="@color/color_invert_background_layer" android:paddingLeft="@dimen/bog_input_dialog_padding" android:paddingRight="@dimen/bog_input_dialog_padding" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogInputLayout android:id="@+id/search_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:editTextHintFocused="@string/wizard_search" app:inputType="none"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/wizard_selector_recycler" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/retryLayout" android:background="@color/color_invert_background_canvas" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/horizontal_error_retry_button" layout="@layout/layout_horizontal_error"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/progressBar" android:background="@color/color_invert_background_layer" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <p341ge.bog.mobilebank.p975ui.components.BogProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</FrameLayout>

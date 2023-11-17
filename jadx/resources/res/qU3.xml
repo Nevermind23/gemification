@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/payment_result_image" android:layout_width="60dp" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:src="@drawable/ic_result_success"/>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="18sp" android:textColor="@color/bog_dialog_green_color" android:layout_gravity="center" android:id="@+id/successful_result_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="34dp" android:text="@string/bonus_exchange_completed" android:fontFamily="@font/bog_medium"/>
+    <View android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="10dp"/>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.SpecialAlignedTitleValueView android:layout_gravity="center_vertical" android:id="@+id/express_exchange_from" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.SpecialAlignedTitleValueView android:layout_gravity="center_vertical" android:id="@+id/express_exchange_to" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/divider_color_2" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:layout_marginRight="16dp"/>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.SpecialAlignedTitleValueView android:layout_gravity="center_vertical" android:id="@+id/transferred_point_amount" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

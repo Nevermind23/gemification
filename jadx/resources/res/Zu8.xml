@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/navigation_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/spacing_16" app:button_icon="@drawable/icons_24_system_chevron_left" app:button_type="9"/>
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/toolbar_icon_layer" android:background="?attr/color_invert_background_canvas" android:layout_width="@dimen/toolbar_icon_width" android:layout_height="@dimen/toolbar_icon_height" android:layout_marginStart="@dimen/spacing_16" app:layerStyle="@style/LayerRadiusCircleShadow0">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/toolbar_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/titlesContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_8">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextCaption1" android:textColor="@color/color_invert_component_tr_200" android:id="@+id/secondary_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SingleLine.EllipsizeEnd"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextH5" android:textColor="@color/color_invert_component_tr_400" android:id="@+id/primary_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/SingleLine.EllipsizeEnd"/>
+    </LinearLayout>
+</merge>

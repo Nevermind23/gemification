@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingVertical="@dimen/spacing_16">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_25" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="164dp" android:paddingHorizontal="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_50" android:layout_width="206dp" android:layout_height="18dp" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow0"/>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_50" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow0"/>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_50" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow0"/>
+        </LinearLayout>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_25" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="164dp" android:layout_marginTop="@dimen/spacing_16" android:paddingHorizontal="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_50" android:layout_width="206dp" android:layout_height="18dp" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow0"/>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_50" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow0"/>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_50" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow0"/>
+        </LinearLayout>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+</LinearLayout>

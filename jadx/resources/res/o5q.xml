@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/identomat_instruction_bg" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="50dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <TextView android:textSize="20sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/record_begin_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identomat_no_connection" android:maxLines="2" android:textAlignment="center"/>
+        <RelativeLayout android:id="@+id/again_button" android:background="@drawable/identomat_button" android:layout_width="100dp" android:layout_height="45dp" android:layout_marginTop="10dp" android:elevation="1dp">
+            <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identomat_scan_retry_again" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

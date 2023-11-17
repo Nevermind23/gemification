@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="fill_vertical" android:id="@+id/accounts_recycler" android:background="@color/bog_activity_background_color" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/no_data_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/ic_operations_with_gray_back" android:layout_width="@dimen/saved_cards_no_data_icon_size" android:layout_height="@dimen/saved_cards_no_data_icon_size" android:layout_marginTop="@dimen/item_default_margin" android:layout_marginBottom="@dimen/margin_large"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="@color/empty_notifications_txt_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:text="@string/statement_text_no_operations" android:fontFamily="@font/bog_medium"/>
+    </LinearLayout>
+</FrameLayout>

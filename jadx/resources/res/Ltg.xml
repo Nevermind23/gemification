@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/toolbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:padding="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow0">
+                <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.pagestate.PageState android:id="@+id/instant_card_status_state" android:layout_width="match_parent" android:layout_height="wrap_content" app:page_state_type="0"/>
+                    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextCaption1" android:textColor="@color/color_invert_component_tr_400" android:gravity="center" android:id="@+id/instant_card_status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/back_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:button_type="1"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow0">
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/instant_card_status_details_header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/instant_card_details_card_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:text="არაპერსონიფიცირებული" app:title="ბარათი"/>
+                    <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/instant_card_details_country_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:text="იტალია" app:title="ქვეყანა"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

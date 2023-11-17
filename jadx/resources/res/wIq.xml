@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:paddingBottom="@dimen/spacing_m" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.onetimepassword.OneTimePasswordView android:id="@+id/otp_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/action_button" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_m" app:button_text="@string/next" app:button_type="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/otp_view"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

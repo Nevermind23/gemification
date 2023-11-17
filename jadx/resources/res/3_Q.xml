@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layer_view" android:background="?attr/color_invert_background_layer" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadiusCircleShadow0">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/thumbnail" android:background="@drawable/shape_thumbnail_circle" android:layout_width="@dimen/width_thumbnail" android:layout_height="@dimen/height_thumbnail" android:scaleType="centerInside"/>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

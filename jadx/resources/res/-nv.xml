@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_xs" android:layout_marginBottom="@dimen/spacing_xs" android:layout_marginStart="34dp" android:layout_marginVertical="@dimen/spacing_xs">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextBody2InvertComponents150Left" android:id="@+id/sub_product_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/spacing_xs" style="@style/SingleLine.EllipsizeEnd"/>
+    <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/spacing_xs">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextSmallButtonInvertComponents150Left" android:id="@+id/sub_product_stars_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/spacing_xs" style="@style/SingleLine.EllipsizeEnd"/>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/sub_product_icon" android:layout_width="10dp" android:layout_height="10dp" app:srcCompat="@drawable/icons_24_system_star_fill"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/insurance_activation_graph" app:startDestination="@+id/insuranceInfoFragment">
+    <fragment android:label="@string/title_auto_liability_insurance" android:name="p341ge.bog.mobilebank.autoliabilityinsurance.presentation.policydetail.PolicyDetailFragment" android:id="@+id/insuranceDetailFragment"/>
+    <fragment android:label="@string/title_auto_liability_insurance" android:name="p341ge.bog.mobilebank.autoliabilityinsurance.presentation.InsuranceInfoFragment" android:id="@+id/insuranceInfoFragment">
+        <action android:id="@+id/action_insuranceInfoFragment_to_insuranceProviderListFragment" app:destination="@+id/insuranceProviderListFragment"/>
+        <action android:id="@+id/action_insuranceInfoFragment_to_insuranceConditionsFragment" app:destination="@+id/insuranceConditionsFragment"/>
+        <action android:id="@+id/action_insuranceInfoFragment_to_insuranceDetailsFragment" app:destination="@+id/insuranceDetailFragment" app:popUpTo="@+id/insurance_activation_graph" app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment android:label="@string/title_insurance_conditions" android:name="p341ge.bog.mobilebank.autoliabilityinsurance.presentation.insuranceconditions.InsuranceConditionsFragment" android:id="@+id/insuranceConditionsFragment">
+        <action android:id="@+id/action_insuranceConditionsFragment_to_insuranceInfoFragment" app:destination="@+id/insuranceInfoFragment"/>
+    </fragment>
+    <fragment android:label="@string/title_auto_liability_insurance" android:name="p341ge.bog.mobilebank.autoliabilityinsurance.presentation.providerlist.InsuranceProviderListFragment" android:id="@+id/insuranceProviderListFragment">
+        <action android:id="@+id/action_insuranceProviderListFragment_to_selectInsurancePackageActionSheet" app:destination="@+id/selectInsurancePackageActionSheet"/>
+    </fragment>
+    <dialog android:label="@string/title_auto_liability_insurance" android:name="p341ge.bog.mobilebank.autoliabilityinsurance.presentation.selectpackage.SelectInsurancePackageActionSheet" android:id="@+id/selectInsurancePackageActionSheet">
+        <action android:id="@+id/action_selectInsurancePackageActionSheet_to_carNumberInputFragment" app:destination="@+id/carNumberInputFragment"/>
+    </dialog>
+    <fragment android:label="@string/title_auto_liability_insurance" android:name="p341ge.bog.mobilebank.autoliabilityinsurance.presentation.carnumberinput.CarNumberInputFragment" android:id="@+id/carNumberInputFragment">
+        <action android:id="@+id/action_carNumberInputFragment_to_carOwnerInputFragment" app:destination="@+id/carOwnerInputFragment"/>
+        <action android:id="@+id/action_carNumberInputFragment_to_contactInfoInputFragment" app:destination="@+id/contactInfoInputFragment"/>
+    </fragment>
+    <fragment android:label="@string/title_auto_liability_insurance" android:name="p341ge.bog.mobilebank.autoliabilityinsurance.presentation.carownerinput.CarOwnerInputFragment" android:id="@+id/carOwnerInputFragment">
+        <action android:id="@+id/action_carOwnerInputFragment_to_contactInfoInputFragment" app:destination="@+id/contactInfoInputFragment"/>
+    </fragment>
+    <fragment android:label="@string/title_auto_liability_insurance" android:name="p341ge.bog.mobilebank.autoliabilityinsurance.presentation.dateinput.InsuranceActivationDateInputFragment" android:id="@+id/contactInfoInputFragment">
+        <action android:id="@+id/action_contactInfoInputFragment_to_policyDetailsFragment" app:destination="@+id/policyDetailsFragment"/>
+    </fragment>
+    <fragment android:label="@string/title_auto_liability_insurance" android:name="p341ge.bog.mobilebank.autoliabilityinsurance.presentation.policydetails.PolicyDetailsFragment" android:id="@+id/policyDetailsFragment">
+        <action android:id="@+id/action_policyDetailsFragment_to_registerMtplPolicyFragment" app:destination="@+id/registerMtplPolicyFragment"/>
+    </fragment>
+    <fragment android:label="@string/title_auto_liability_insurance" android:name="p341ge.bog.mobilebank.autoliabilityinsurance.presentation.registermtplpolicy.RegisterMtplPolicyFragment" android:id="@+id/registerMtplPolicyFragment">
+        <action android:id="@+id/action_registerMtplPolicyFragment_to_selectInsuranceCardActionSheet" app:destination="@+id/selectInsuranceCardActionSheet"/>
+        <action android:id="@+id/action_registerMtplPolicyFragment_to_policyDownloadFragment" app:destination="@+id/policyDownloadFragment" app:popUpTo="@+id/insuranceInfoFragment"/>
+    </fragment>
+    <dialog android:label="@string/title_auto_liability_insurance" android:name="p341ge.bog.mobilebank.autoliabilityinsurance.presentation.selectinsurancecard.SelectInsuranceCardActionSheet" android:id="@+id/selectInsuranceCardActionSheet"/>
+    <fragment android:label="@string/title_auto_liability_insurance" android:name="p341ge.bog.mobilebank.autoliabilityinsurance.presentation.policydownload.PolicyDownloadFragment" android:id="@+id/policyDownloadFragment">
+        <action android:id="@+id/action_policyDownloadFragment_to_insuranceDetailFragment" app:destination="@+id/insuranceDetailFragment" app:popUpTo="@+id/insuranceInfoFragment"/>
+    </fragment>
+</navigation>

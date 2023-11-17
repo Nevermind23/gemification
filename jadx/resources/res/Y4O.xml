@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/bog_button_rounded_selector_red" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/retry_button_refresh_img" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/retry_button_img_selector"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextTitle3" android:textSize="14sp" android:textColor="@color/retry_button_selector" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/common_text_retry_upper_case"/>
+</LinearLayout>

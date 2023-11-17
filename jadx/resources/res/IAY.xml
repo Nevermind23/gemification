@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="16sp" android:textStyle="bold" android:textColor="?attr/color_invert_component_tr_400" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_16" android:fontFamily="@font/bog_headline_medium"/>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="?attr/color_invert_component_tr_400" android:id="@+id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_default_margin" android:layout_marginTop="4dp" android:layout_marginRight="@dimen/item_default_margin" android:fontFamily="@font/bog_medium"/>
+    <View android:id="@+id/item_divider" android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root" android:background="@color/bog_white_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar" app:layout_constraintVertical_bias="0"/>
+    <androidx.cardview.widget.CardView android:id="@+id/progressBar" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="0dp" android:layout_height="0dp" app:cardBackgroundColor="@color/bog_white_color" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <p341ge.bog.mobilebank.p975ui.components.BogProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:progressStyle="0"/>
+    </androidx.cardview.widget.CardView>
+    <FrameLayout android:id="@+id/retryButtonContainer" android:background="@color/bog_activity_background_color" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <include android:layout_gravity="center" android:id="@+id/retryBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/retry_button"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

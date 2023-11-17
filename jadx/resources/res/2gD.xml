@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/provider_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/provider_content_wrapper" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="@dimen/default_list_item_with_image_container_height">
+        <FrameLayout android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/rounded_container" android:padding="@dimen/loan_stroke_width" android:layout_width="@dimen/rounded_image_container_small_width_height" android:layout_height="@dimen/rounded_image_container_small_width_height" android:layout_marginLeft="@dimen/item_default_margin">
+            <ImageView android:layout_gravity="center" android:id="@+id/rounded_image" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/item_default_margin">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="@dimen/payment_provider_item_text_size" android:textColor="@color/color_invert_component_tr_400" android:ellipsize="end" android:id="@+id/provider_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:fontFamily="@font/bog_medium"/>
+            <View android:background="@color/payments_last_operations_divider_grey" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

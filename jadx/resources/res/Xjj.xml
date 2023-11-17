@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/loans_nav_graph" app:startDestination="@+id/loanDetailsFragment">
+    <fragment android:label="" android:name="p341ge.bog.mobilebank.loans.presentation.details.LoanDetailsFragment" android:id="@+id/loanDetailsFragment">
+        <argument android:name="@string/loans_flow_extra" app:argType="ge.bog.mobilebank.loans.presentation.LoansFlow$Details"/>
+        <action android:id="@+id/action_loanDetailsFragment_to_repaymentFragment" app:destination="@+id/repaymentFragment"/>
+        <action android:id="@+id/action_loanDetailsFragment_to_pawnLoanFragment" app:destination="@+id/pawnLoanFragment"/>
+        <action android:id="@+id/action_loanDetailsFragment_to_loansHistoryGraphicsFragment" app:destination="@+id/loansHistoryGraphicsFragment"/>
+    </fragment>
+    <fragment android:label="" android:name="p341ge.bog.mobilebank.loans.presentation.repayment.RepaymentFragment" android:id="@+id/repaymentFragment">
+        <argument android:name="@string/loans_flow_extra" app:argType="ge.bog.mobilebank.loans.presentation.LoansFlow$Repayment"/>
+        <action android:id="@+id/action_repaymentFragment_to_repaymentSuccessFragment" app:destination="@+id/repaymentSuccessFragment"/>
+    </fragment>
+    <fragment android:label="" android:name="p341ge.bog.mobilebank.loans.presentation.repaymentsuccess.RepaymentSuccessFragment" android:id="@+id/repaymentSuccessFragment">
+        <argument android:name="@string/arg_payment_result_data" app:argType="ge.bog.mobilebank.loans.presentation.model.PaymentResultData"/>
+    </fragment>
+    <fragment android:label="" android:name="p341ge.bog.mobilebank.loans.presentation.pawnshop.PawnLoanFragment" android:id="@+id/pawnLoanFragment">
+        <argument android:name="@string/loans_flow_extra" app:argType="ge.bog.mobilebank.loans.presentation.LoansFlow$Repayment"/>
+        <action android:id="@+id/action_pawnLoanFragment_to_repaymentSuccessFragment" app:destination="@+id/repaymentSuccessFragment"/>
+    </fragment>
+    <fragment android:label="" android:name="p341ge.bog.mobilebank.loans.presentation.historygraphics.LoansHistoryGraphicsFragment" android:id="@+id/loansHistoryGraphicsFragment">
+        <argument android:name="@string/arg_history_schedule_data" app:argType="ge.bog.mobilebank.loans.presentation.historygraphics.model.HistoryScheduleDataModel"/>
+    </fragment>
+</navigation>

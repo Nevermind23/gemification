@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/spacing_m" android:paddingEnd="@dimen/spacing_m">
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:layout_gravity="center_vertical" android:id="@+id/image_background_layer" android:layout_width="@dimen/height_thumbnail" android:layout_height="@dimen/width_thumbnail" app:layerStyle="@style/LayerRadiusCircleShadow0">
+            <ImageView android:layout_gravity="center" android:id="@+id/image" android:layout_width="@dimen/button_list_icon_width" android:layout_height="@dimen/button_list_icon_height"/>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/spacing_m">
+            <TextView android:textAppearance="@style/TextCaption1InvertComponents200Left" android:id="@+id/tran_date" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/color_invert_component_tr_400" android:ellipsize="end" android:id="@+id/tran_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_2xs" android:layout_marginBottom="@dimen/spacing_2xs" android:maxLines="1" android:fontFamily="@font/bog_medium"/>
+            <TextView android:textAppearance="@style/TextCaption1InvertComponents200Left" android:id="@+id/tran_share" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="end" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_m">
+            <TextView android:textAppearance="@style/TextButton1InvertComponents400Left" android:id="@+id/right_top" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:layout_gravity="end" android:id="@+id/right_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_2xs"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/separator" android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/spacing_m" android:layout_marginRight="@dimen/spacing_m" android:layout_marginHorizontal="@dimen/spacing_m"/>
+</LinearLayout>

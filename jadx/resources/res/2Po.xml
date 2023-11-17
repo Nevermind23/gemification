@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/select_geo_view" android:background="?attr/selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/language_pick_item_height">
+                <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <p341ge.bog.designsystem.components.list.SingleLineTextItem android:textAppearance="@style/TextBody1" android:textColor="@color/color_invert_component_tr_400" android:id="@+id/select_ge_text" android:layout_width="wrap_content" android:layout_height="match_parent" app:text="GE - ქართული"/>
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/icon_ge_tick_iv" android:visibility="gone" android:layout_width="@dimen/tick_size" android:layout_height="@dimen/tick_size" android:src="@drawable/icons_48_system_check" app:tint="?attr/colorAccent"/>
+            </p341ge.bog.designsystem.components.list.ListItem>
+            <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+            <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/select_en_view" android:background="?attr/selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/language_pick_item_height">
+                <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <p341ge.bog.designsystem.components.list.SingleLineTextItem android:textAppearance="@style/TextBody1" android:textColor="@color/color_invert_component_tr_400" android:id="@+id/select_en_text" android:layout_width="wrap_content" android:layout_height="match_parent" app:text="EN - English"/>
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/icon_en_tick_iv" android:visibility="gone" android:layout_width="@dimen/tick_size" android:layout_height="@dimen/tick_size" android:src="@drawable/icons_48_system_check" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:tint="?attr/colorAccent"/>
+            </p341ge.bog.designsystem.components.list.ListItem>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/dark_mode_container" android:background="?attr/color_invert_background_layer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/dark_mode_title" android:layout_width="match_parent" android:layout_height="wrap_content" app:empty_widget_title="Dark Mode"/>
+            <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/dark_mode_dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground">
+                <p341ge.bog.designsystem.components.radiobutton.RadioButtonView android:id="@+id/dark_mode_dark_radio" android:paddingTop="@dimen/spacing_8" android:paddingBottom="@dimen/spacing_8" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/spacing_8"/>
+                <p341ge.bog.designsystem.components.list.SingleLineTextItem android:layout_width="match_parent" android:layout_height="match_parent" app:text="Dark"/>
+            </p341ge.bog.designsystem.components.list.ListItem>
+            <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/dark_mode_auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground">
+                <p341ge.bog.designsystem.components.radiobutton.RadioButtonView android:id="@+id/dark_mode_auto_radio" android:paddingTop="@dimen/spacing_8" android:paddingBottom="@dimen/spacing_8" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/spacing_8"/>
+                <p341ge.bog.designsystem.components.list.TwoLineReverseTextItem android:layout_width="match_parent" android:layout_height="match_parent" app:multiline_bottom_text="true" app:text="Auto" app:title="Dark mode will be determined by system setting"/>
+            </p341ge.bog.designsystem.components.list.ListItem>
+            <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/dark_mode_none" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground">
+                <p341ge.bog.designsystem.components.radiobutton.RadioButtonView android:id="@+id/dark_mode_none_radio" android:paddingTop="@dimen/spacing_8" android:paddingBottom="@dimen/spacing_8" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/spacing_8"/>
+                <p341ge.bog.designsystem.components.list.SingleLineTextItem android:layout_width="match_parent" android:layout_height="match_parent" app:text="None"/>
+            </p341ge.bog.designsystem.components.list.ListItem>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+</LinearLayout>

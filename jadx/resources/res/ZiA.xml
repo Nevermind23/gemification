@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/story_group_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.mobilebank.cleanarch.presentation.common.StateView android:id="@+id/content_state" android:layout_width="match_parent" android:layout_height="match_parent" app:contentViewId="@+id/story_groups_container" app:errorViewId="@+id/error_layout" app:loadingViewId="@+id/loader">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/story_groups_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.viewpager2.widget.ViewPager2 android:id="@+id/story_groups_pager" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintDimensionRatio="H,9:16" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0.4"/>
+            <View android:id="@+id/gesture_catcher" android:focusable="true" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="@+id/story_groups_pager" app:layout_constraintTop_toTopOf="@+id/story_groups_pager"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout android:id="@+id/loader" android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:id="@+id/error_layout" android:background="?attr/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+            <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/error_description" android:layout_width="match_parent" android:layout_height="wrap_content" app:drawable_src="@drawable/icons_16_system_error_fill" app:drawable_tint="@color/color_negative_solid_df_500" app:drawable_type="2" app:text="მოხდა შეცდომა გვიშველე"/>
+            <p341ge.bog.designsystem.components.buttons.Button android:layout_width="wrap_content" android:layout_height="wrap_content" app:button_icon="@drawable/icons_48_system_retry" app:button_text="@string/button_text_retry" app:button_type="2"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </p341ge.bog.mobilebank.cleanarch.presentation.common.StateView>
+</FrameLayout>

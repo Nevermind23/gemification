@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_layer" android:padding="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_8" app:layerStyle="@style/LayerRadius12Shadow20">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_8">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_component_tr_25" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:layout_marginEnd="@dimen/spacing_12" app:layerStyle="@style/LayerRadius16Shadow0"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginEnd="@dimen/spacing_24">
+                <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="11dp" android:layout_marginBottom="@dimen/spacing_2"/>
+                <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="14dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="11dp" android:layout_marginBottom="@dimen/spacing_2"/>
+                <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="14dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginBottom="@dimen/spacing_8"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_8">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginEnd="@dimen/spacing_24">
+                <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="11dp" android:layout_marginBottom="@dimen/spacing_2"/>
+                <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="14dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="11dp" android:layout_marginBottom="@dimen/spacing_2"/>
+                <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="14dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

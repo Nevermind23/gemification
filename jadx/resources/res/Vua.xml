@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/parameter_item_height">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/layer_1" android:background="?attr/color_invert_component_tr_25" android:layout_width="@dimen/spacing_28" android:layout_height="@dimen/spacing_28" android:layout_marginStart="@dimen/spacing_4" app:layerStyle="@style/LayerRadius10Shadow0"/>
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/layer_2" android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/skeleton_line_height" android:paddingEnd="@dimen/margin_medium" android:layout_marginStart="@dimen/skeleton_big_spacing" android:layout_marginEnd="@dimen/spacing_16" app:layerStyle="@style/LayerRadius10Shadow0"/>
+</LinearLayout>

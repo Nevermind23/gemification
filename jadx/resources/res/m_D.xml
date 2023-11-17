@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="right" android:id="@+id/login_wizard_solo_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_solo_logo" android:adjustViewBounds="true"/>
+    <View android:id="@+id/dialog_base_dim" android:background="@android:color/black" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/base_drop_view_height_calculate_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/dialog_base_super_content" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/dialog_base_super_content_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@color/bog_dialog_bg" android:scaleType="centerCrop" android:contentDescription="@null"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/dialog_base_content" android:padding="@dimen/drop_dialog_content_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="15sp" android:id="@+id/base_drop_view_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bog_headline_light"/>
+                </LinearLayout>
+                <FrameLayout android:id="@+id/dialog_base_drop_progress_layout" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/dialog_base_drop_progress_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:alpha="0"/>
+                    <View android:id="@+id/dialog_base_drop_progress_dim" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0"/>
+                    <p341ge.bog.mobilebank.p975ui.components.BogProgressBar android:layout_gravity="center" android:layout_width="50dp" android:layout_height="50dp"/>
+                    <p341ge.bog.mobilebank.p975ui.components.BogProgressBar android:layout_gravity="center" android:id="@+id/dialog_base_drop_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </FrameLayout>
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/dialog_base_authorize" android:background="@drawable/alpha_white_rounded_rect" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/drop_dialog_content_padding" android:layout_marginTop="@dimen/base_drop_view_top_margin" android:layout_marginRight="@dimen/drop_dialog_content_padding">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_avatar_small"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_option_wizard_or_log_in" android:fontFamily="@font/bog_headline_medium"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/payment_option_wizard_comission" android:fontFamily="@font/bog_regular"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <p341ge.bog.mobilebank.p975ui.components.passwordrules.PasswordRulesView android:id="@+id/password_rules" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="13sp" android:textColor="@color/bog_white_color" android:layout_gravity="center_horizontal" android:id="@+id/descriptionText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/item_default_margin" android:fontFamily="@font/bog_medium"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/bottomContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/item_default_margin">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/bottomImage" android:layout_width="140dp" android:layout_height="wrap_content" android:src="@drawable/ic_watches_and_jewellery" android:adjustViewBounds="true"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@color/bog_white_color" android:layout_gravity="center_vertical" android:id="@+id/bottomText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/item_default_margin" android:fontFamily="@font/bog_medium"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/banner_container" android:layout_width="match_parent" android:layout_height="128dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/item_default_margin" android:layout_marginRight="@dimen/item_default_margin">
+        <FrameLayout android:layout_gravity="center" android:background="@drawable/white_circle" android:layout_width="80dp" android:layout_height="80dp">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:id="@+id/banner_image" android:layout_width="match_parent" android:layout_height="match_parent" android:adjustViewBounds="true" app:tintType="1"/>
+        </FrameLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="24dp" android:layout_marginTop="@dimen/item_default_margin" android:layout_marginBottom="10dp">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textStyle="bold" android:ellipsize="end" android:id="@+id/banner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentTop="true" android:fontFamily="@font/bog_headline_medium"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="9sp" android:ellipsize="end" android:id="@+id/banner_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="2" android:layout_below="@+id/banner_title" android:fontFamily="@font/bog_regular"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogButton android:textSize="12sp" android:textColor="?attr/bog_button_rounded_dark_text_selector" android:layout_gravity="center" android:id="@+id/banner_button" android:background="?attr/bog_button_rounded_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/exchange_side_margin" android:layout_marginRight="@dimen/exchange_side_margin" android:text="@string/calculator_convert" android:layout_alignParentBottom="true" android:fontFamily="@font/bog_headline_medium"/>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

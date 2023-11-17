@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="base_drop_view_top_margin">10dp</dimen>
+    <dimen name="home_card_amount_text_size">28sp</dimen>
+    <dimen name="home_card_badge_bg_height">24dp</dimen>
+    <dimen name="home_card_badge_bg_width">32dp</dimen>
+    <dimen name="home_card_badge_container_width">76dp</dimen>
+    <dimen name="home_card_badge_height">30dp</dimen>
+    <dimen name="home_card_badge_width">38dp</dimen>
+    <dimen name="home_card_padding">24dp</dimen>
+    <dimen name="home_currency_height">20dp</dimen>
+    <dimen name="home_currency_margin">4dp</dimen>
+    <dimen name="home_currency_text_size">12sp</dimen>
+    <dimen name="home_currency_width">26dp</dimen>
+    <dimen name="login_wizard_content_height">70dp</dimen>
+    <dimen name="login_wizard_margin10">5dp</dimen>
+    <dimen name="ny_btn_height">40dp</dimen>
+    <dimen name="ny_cal_margin_size">20dp</dimen>
+    <dimen name="ny_list_item_icon_w_h">30dp</dimen>
+    <dimen name="ny_list_item_padding">10dp</dimen>
+    <dimen name="ny_title1_size">16sp</dimen>
+    <dimen name="ny_title2_size">15sp</dimen>
+    <dimen name="ny_title_margin1_size">15dp</dimen>
+    <dimen name="ny_title_margin2_size">11dp</dimen>
+    <dimen name="payment_wizard_close_margin">10dp</dimen>
+    <dimen name="payment_wizard_close_width_height">40dp</dimen>
+</resources>

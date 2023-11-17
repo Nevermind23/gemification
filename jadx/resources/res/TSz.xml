@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/pageDesc" android:layout_width="match_parent" android:layout_height="wrap_content" app:drawable_src="@drawable/identomat_type_selector_actionsheet_thumbnail" app:drawable_type="2"/>
+        <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/button_id_card" android:paddingTop="@dimen/spacing_m" android:paddingBottom="@dimen/spacing_m" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/spacing_m">
+            <ImageView android:background="@drawable/background_circle_primary_25" android:padding="@dimen/login_wizard_margin10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_24_general_id" app:tint="?attr/color_primary_solid_df_500"/>
+            <TextView android:textAppearance="@style/TextBody1InvertComponents400Left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gt_onboarding_identomat_id_card"/>
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="16dp" android:layout_height="16dp" android:tint="?attr/color_invert_component_solid_500" app:srcCompat="@drawable/icons_24_system_chevron_right"/>
+        </p341ge.bog.designsystem.components.list.ListItem>
+        <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/spacing_m" android:layout_marginRight="@dimen/spacing_m" android:layout_marginHorizontal="@dimen/spacing_m"/>
+        <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/button_passport" android:paddingTop="@dimen/spacing_m" android:paddingBottom="@dimen/spacing_m" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/spacing_m">
+            <ImageView android:background="@drawable/background_circle_primary_25" android:padding="@dimen/login_wizard_margin10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_24_general_id" app:tint="?attr/color_primary_solid_df_500"/>
+            <TextView android:textAppearance="@style/TextBody1InvertComponents400Left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gt_onboarding_identomat_passport"/>
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="16dp" android:layout_height="16dp" android:tint="?attr/color_invert_component_solid_500" app:srcCompat="@drawable/icons_24_system_chevron_right"/>
+        </p341ge.bog.designsystem.components.list.ListItem>
+        <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/spacing_m" android:layout_marginRight="@dimen/spacing_m" android:layout_marginHorizontal="@dimen/spacing_m"/>
+        <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/button_residence" android:paddingTop="@dimen/spacing_m" android:paddingBottom="@dimen/spacing_m" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/spacing_m">
+            <ImageView android:background="@drawable/background_circle_primary_25" android:padding="@dimen/login_wizard_margin10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_24_general_doc_fill" app:tint="?attr/color_primary_solid_df_500"/>
+            <TextView android:textAppearance="@style/TextBody1InvertComponents400Left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gt_onboarding_identomat_residence_card"/>
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="16dp" android:layout_height="16dp" android:tint="?attr/color_invert_component_solid_500" app:srcCompat="@drawable/icons_24_system_chevron_right"/>
+        </p341ge.bog.designsystem.components.list.ListItem>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateTint="?attr/color_primary_solid_df_500"/>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/content_linear_layout" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/page_description" android:layout_width="match_parent" android:layout_height="wrap_content" app:drawable_type="1" app:text="@string/setup_security_parameters_offer_page_description_text"/>
+            <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/activation_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="38dp" android:layout_marginStart="@dimen/spacing_m" android:layout_marginEnd="@dimen/spacing_m" app:button_text="@string/setup_security_parameters_offer_set_button_text" app:button_type="0"/>
+            <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/dont_ask_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_xl" android:layout_marginBottom="@dimen/spacing_m" android:layout_marginStart="@dimen/spacing_m" android:layout_marginEnd="@dimen/spacing_m" app:button_text="@string/setup_security_parameters_offer_dont_ask_me_button_text" app:button_type="15"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

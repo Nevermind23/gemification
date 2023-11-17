@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/content_linear_layout" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/page_description" android:layout_width="match_parent" android:layout_height="wrap_content" app:drawable_src="@drawable/icons_48_security_2_factor_auth_outline" app:drawable_type="1" app:text="@string/setup_security_parameters_trusted_device_page_description_text" app:title="@string/setup_security_parameters_trusted_device_page_title"/>
+            <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/activation_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_m" android:layout_marginTop="@dimen/spacing_m" android:layout_marginRight="@dimen/spacing_m" android:layout_marginBottom="@dimen/spacing_m" android:layout_marginHorizontal="@dimen/spacing_m" android:layout_marginVertical="@dimen/spacing_m" app:button_text="@string/setup_security_parameters_trusted_device_button_text" app:button_type="0"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

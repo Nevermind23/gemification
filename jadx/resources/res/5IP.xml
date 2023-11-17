@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/bog_white_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="32dp" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="9sp" android:textColor="@color/dark_text_color_333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_details_title_amount" android:fontFamily="@font/bog_regular"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="15sp" android:textColor="@color/dark_text_color_333" android:id="@+id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:fontFamily="@font/bog_medium"/>
+        <View android:background="@color/default_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginTop="16dp"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="9sp" android:textColor="@color/dark_text_color_333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/product_details_title_cas_linked_deposits" android:fontFamily="@font/bog_regular"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/deposits_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+        <View android:background="@color/default_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginTop="13dp"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="9sp" android:textColor="@color/dark_text_color_333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/product_details_title_cas_linked_accounts" android:fontFamily="@font/bog_regular"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/accounts_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

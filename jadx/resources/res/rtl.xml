@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" app:layout_constraintTop_toTopOf="0" layout="@layout/toolbar"/>
+    <p341ge.bog.mobilebank.cleanarch.presentation.common.StateView android:id="@+id/content_state" android:layout_width="match_parent" android:layout_height="0dp" app:contentViewId="@+id/content_layout" app:errorViewId="@+id/error_layout" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:layout_constraintBottom_toTopOf="@+id/agree_button" app:layout_constraintTop_toBottomOf="@+id/toolbar" app:layout_constraintVertical_bias="0" app:loadingViewId="@+id/skeleton_loader">
+        <androidx.core.widget.NestedScrollView android:id="@+id/content_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/deposit_break_description_container" android:background="@color/color_invert_background_layer" android:padding="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" app:layerStyle="@style/LayerRadius16Shadow0" app:layout_constraintTop_toTopOf="0">
+                    <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/deposit_break_description" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+                <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/break_details_container" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow0" app:layout_constraintTop_toBottomOf="@+id/deposit_break_description_container">
+                    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <include android:id="@+id/current_amount" layout="@layout/item_deposit_break_detail"/>
+                        <include android:id="@+id/details_loss_container" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_deposit_break_info_container"/>
+                        <include android:id="@+id/break_details_without_break_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" layout="@layout/layout_deposit_break_info_container"/>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+                <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_24" app:layerStyle="@style/LayerRadius16Shadow0" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/break_details_container">
+                    <LinearLayout android:orientation="vertical" android:padding="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/break_amount_description" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.input.Input android:id="@+id/accounts_selectbox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:end_icon_small="@drawable/icons_48_system_chevron_up_down" app:end_icon_small_tint_color="@color/color_invert_component_solid_500" app:input_type="2"/>
+                    </LinearLayout>
+                </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/error_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/error_page_description" android:layout_width="match_parent" android:layout_height="wrap_content" app:drawable_src="@drawable/icons_48_system_error_outline" app:drawable_tint="@color/color_negative_solid_df_500" app:drawable_type="1" app:title="@string/error_loading_data"/>
+            <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/refresh_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_m" android:layout_marginTop="@dimen/spacing_xl" android:layout_marginRight="@dimen/spacing_m" android:layout_marginHorizontal="@dimen/spacing_m" app:button_icon="@drawable/icons_48_system_retry" app:button_text="@string/common_button_refresh" app:button_type="2"/>
+        </LinearLayout>
+        <p341ge.bog.designsystem.components.loading.LoadingView android:id="@+id/skeleton_loader" android:layout_width="match_parent" android:layout_height="match_parent" app:item_count="1" app:item_layout="@layout/skeleton_deposit_break_activity"/>
+    </p341ge.bog.mobilebank.cleanarch.presentation.common.StateView>
+    <FrameLayout android:id="@+id/regular_loader_container" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:foreground="@color/color_invert_component_tr_25" app:layout_constraintBottom_toTopOf="@+id/agree_button" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/round_loader" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <p341ge.bog.designsystem.components.fixedbutton.FixedButtonCheckboxView android:id="@+id/agree_button" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

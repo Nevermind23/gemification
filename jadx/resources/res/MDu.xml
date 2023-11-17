@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.mobilebank.p975ui.components.BogSwipeRefreshLayout android:id="@+id/swipeRefresh" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </p341ge.bog.mobilebank.p975ui.components.BogSwipeRefreshLayout>
+    <p341ge.bog.designsystem.components.buttons.Button android:layout_gravity="bottom" android:id="@+id/nextBtn" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/item_default_margin" app:button_text="@string/save" app:button_type="0" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

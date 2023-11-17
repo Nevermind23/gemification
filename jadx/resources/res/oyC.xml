@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:background="@drawable/wizard_template_background" android:layout_width="150dp" android:layout_height="60dp" android:layout_margin="3dp">
+    <ImageView android:layout_gravity="center" android:id="@+id/contact_template_image" android:layout_width="55dp" android:layout_height="55dp" android:layout_marginLeft="5dp"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="5dp" android:layout_weight="1">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="11sp" android:textColor="@color/bog_white_color" android:id="@+id/contact_template_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:fontFamily="@font/bog_regular"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@color/bog_white_color" android:id="@+id/contact_template_sub_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:fontFamily="@font/bog_medium"/>
+    </LinearLayout>
+</LinearLayout>

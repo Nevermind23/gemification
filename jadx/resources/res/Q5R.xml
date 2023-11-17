@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:height="52dp" android:width="52dp" android:viewportWidth="52" android:viewportHeight="52">
+    <path android:fillColor="@color/color_invert_background_layer" android:pathData="M26,26m-26,0a26,26 0,1 1,52 0a26,26 0,1 1,-52 0" android:strokeAlpha="0.05" android:fillAlpha="0.05"/>
+    <path android:fillColor="@color/color_invert_component_tr_50" android:pathData="M20.699,20.037a0.662,0.662 0,0 0,-0.662 0.662v10.6a0.662,0.662 0,0 0,1.325 0v-10.6a0.662,0.662 0,0 0,-0.663 -0.662z"/>
+    <path android:fillColor="@color/color_invert_component_tr_50" android:pathData="M24.012,20.037a0.662,0.662 0,0 0,-0.662 0.662v10.6a0.662,0.662 0,1 0,1.325 0v-10.6a0.662,0.662 0,0 0,-0.663 -0.662z"/>
+    <path android:fillColor="@color/color_invert_component_tr_50" android:pathData="M33.949,24.344L29.975,24.344a0.662,0.662 0,0 0,0 1.325h3.975v8.281h-5.963v-15.9A1.325,1.325 0,0 0,26.662 16.725L18.05,16.725A1.325,1.325 0,0 0,16.725 18.05v15.9a1.325,1.325 0,0 0,1.325 1.325h15.9a1.325,1.325 0,0 0,1.325 -1.325L35.275,25.668a1.325,1.325 0,0 0,-1.326 -1.324zM18.05,18.05h8.612v15.9L18.05,33.95z"/>
+    <path android:fillColor="@color/color_invert_component_tr_50" android:pathData="M29.974,29.312h1.988a0.662,0.662 0,1 0,0 -1.325h-1.988a0.662,0.662 0,1 0,0 1.325z"/>
+    <path android:fillColor="@color/color_invert_component_tr_50" android:pathData="M29.974,31.962h1.988a0.662,0.662 0,1 0,0 -1.325h-1.988a0.662,0.662 0,1 0,0 1.325z"/>
+</vector>

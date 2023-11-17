@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <p341ge.bog.designsystem.components.list.SingleLineTextItem android:textAppearance="@style/TextBody1" android:textColor="@color/color_invert_component_tr_400" android:layout_gravity="center_vertical" android:id="@+id/text" android:layout_width="match_parent" android:layout_height="wrap_content" app:multiline_text="true"/>
+    <ImageView android:id="@+id/check_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_24_system_check" app:tint="?attr/color_primary_solid_df_500"/>
+</p341ge.bog.designsystem.components.list.ListItem>

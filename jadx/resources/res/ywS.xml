@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_16">
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/start" android:background="@color/color_invert_component_tr_5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/spacing_16" app:layerStyle="@style/LayerRadius12Shadow0">
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16">
+                <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/start_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:title="@string/start"/>
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/icon_tiny" android:layout_height="@dimen/icon_tiny" android:src="@drawable/ic_filter_calendar" app:tint="@color/color_invert_component_tr_300"/>
+            </LinearLayout>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/end" android:background="@color/color_invert_component_tr_5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/spacing_16" app:layerStyle="@style/LayerRadius12Shadow0">
+            <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16">
+                <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/end_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:title="@string/end"/>
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/icon_tiny" android:layout_height="@dimen/icon_tiny" android:src="@drawable/ic_filter_calendar" app:tint="@color/color_invert_component_tr_300"/>
+            </LinearLayout>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    </LinearLayout>
+    <p341ge.bog.designsystem.components.chips.ChipGroup android:id="@+id/chips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_16" app:multiple_select="false">
+        <p341ge.bog.designsystem.components.chips.Chip android:id="@+id/chip_1m" android:layout_width="wrap_content" android:layout_height="wrap_content" app:chip_title="@string/one_month"/>
+        <p341ge.bog.designsystem.components.chips.Chip android:id="@+id/chip_3m" android:layout_width="wrap_content" android:layout_height="wrap_content" app:chip_title="@string/three_months"/>
+        <p341ge.bog.designsystem.components.chips.Chip android:id="@+id/chip_6m" android:layout_width="wrap_content" android:layout_height="wrap_content" app:chip_title="@string/six_months"/>
+        <p341ge.bog.designsystem.components.chips.Chip android:id="@+id/chip_1y" android:layout_width="wrap_content" android:layout_height="wrap_content" app:chip_title="@string/one_year"/>
+    </p341ge.bog.designsystem.components.chips.ChipGroup>
+    <CalendarView android:theme="@style/CalendarInvertStyle" android:id="@+id/calendar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_16" android:selectedWeekBackgroundColor="@color/color_primary_retail" android:weekDayTextAppearance="@style/CalendarInvertStyle" android:dateTextAppearance="@style/CalendarInvertStyle"/>
+    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/button" android:layout_width="match_parent" android:layout_height="wrap_content" app:button_text="@string/button_text_filtration" app:button_type="0"/>
+</LinearLayout>

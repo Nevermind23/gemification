@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.designsystem.components.tabs.TabsView android:id="@+id/products_tab_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabMode="2">
+        <com.google.android.material.tabs.TabItem android:layout="@layout/item_tab_custom_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/products_tab_bog"/>
+        <com.google.android.material.tabs.TabItem android:layout="@layout/item_tab_custom_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/products_tab_other_banks"/>
+    </p341ge.bog.designsystem.components.tabs.TabsView>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@+id/products_view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

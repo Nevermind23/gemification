@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <p341ge.bog.designsystem.components.bannercard.BannerCard android:id="@+id/insurance_banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_16" android:foreground="?attr/selectableItemBackground" app:image_type="1"/>
+        <p341ge.bog.designsystem.components.loading.LoadingView android:id="@+id/banner_loader" android:layout_width="match_parent" android:layout_height="wrap_content" app:item_count="1" app:item_layout="@layout/skeleton_list_item"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/manage_cards_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <include android:id="@+id/full_progress_barrr" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bog_full_progressbar"/>
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_canvas" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius40Shadow30">
+                <LinearLayout android:orientation="vertical" android:id="@+id/status_container" android:paddingBottom="@dimen/spacing_3xl" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.pagestate.PageState android:id="@+id/page_state" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_m"/>
+                    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/my_deposit_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:button_icon="@drawable/icons_48_general_home_outline" app:button_type="2"/>
+                </LinearLayout>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/details_container" android:background="@color/color_invert_background_layer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow20">
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/details_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/details_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

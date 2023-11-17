@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_component_tr_5" android:layout_width="@dimen/deposit_highlight_icon_layer_size" android:layout_height="@dimen/deposit_highlight_icon_layer_size" app:layerStyle="@style/LayerRadiusCircleShadow0">
+        <ImageView android:layout_gravity="center" android:id="@+id/icon_image" android:layout_width="@dimen/deposit_highlight_icon_size" android:layout_height="@dimen/deposit_highlight_icon_size" android:scaleType="centerInside" android:importantForAccessibility="no"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <TextView android:textAppearance="@style/TextCaption2InvertComponents200Left" android:layout_gravity="center_vertical" android:id="@+id/title_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_8"/>
+</merge>

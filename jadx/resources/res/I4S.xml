@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/error_layout" android:background="@color/color_invert_background_additional" android:paddingTop="@dimen/payment_pay_group_item_margin" android:paddingBottom="@dimen/payment_pay_group_item_margin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/layout_horizontal_error"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="@color/color_invert_component_solid_500" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/notifications_my_notifications" android:layout_weight="1" style="@style/TextGroupHeader"/>
+            <ImageButton android:id="@+id/menu_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu" android:minWidth="24dp" android:minHeight="24dp" style="@style/Widget.AppCompat.Button.Borderless"/>
+        </LinearLayout>
+        <View android:background="@drawable/divider" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/notification_list_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/empty_view" android:background="@color/bog_activity_background_color" android:padding="20dp" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+        <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.28"/>
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/inbox_empty"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextBody1" android:textColor="@color/color_invert_component_tr_300" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/notifications_msg_box_is_empty"/>
+    </LinearLayout>
+    <include android:id="@+id/full_progress_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bog_full_progressbar"/>
+</FrameLayout>

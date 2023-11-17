@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:id="@+id/simple_wizard_list_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="15dp" style="@style/TextH4InvertComponents400Left"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/simple_wizard_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp"/>
+</LinearLayout>

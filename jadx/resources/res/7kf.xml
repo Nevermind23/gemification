@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/wizard_activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/rename_wizard_close_button" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/payment_wizard_close_margin" android:layout_width="@dimen/payment_wizard_close_width_height" android:layout_height="@dimen/payment_wizard_close_width_height" android:src="@drawable/ic_wizard_close"/>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="16dp" android:paddingTop="15dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="180dp">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_text_change_name" android:fontFamily="@font/bog_headline_light"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogInputLayout android:layout_gravity="center" android:id="@+id/rename_wizard_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:changeColorOnFocus="false" app:editTextHintFocused="@string/common_text_account_name" app:focusMeViewIgnored="true"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogButton android:id="@+id/rename_wizard_save_button" android:layout_width="0dp" android:layout_height="@dimen/bog_button_height" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" android:layout_marginBottom="10dp" android:text="@string/button_text_save_remember" android:layout_weight="4" android:fontFamily="@font/bog_headline_medium" style="@style/BogButtonActiveStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

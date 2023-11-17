@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.otaliastudios.cameraview.CameraView android:id="@+id/camera_view" android:background="#000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:keepScreenOn="true" android:scaleX="1.05" android:scaleY="1.05" app:cameraAudio="0" app:cameraEngine="1" app:cameraUseDeviceOrientation="false"/>
+    <com.identomat.subfragments.views.DocumentView android:id="@+id/document_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true"/>
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/title_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Scan Front Side Of Document" android:layout_above="@+id/document_view_holder" android:layout_centerHorizontal="true" android:textAlignment="center"/>
+    <TextView android:textColor="@color/white" android:id="@+id/progress_text_view" android:background="@drawable/identomat_indicator_info_text" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="" android:layout_above="@+id/document_view_holder" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:translationY="80dp" android:textAlignment="center"/>
+    <RelativeLayout android:id="@+id/document_view_holder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:translationY="-20dp">
+        <RelativeLayout android:id="@+id/indicator_view" android:background="@drawable/identomat_indicator_view" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/indicator_icon" android:padding="12dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/identomat_ic_arrow_down"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textColor="@color/white" android:id="@+id/size_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1000"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/back_button" android:layout_width="30dp" android:layout_height="match_parent" android:src="@drawable/identomat_back_arrow"/>
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/back_button_title_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="" android:textAlignment="center"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/captured_preview" android:layout_width="150dp" android:layout_height="wrap_content" android:scaleType="fitCenter"/>
+</RelativeLayout>

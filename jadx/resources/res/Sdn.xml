@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/wizard_input_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/wizard_selector_container" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/wizard_selector_title_layout" android:background="?attr/color_invert_background_canvas" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="15sp" android:textColor="?attr/color_invert_component_tr_300" android:id="@+id/wizard_selector_title" android:paddingLeft="@dimen/bog_input_dialog_padding" android:paddingTop="@dimen/bog_input_dialog_padding" android:paddingRight="@dimen/bog_input_dialog_padding" android:paddingBottom="@dimen/spacing_xs" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/bog_headline_medium" android:paddingHorizontal="@dimen/bog_input_dialog_padding"/>
+            </FrameLayout>
+            <LinearLayout android:id="@+id/wizard_selector_recycler_layout" android:background="?attr/color_invert_background_layer" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/wizard_selector_recycler_padding_layout" android:paddingLeft="@dimen/bog_input_dialog_padding" android:paddingRight="@dimen/bog_input_dialog_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="9.8sp" android:textColor="?attr/color_invert_component_tr_300" android:id="@+id/description_txt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bog_medium"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/wizard_selector_recycler" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

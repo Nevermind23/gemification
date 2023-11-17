@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/color_invert_background_popup" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <p341ge.bog.designsystem.components.loading.LoadingView android:id="@+id/skeleton_loading" android:layout_width="match_parent" android:layout_height="match_parent" app:item_count="4" app:item_layout="@layout/skeleton_list_item"/>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/circle_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateTint="?attr/colorAccent" android:indeterminateTintMode="src_atop"/>
+</FrameLayout>

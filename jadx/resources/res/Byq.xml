@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/layout_root" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/error_layout" android:background="@color/color_invert_background_layer" android:paddingTop="@dimen/payment_pay_group_item_margin" android:paddingBottom="@dimen/payment_pay_group_item_margin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:id="@+id/horizontal_error_layout" layout="@layout/layout_horizontal_error"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/payment_details_root" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.core.widget.NestedScrollView android:id="@+id/id_nested_scroll" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/payment_footer">
+                <LinearLayout android:orientation="vertical" android:background="@color/color_invert_background_layer" android:paddingTop="@dimen/payment_pay_group_item_margin" android:paddingBottom="32dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <p341ge.bog.mobilebank.p975ui.views.controllers.PaymentHeaderView android:id="@+id/template_header_view" android:paddingTop="@dimen/payment_pay_group_item_margin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <include android:id="@+id/payment_details_header" android:paddingLeft="@dimen/payment_pay_group_item_margin" android:paddingRight="@dimen/payment_pay_group_item_margin" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/payment_details_header_layout"/>
+                    <FrameLayout android:id="@+id/dd_header_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatButton android:textSize="@dimen/payments_header_ellipsis_size" android:textStyle="bold" android:textColor="@color/color_invert_component_tr_150" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/dd_details_menu_button" android:background="?attr/selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="@dimen/payments_header_settings_btn_size" android:layout_height="@dimen/payments_header_settings_btn_size" android:layout_marginRight="@dimen/payments_header_margin" android:text="@string/vertical_ellipsis"/>
+                    </FrameLayout>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="14sp" android:textColor="@color/color_invert_component_tr_200" android:layout_gravity="start" android:id="@+id/details_tv" android:paddingLeft="@dimen/payment_pay_group_item_margin" android:paddingRight="@dimen/payment_pay_group_item_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/text_type_view_margin" android:text="@string/common_text_details" android:textAllCaps="true" android:fontFamily="@font/bog_headline_light"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.TextTypeView android:id="@+id/template_icon_tv" android:paddingLeft="@dimen/payment_pay_group_item_margin" android:paddingRight="@dimen/payment_pay_group_item_margin" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="0dp" app:isClickEnabled="true" app:isEditable="false" app:separator="400" app:titleText="@string/common_text_upload_image" app:view_color="@color/color_invert_component_tr_200"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/payment_dynamic_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_medium" android:layout_marginRight="@dimen/margin_medium"/>
+                    <include android:id="@+id/payment_rv_header" android:visibility="gone" layout="@layout/ct_park_recycler_header"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/payment_rv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+            <include android:id="@+id/payment_footer" layout="@layout/payments_pay_group"/>
+        </RelativeLayout>
+        <include android:id="@+id/full_progress_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bog_full_progressbar"/>
+        <FrameLayout android:id="@+id/btn_retry_op_id_container" android:background="@color/color_invert_background_layer" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:layout_gravity="center" android:id="@+id/btnRetryOpId" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/retry_button"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_primary_tr_5" android:layout_width="@dimen/icon_size_40" android:layout_height="@dimen/icon_size_40" app:layerStyle="@style/LayerRadiusCircleShadow0">
+                <ImageView android:layout_gravity="center" android:id="@+id/item_transfer_within_bog_type_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_16_payment_category_government" app:tint="?attr/color_primary_tr_300"/>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+            <TextView android:textAppearance="@style/TextBody1InvertComponents400Left" android:id="@+id/item_transfer_within_bog_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_16_system_chevron_right" app:tint="?attr/color_invert_component_tr_400"/>
+            <View android:id="@+id/item_transfer_within_bog_divider" android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        </p341ge.bog.designsystem.components.list.ListItem>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

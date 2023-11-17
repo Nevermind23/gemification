@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.github.chrisbanes.photoview.PhotoView android:id="@+id/photoView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/actionsToolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:layout_marginStart="17dp" android:layout_marginEnd="17dp">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/close_btn" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chat_image_viewer_close"/>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/downloadBtn" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chat_image_viewer_download"/>
+    </FrameLayout>
+</RelativeLayout>

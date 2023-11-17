@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="@dimen/home_currency_text_size" android:textColor="#424242" android:gravity="center" android:id="@+id/swiper_ccy_text" android:background="@drawable/background_swiper_card_ccy_cornered_rect" android:layout_width="@dimen/home_currency_width" android:layout_height="@dimen/home_currency_height" android:layout_margin="@dimen/home_currency_margin" android:fontFamily="@font/bog_medium" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+</merge>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/color_invert_component_tr_25" android:padding="@dimen/spacing_8" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadiusCircleShadow0">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_16_system_swap" app:tint="?attr/color_primary_solid_df_500"/>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

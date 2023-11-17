@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadiusBottom16Shadow0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:layout_gravity="center" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="1" app:layout_constraintTop_toTopOf="0" layout="@layout/toolbar"/>
+            <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+            <p341ge.bog.mobilebank.cleanarch.presentation.common.StateView android:id="@+id/titleStateView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_24" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_24" android:layout_marginHorizontal="@dimen/spacing_16" android:layout_marginVertical="@dimen/spacing_24" app:contentViewId="@+id/title_text" app:loadingViewId="@+id/titleLoadingView">
+                <TextView android:textAppearance="@style/TextH1" android:textColor="@color/color_invert_component_tr_400" android:gravity="center" android:id="@+id/title_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <p341ge.bog.designsystem.components.loading.LoadingView android:id="@+id/titleLoadingView" android:layout_width="match_parent" android:layout_height="wrap_content" app:item_count="1" app:item_layout="@layout/skeleton_gt_investments_title"/>
+            </p341ge.bog.mobilebank.cleanarch.presentation.common.StateView>
+        </LinearLayout>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <p341ge.bog.designsystem.components.search.SearchView android:id="@+id/search_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_24" android:layout_marginHorizontal="@dimen/spacing_16" app:layout_scrollFlags="5" app:search_hint="@string/gt_portfolio_my_investments_input_hint"/>
+    <p341ge.bog.mobilebank.cleanarch.presentation.common.StateView android:id="@+id/stateView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_m" android:layout_marginRight="@dimen/spacing_m" android:layout_marginHorizontal="@dimen/spacing_m" app:contentViewId="@+id/refresh_layout" app:loadingViewId="@+id/loadingView">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/refresh_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <p341ge.bog.designsystem.components.loading.LoadingView android:id="@+id/loadingView" android:layout_width="match_parent" android:layout_height="wrap_content" app:item_count="10" app:item_layout="@layout/layout_search_symbol_loading"/>
+    </p341ge.bog.mobilebank.cleanarch.presentation.common.StateView>
+</LinearLayout>

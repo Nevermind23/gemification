@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="@dimen/spacing_12" android:paddingBottom="@dimen/spacing_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/spacing_12">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_16" android:paddingHorizontal="@dimen/spacing_16">
+        <p341ge.bog.designsystem.components.buttons.Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/spacing_12" app:button_icon="@drawable/icons_16_general_offer" app:button_icon_tint="@color/color_invert_component_tr_200" app:button_type="9"/>
+        <TextView android:textAppearance="@style/TextTitle1" android:textColor="@color/color_invert_component_tr_200" android:id="@+id/text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/spacing_12"/>
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:button_text="@string/common_all" app:button_type="6"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/icon_layer" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius2Shadow0">
+        <ImageView android:id="@+id/icon" android:layout_width="@dimen/media_text_thumbnail_icon_size" android:layout_height="@dimen/media_text_thumbnail_icon_size" android:scaleType="fitCenter" android:contentDescription="@null"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <TextView android:textAppearance="@style/TextCaption1InvertComponents400Left" android:gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" style="@style/SingleLine.EllipsizeEnd"/>
+    <TextView android:textAppearance="@style/TextCaption2InvertComponents400Left" android:layout_gravity="center" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" style="@style/SingleLine.EllipsizeEnd"/>
+</LinearLayout>

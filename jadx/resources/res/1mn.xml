@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/bog_activity_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BigDividerView android:layout_width="match_parent" android:layout_height="8dp"/>
+            <LinearLayout android:orientation="vertical" android:background="@color/bog_card_view_background_color" android:paddingTop="@dimen/payment_pay_group_item_margin" android:paddingBottom="@dimen/payment_pay_group_item_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/payment_pay_group_item_margin" android:paddingRight="@dimen/payment_pay_group_item_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="15sp" android:textColor="@color/payment_details_titles_text_color" android:id="@+id/transfer_details_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_text_details" android:fontFamily="@font/bog_headline_light"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.TextTypeView android:id="@+id/exchange_from_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/payment_pay_group_item_margin" app:isEditable="false" app:separator="400" app:titleText="@string/bonus_exchange_wizard_amount" app:view_color="@color/banner_text_color_grey"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.TextTypeView android:id="@+id/exchange_to_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/template_group_margin" app:isEditable="false" app:separator="400" app:titleText="@string/bonus_exchange_wizard_receive_amount" app:view_color="@color/banner_text_color_grey"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/plus_points_value_container" android:background="?attr/selectableItemBackground" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+                        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@color/light_gray_highlight_color" android:id="@+id/plus_points_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bog_medium"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <include android:layout_gravity="bottom" android:id="@+id/pay_group" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/payments_pay_group"/>
+        <FrameLayout android:id="@+id/full_progress_bar" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.5">
+            <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bog_full_progressbar"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/error_layout" android:background="@color/bog_activity_background_color" android:paddingTop="@dimen/payment_pay_group_item_margin" android:paddingBottom="@dimen/payment_pay_group_item_margin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/horizontal_error_layout" layout="@layout/layout_horizontal_error"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/progress_layout" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <p341ge.bog.mobilebank.p975ui.components.BogProgressBar android:layout_gravity="center" android:layout_width="50dp" android:layout_height="50dp" app:progressStyle="0"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

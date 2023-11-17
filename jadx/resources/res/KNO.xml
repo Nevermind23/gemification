@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/widget_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/widget_quick_links_label_txt_size" android:textStyle="bold" android:textColor="@color/dark_text_color_333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.3dp" android:layout_marginTop="14.5dp" android:layout_marginRight="8dp" android:layout_marginBottom="14.5dp" android:text="@string/quick_links" android:textAllCaps="true" android:fontFamily="@font/bog_bold"/>
+    <LinearLayout android:background="@color/gray_alpha" android:layout_width="match_parent" android:layout_height="0.8dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.5dp" android:layout_marginBottom="39.5dp" android:weightSum="4">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageButton android:id="@+id/qr_pay_button" android:background="@drawable/quick_link_widget_icons_background" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_qr_pay_widget_icon"/>
+            <ImageView android:id="@+id/qr_pay_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.5dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageButton android:id="@+id/mobile_topup_button" android:background="@drawable/quick_link_widget_icons_background" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_mobile_topup_widget_icon"/>
+            <ImageView android:id="@+id/mobile_topup_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.5dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageButton android:id="@+id/transfer_button" android:background="@drawable/quick_link_widget_icons_background" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_transfer_widget_icon"/>
+            <ImageView android:id="@+id/transfer_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.5dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageButton android:id="@+id/utility_payment_button" android:background="@drawable/quick_link_widget_icons_background" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_utility_payment_widget_icon"/>
+            <ImageView android:id="@+id/utility_payment_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

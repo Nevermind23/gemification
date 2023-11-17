@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/sms_container" android:background="@color/color_invert_background_layer" android:clickable="true" android:layout_width="match_parent" android:layout_height="56dp">
+            <RelativeLayout android:layout_width="72dp" android:layout_height="match_parent">
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:layout_width="22dp" android:layout_height="25.5dp" android:src="@drawable/ic_notification_type_sms" android:tint="?attr/colorAccent" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@color/color_invert_component_tr_150" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notifications_type_sms" android:fontFamily="@font/bog_headline_medium"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="11sp" android:textColor="@color/color_invert_component_tr_400" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/sms_notifications_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:maxLines="1" android:fontFamily="@font/bog_medium"/>
+                </LinearLayout>
+                <View android:layout_gravity="bottom" android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/push_container" android:background="@color/color_invert_background_layer" android:clickable="true" android:layout_width="match_parent" android:layout_height="56dp">
+            <RelativeLayout android:layout_width="72dp" android:layout_height="match_parent">
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:layout_width="22dp" android:layout_height="25.5dp" android:src="@drawable/ic_notifications_push" android:tint="?attr/colorAccent" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@color/color_invert_component_tr_150" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notifications_type_push" android:fontFamily="@font/bog_headline_medium"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="11sp" android:textColor="@color/color_invert_component_tr_400" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/push_notifications_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:maxLines="1" android:fontFamily="@font/bog_medium"/>
+                </LinearLayout>
+                <View android:layout_gravity="bottom" android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

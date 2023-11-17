@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_negative_solid_25" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius16Shadow0" app:layout_constraintTop_toBottomOf="@+id/deposit_break_description_container">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/details_header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/details_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

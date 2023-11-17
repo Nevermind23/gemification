@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:padding="@dimen/spacing_8" android:layout_width="@dimen/icon_size_40" android:layout_height="@dimen/icon_size_40" android:layout_marginTop="@dimen/spacing_8" android:layout_marginBottom="@dimen/spacing_8" android:src="@drawable/icons_24_general_doc_fill" android:tint="@color/color_primary_solid_df_500" android:layout_marginVertical="@dimen/spacing_8"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textAppearance="@style/TextBody1" android:textColor="@color/color_invert_component_tr_400" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/remove" android:layout_width="wrap_content" android:layout_height="wrap_content" app:button_type="6"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BigDividerView android:id="@+id/divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/goal_icon" android:layout_width="@dimen/deposit_section_bordered_icon_size" android:layout_height="@dimen/deposit_section_bordered_icon_size" android:src="@drawable/thumbnail_circle"/>
+    <p341ge.bog.designsystem.components.list.SingleLineTextItem android:textAppearance="@style/TextBody1" android:id="@+id/goal_name" android:layout_width="match_parent" android:layout_height="wrap_content" app:multiline_text="true"/>
+    <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="match_parent" android:layout_height="match_parent"/>
+</p341ge.bog.designsystem.components.list.ListItem>

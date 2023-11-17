@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:layout_gravity="center_vertical" android:id="@+id/layer_view_2" android:background="@color/color_primary_tr_5" android:layout_width="@dimen/icon_size_40" android:layout_height="@dimen/icon_size_40" app:layerStyle="@style/LayerRadiusCircleShadow0">
+        <ImageView android:layout_gravity="center" android:id="@+id/tc_pass_device_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_16_payment_transfer_automatic"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextBody1InvertComponents400Left" android:id="@+id/tc_pass_device_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_2" android:text="@string/tc_plastic_card"/>
+        <TextView android:textAppearance="@style/TextCaption1InvertComponents200Left" android:id="@+id/tc_pass_device_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tc_digital_wallet"/>
+    </LinearLayout>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:id="@+id/tc_pass_device_is_selected_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_24_system_check" android:tint="?attr/color_primary_solid_df_500"/>
+    <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp"/>
+</p341ge.bog.designsystem.components.list.ListItem>

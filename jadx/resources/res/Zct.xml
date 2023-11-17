@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <p341ge.bog.designsystem.components.list.ThreeLineTextItem android:id="@+id/info" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:id="@+id/edit" android:background="@drawable/edit_income_round_shape" android:paddingLeft="@dimen/spacing_8" android:paddingRight="@dimen/spacing_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_16_system_more_horizontal" android:tint="@color/color_information_tr_200" android:paddingHorizontal="@dimen/spacing_8"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BigDividerView android:id="@+id/divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+</LinearLayout>

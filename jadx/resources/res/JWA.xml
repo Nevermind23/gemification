@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/item_default_margin" android:paddingRight="@dimen/item_default_margin" android:layout_width="match_parent" android:layout_height="116dp">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/banner_apps_image" android:layout_width="68dp" android:layout_height="68dp" android:adjustViewBounds="true"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/banner_apps_image_right_margin">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="@dimen/banner_largest_text_size" android:textStyle="bold" android:ellipsize="end" android:id="@+id/banner_apps_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/bog_headline_medium"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="@dimen/banner_small_text_size" android:ellipsize="end" android:id="@+id/banner_apps_condition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:maxLines="3" android:fontFamily="@font/bog_regular"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogButton android:textSize="@dimen/banner_large_text_size" android:id="@+id/banner_app_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bog_button_rounded_margin_top" android:maxLines="1" android:fontFamily="@font/bog_headline_medium"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

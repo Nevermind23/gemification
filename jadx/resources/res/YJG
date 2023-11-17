@@ -1,0 +1,174 @@
+[
+        {
+            "id": 33,
+            "customerId": null,
+            "settingsName": "EID_SDK_ENDPOINT",
+            "settingsValue": "https://etrust-live.electronicid.eu/v2",
+            "settingsJsonValue": null,
+            "settingsBooleanValue": null,
+            "settingsNumberValue": null,
+            "channelCode": "MOBILE-EXT",
+            "customerType": null,
+            "jsonSettings": null,
+            "booleanSettings": null
+        },
+        {
+            "id": 41,
+            "customerId": null,
+            "settingsName": "MBANK_EID_REGISTRATION_PRELOGIN_BANNER",
+            "settingsValue": ".",
+            "settingsJsonValue": null,
+            "settingsBooleanValue": null,
+            "settingsNumberValue": null,
+            "channelCode": "MOBILE-EXT",
+            "customerType": null,
+            "jsonSettings": null,
+            "booleanSettings": false
+        },
+        {
+            "id": 27,
+            "customerId": null,
+            "settingsName": "CHAT_IS_ENABLED_IOS",
+            "settingsValue": "1",
+            "settingsJsonValue": null,
+            "settingsBooleanValue": null,
+            "settingsNumberValue": null,
+            "channelCode": "MOBILE-EXT",
+            "customerType": null,
+            "jsonSettings": null,
+            "booleanSettings": true
+        },
+        {
+            "id": 28,
+            "customerId": null,
+            "settingsName": "CHAT_IS_ENABLED_ANDROID",
+            "settingsValue": "1",
+            "settingsJsonValue": null,
+            "settingsBooleanValue": null,
+            "settingsNumberValue": null,
+            "channelCode": "MOBILE-EXT",
+            "customerType": null,
+            "jsonSettings": null,
+            "booleanSettings": true
+        },
+        {
+            "id": 26,
+            "customerId": null,
+            "settingsName": "MBANK_FREE_COMMISSIONS_BANNER",
+            "settingsValue": "N/A",
+            "settingsJsonValue": null,
+            "settingsBooleanValue": null,
+            "settingsNumberValue": null,
+            "channelCode": null,
+            "customerType": null,
+            "jsonSettings": null,
+            "booleanSettings": false
+        },
+        {
+            "id": 34,
+            "customerId": null,
+            "settingsName": "EID_DOCUMENT_TYPES",
+            "settingsValue": "{\"documentTypes\":[{\"id\":238,\"dctKey\":\"text.eid.doc.type.identity.card.new\",\"orderNo\":2,\"docType\":\"ID_CARD\",\"docType2\":\"E_ID_CARD\",\"processFlow\":[\"IDENTIFY_BY_DOCUMENT\",\"IDENTIFY_BY_CARD\",\"REGISTER_NEW_CLIENT\",\"ADD_FINANCIAL_CONTACT\"],\"frontFaceExplanationImageURL\":\"https://api.bog.ge/rb-middleware-api-connector?serviceId=COMMON_GET_FILE&channel=MOBILE&id=77724387\",\"backFaceExplanationImageURL\":\"https://api.bog.ge/rb-middleware-api-connector?serviceId=COMMON_GET_FILE&channel=MOBILE&id=77724388\",\"selfieExplanationImageURL\":\"https://api.bog.ge/rb-middleware-api-connector?serviceId=COMMON_GET_FILE&channel=MOBILE&id=77724390\",\"frontFaceHeaderTextDctKey\":\"text.eid.video.id.card.front.header\",\"frontFaceBodyTextDctKey\":\"text.eid.video.id.card.front.desc\",\"backFaceHeaderTextDctKey\":\"text.eid.video.id.card.back.header\",\"backFaceBodyTextDctKey\":\"text.eid.video.id.card.back.desc\",\"selfieHeaderTextDctKey\":\"text.eid.video.id.selfie.header\",\"selfieBodyTextDctKey\":\"text.eid.video.id.selfie.desc\"},{\"id\":72,\"dctKey\":\"text.eid.doc.type.passport\",\"orderNo\":3,\"docType\":\"PASSPORT\",\"docType2\":\"CIT.PSP.\",\"processFlow\":[\"IDENTIFY_BY_DOCUMENT\",\"IDENTIFY_BY_CARD\",\"REGISTER_NEW_CLIENT\",\"ADD_FINANCIAL_CONTACT\"],\"frontFaceExplanationImageURL\":\"https://api.bog.ge/rb-middleware-api-connector?serviceId=COMMON_GET_FILE&channel=MOBILE&id=77724389\",\"backFaceExplanationImageURL\":null,\"selfieExplanationImageURL\":\"https://api.bog.ge/rb-middleware-api-connector?serviceId=COMMON_GET_FILE&channel=MOBILE&id=77724390\",\"frontFaceHeaderTextDctKey\":\"text.eid.video.passport.front.header\",\"frontFaceBodyTextDctKey\":\"text.eid.video.passport.front.desc\",\"backFaceHeaderTextDctKey\":null,\"backFaceBodyTextDctKey\":null,\"selfieHeaderTextDctKey\":\"text.eid.video.id.selfie.header\",\"selfieBodyTextDctKey\":\"text.eid.video.id.selfie.desc\"},{\"id\":3,\"dctKey\":\"text.eid.doc.type.identity.card.old\",\"orderNo\":1,\"docType\":\"ID_CARD_OLD\",\"docType2\":\"ID_CARD\",\"processFlow\":[\"IDENTIFY_BY_DOCUMENT\"],\"frontFaceExplanationImageURL\":null,\"backFaceExplanationImageURL\":null,\"selfieExplanationImageURL\":null,\"frontFaceHeaderTextDctKey\":null,\"frontFaceBodyTextDctKey\":null,\"backFaceHeaderTextDctKey\":null,\"backFaceBodyTextDctKey\":null,\"selfieHeaderTextDctKey\":null,\"selfieBodyTextDctKey\":null}]}",
+            "settingsJsonValue": null,
+            "settingsBooleanValue": null,
+            "settingsNumberValue": null,
+            "channelCode": "MOBILE-EXT",
+            "customerType": null,
+            "jsonSettings": {
+                "documentTypes": [
+                    {
+                        "id": 238,
+                        "dctKey": "text.eid.doc.type.identity.card.new",
+                        "orderNo": 2,
+                        "docType": "ID_CARD",
+                        "docType2": "E_ID_CARD",
+                        "processFlow": [
+                            "IDENTIFY_BY_DOCUMENT",
+                            "IDENTIFY_BY_CARD",
+                            "REGISTER_NEW_CLIENT",
+                            "ADD_FINANCIAL_CONTACT"
+                        ],
+                        "frontFaceExplanationImageURL": "https://api.bog.ge/rb-middleware-api-connector?serviceId=COMMON_GET_FILE&channel=MOBILE&id=77724387",
+                        "backFaceExplanationImageURL": "https://api.bog.ge/rb-middleware-api-connector?serviceId=COMMON_GET_FILE&channel=MOBILE&id=77724388",
+                        "selfieExplanationImageURL": "https://api.bog.ge/rb-middleware-api-connector?serviceId=COMMON_GET_FILE&channel=MOBILE&id=77724390",
+                        "frontFaceHeaderTextDctKey": "text.eid.video.id.card.front.header",
+                        "frontFaceBodyTextDctKey": "text.eid.video.id.card.front.desc",
+                        "backFaceHeaderTextDctKey": "text.eid.video.id.card.back.header",
+                        "backFaceBodyTextDctKey": "text.eid.video.id.card.back.desc",
+                        "selfieHeaderTextDctKey": "text.eid.video.id.selfie.header",
+                        "selfieBodyTextDctKey": "text.eid.video.id.selfie.desc"
+                    },
+                    {
+                        "id": 72,
+                        "dctKey": "text.eid.doc.type.passport",
+                        "orderNo": 3,
+                        "docType": "PASSPORT",
+                        "docType2": "CIT.PSP.",
+                        "processFlow": [
+                            "IDENTIFY_BY_DOCUMENT",
+                            "IDENTIFY_BY_CARD",
+                            "REGISTER_NEW_CLIENT",
+                            "ADD_FINANCIAL_CONTACT"
+                        ],
+                        "frontFaceExplanationImageURL": "https://api.bog.ge/rb-middleware-api-connector?serviceId=COMMON_GET_FILE&channel=MOBILE&id=77724389",
+                        "backFaceExplanationImageURL": null,
+                        "selfieExplanationImageURL": "https://api.bog.ge/rb-middleware-api-connector?serviceId=COMMON_GET_FILE&channel=MOBILE&id=77724390",
+                        "frontFaceHeaderTextDctKey": "text.eid.video.passport.front.header",
+                        "frontFaceBodyTextDctKey": "text.eid.video.passport.front.desc",
+                        "backFaceHeaderTextDctKey": null,
+                        "backFaceBodyTextDctKey": null,
+                        "selfieHeaderTextDctKey": "text.eid.video.id.selfie.header",
+                        "selfieBodyTextDctKey": "text.eid.video.id.selfie.desc"
+                    },
+                    {
+                        "id": 3,
+                        "dctKey": "text.eid.doc.type.identity.card.old",
+                        "orderNo": 1,
+                        "docType": "ID_CARD_OLD",
+                        "docType2": "ID_CARD",
+                        "processFlow": [
+                            "IDENTIFY_BY_DOCUMENT"
+                        ],
+                        "frontFaceExplanationImageURL": null,
+                        "backFaceExplanationImageURL": null,
+                        "selfieExplanationImageURL": null,
+                        "frontFaceHeaderTextDctKey": null,
+                        "frontFaceBodyTextDctKey": null,
+                        "backFaceHeaderTextDctKey": null,
+                        "backFaceBodyTextDctKey": null,
+                        "selfieHeaderTextDctKey": null,
+                        "selfieBodyTextDctKey": null
+                    }
+                ]
+            },
+            "booleanSettings": null
+        },
+        {
+             "id": 107,
+             "customerId": null,
+             "settingsName": "TMX_ORG_ID",
+             "settingsValue": "crssf8gn",
+             "settingsJsonValue": null,
+             "settingsBooleanValue": null,
+             "settingsNumberValue": null,
+             "channelCode": "MOBILE-EXT",
+             "customerType": null,
+             "segmentId": 100,
+             "jsonSettings": null,
+             "booleanSettings": null
+        },
+        {
+             "id": 109,
+             "customerId": null,
+             "settingsName": "TMX_FP_SERVER",
+             "settingsValue": "img2.bog.ge",
+             "settingsJsonValue": null,
+             "settingsBooleanValue": null,
+             "settingsNumberValue": null,
+             "channelCode": "MOBILE-EXT",
+             "customerType": null,
+             "segmentId": 100,
+             "jsonSettings": null,
+             "booleanSettings": null
+        }
+    ]

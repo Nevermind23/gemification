@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#d9000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/customToolbar" layout="@layout/transparent_toolbar"/>
+    <LinearLayout android:orientation="vertical" android:background="#f9f9f9" android:layout_width="match_parent" android:layout_height="match_parent">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="#777777" android:gravity="center" android:layout_gravity="center" android:paddingLeft="33dp" android:paddingTop="17dp" android:paddingRight="33dp" android:paddingBottom="17dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sms_to_push_choose_numbers_description" android:fontFamily="@font/bog_medium" android:paddingStart="33dp" android:paddingEnd="33dp"/>
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:id="@+id/numbers_container" android:background="#ffffff" android:paddingBottom="77dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </androidx.core.widget.NestedScrollView>
+        <androidx.cardview.widget.CardView android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="0dp" app:cardElevation="2dp">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogButton android:textSize="18sp" android:id="@+id/submit_numbers_btn" android:layout_width="match_parent" android:layout_height="52dp" android:layout_margin="16dp" android:text="@string/button_text_save_remember" android:fontFamily="@font/bog_headline_medium" style="@style/BogButtonActiveStyle"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

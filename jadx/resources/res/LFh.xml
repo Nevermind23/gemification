@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/wizard_root_view" android:background="@color/color_black_tr_400" android:fitsSystemWindows="true" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="60dp">
+                <View android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="@dimen/payment_wizard_input_layout_height" android:alpha="0.8"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <View android:id="@+id/base_wizard_background_dim_upper" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="@dimen/base_wizard_top_dim_height" android:alpha="0.8"/>
+                <View android:layout_gravity="bottom" android:id="@+id/base_wizard_background_dim_down" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/payment_wizard_input_layout_height" android:alpha="0.8"/>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/base_wizard_fragment_content_holder" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/base_wizard_toolbar" android:layout_below="@+id/base_wizard_close_button">
+            <FrameLayout android:id="@+id/base_wizard_arrow_layout_holder" android:visibility="gone" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="@dimen/arrow_layout_height" android:layout_marginLeft="@dimen/arrow_layout_margin_sides" android:layout_marginTop="@dimen/arrow_layout_margin_top" android:layout_marginRight="@dimen/arrow_layout_margin_sides" android:layout_marginBottom="@dimen/arrow_layout_margin_bottom">
+                <p341ge.bog.mobilebank.p975ui.views.widgets.ArrowLayout android:id="@+id/base_wizard_arrow_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/base_wizard_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+        <include android:id="@+id/base_wizard_close_button" layout="@layout/wizard_close_button"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="15sp" android:textColor="@color/color_white_tr_400" android:gravity="center" android:id="@+id/base_wizard_title_tv" android:layout_width="match_parent" android:layout_height="@dimen/payment_wizard_close_width_height" android:layout_marginRight="@dimen/payment_wizard_close_width_height" android:layout_toRightOf="@+id/base_wizard_close_button" android:fontFamily="@font/bog_regular"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/base_wizard_toolbar" android:background="@color/color_invert_background_layer" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:id="@+id/base_wizard_bottom_spring_gap" android:visibility="visible" android:layout_width="140dp" android:layout_height="0dp"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogButton android:gravity="center" android:layout_gravity="center" android:id="@+id/base_wizard_abc_button" android:focusable="true" android:visibility="invisible" android:clickable="true" android:layout_width="0dp" android:layout_height="@dimen/bog_button_height" android:layout_marginLeft="10dp" android:text="ABC" android:layout_weight="0.4" android:fontFamily="@font/bog_headline_medium" android:elevation="5dp" style="@style/BogButtonNormalStyle"/>
+            <FrameLayout android:layout_gravity="center" android:id="@+id/base_wizard_prev_button_layout" android:visibility="visible" android:layout_width="0dp" android:layout_height="@dimen/bog_button_height" android:layout_marginLeft="10dp" android:layout_weight="0.4">
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogButton android:gravity="center" android:id="@+id/base_wizard_prev_button" android:padding="10dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:adjustViewBounds="true" android:elevation="5dp" style="@style/BogButtonNormalStyle"/>
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_payments_back_icon" android:elevation="10dp"/>
+            </FrameLayout>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogButton android:id="@+id/base_wizard_save_button" android:visibility="gone" android:layout_width="130dp" android:layout_height="@dimen/bog_button_height" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/button_text_save" android:fontFamily="@font/bog_headline_medium" app:isActive="true" style="@style/BogButtonNormalStyle"/>
+            <FrameLayout android:layout_width="0dp" android:layout_height="@dimen/bog_button_height" android:layout_margin="10dp" android:layout_weight="1">
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogButton android:id="@+id/base_wizard_next_button" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/button_text_next" android:fontFamily="@font/bog_headline_medium" style="@style/BogButtonNormalStyle"/>
+                <p341ge.bog.mobilebank.p975ui.components.BogProgressBar android:layout_gravity="center" android:id="@+id/base_wizard_next_progressbar" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:elevation="5dp" app:progressStyle="1"/>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogInputLayout android:id="@+id/input_type_preserver_layout" android:layout_width="0dp" android:layout_height="0dp"/>
+</FrameLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.normalsteps.NormalStepsView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/normal_steps" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:normal_steps_end_icon="@drawable/icons_16_system_chevron_right" app:normal_steps_end_icon_color="@color/color_invert_component_tr_150"/>

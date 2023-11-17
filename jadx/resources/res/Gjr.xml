@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_popup" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <p341ge.bog.designsystem.components.loading.LoadingView android:id="@+id/loading_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:item_count="3" app:item_layout="@layout/skeleton_products_card_wide"/>
+    <androidx.cardview.widget.CardView android:id="@+id/retry_button_container" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="250dp" app:cardBackgroundColor="@color/color_invert_background_canvas">
+        <include android:layout_gravity="center" android:id="@+id/retry_button" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/retry_button"/>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

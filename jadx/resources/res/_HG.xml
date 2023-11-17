@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/layer_view" android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?attr/actionBarSize" app:layerStyle="@style/LayerRadiusTop40Shadow0" app:layout_constrainedHeight="true" app:layout_constraintTop_toBottomOf="0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="64dp">
+                <p341ge.bog.designsystem.components.actionsheet.ActionSheetTitle android:id="@+id/action_sheet_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_weight="1"/>
+                <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:button_icon="@drawable/icons_24_system_close" app:button_type="9" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/biometric_auth_layout" android:paddingBottom="@dimen/spacing_m" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_m" android:layout_marginRight="@dimen/spacing_m" android:layout_marginHorizontal="@dimen/spacing_m">
+                <com.facebook.shimmer.ShimmerFrameLayout android:id="@+id/biometry_shimmer" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/biometry_page_description" android:layout_width="match_parent" android:layout_height="wrap_content" app:drawable_src="@drawable/icons_48_security_face_id_ios" app:drawable_type="1" app:text="@string/sca_verification_biometric_auth"/>
+                </com.facebook.shimmer.ShimmerFrameLayout>
+                <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/retry_bio_auth_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:button_icon="@drawable/icons_24_system_retry" app:button_text="@string/sca_verification_retry" app:button_type="7"/>
+                <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/skip_bio_auth_page_description" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_xl" app:text="@string/sca_verification_try_passcode"/>
+                <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/skip_bio_auth_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_xs" app:button_text="@string/sca_verification_use_other_method" app:button_type="1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/passcode_auth_layout" android:paddingBottom="@dimen/spacing_xl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_m" android:layout_marginRight="@dimen/spacing_m" android:layout_marginHorizontal="@dimen/spacing_m">
+                <com.facebook.shimmer.ShimmerFrameLayout android:id="@+id/passcode_shimmer" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.passcode.PasscodeCompactView android:id="@+id/passcode_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:forgot_passcode_text="@string/sca_verification_forgot_passcode" app:title="@string/sca_verification_enter_passcode"/>
+                </com.facebook.shimmer.ShimmerFrameLayout>
+                <p341ge.bog.designsystem.components.digitalkeyboard.NumericKeyboardView android:id="@+id/passcode_keyboard_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:AdditionalButtonType="2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+</androidx.constraintlayout.widget.ConstraintLayout>

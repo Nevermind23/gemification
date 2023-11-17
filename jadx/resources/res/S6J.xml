@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="@dimen/spacing_32" android:layout_height="@dimen/spacing_32">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_25" android:layout_width="@dimen/spacing_32" android:layout_height="@dimen/spacing_32" app:layerStyle="@style/LayerRadiusCircleShadow0">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_16_contacts_directory_fill" app:tint="?attr/color_primary_solid_df_500"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+</FrameLayout>

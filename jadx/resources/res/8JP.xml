@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.textbadge.TextBadgeView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/textBadgeRoot" android:layout_width="wrap_content" android:layout_height="wrap_content" app:text_badge_bg_color_tint="@color/selector_text_badge_error_color" app:text_badge_icon="@drawable/icons_24_system_error_fill" app:text_badge_icon_tint="?attr/color_white_solid_df_500" app:text_badge_type="4"/>

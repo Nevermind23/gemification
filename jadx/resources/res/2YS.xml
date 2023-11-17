@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="@style/TextButton1InvertComponents400Left" android:id="@+id/cards_num_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:layout_marginStart="@dimen/spacing_16"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/cards_recycler" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/credit_card_widget_recycler_height" android:layout_marginTop="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" android:layout_marginVertical="@dimen/spacing_16"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/buttons_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4">
+        <View android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/spacing_12" android:layout_marginRight="@dimen/spacing_12" android:layout_marginHorizontal="@dimen/spacing_12"/>
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@+id/buttons_recycler" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16"/>
+    </LinearLayout>
+</LinearLayout>

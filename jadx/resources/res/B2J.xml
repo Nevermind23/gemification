@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:layout_gravity="center" android:id="@+id/button_swipe_layer_view" android:background="@drawable/selector_button_swipe" android:duplicateParentState="true" android:layout_width="@dimen/width_swipe_button" android:layout_height="@dimen/height_swipe_button" app:layerStyle="@style/LayerRadius12Shadow0">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/button_swipe_icon" android:duplicateParentState="true" android:layout_width="@dimen/width_swipe_button_icon" android:layout_height="@dimen/height_swipe_button_icon" android:scaleType="fitXY"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextCaption1InvertComponents400Left" android:ellipsize="end" android:gravity="center" android:id="@+id/button_swipe_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_2" android:maxLines="1"/>
+</LinearLayout>

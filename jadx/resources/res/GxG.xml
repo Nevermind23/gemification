@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/mainView" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground">
+    <FrameLayout android:background="@drawable/bg_circle_contact_image" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:id="@+id/contactImage" android:layout_width="44dp" android:layout_height="44dp" android:scaleType="centerInside"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/verifiedBadge" android:layout_width="12dp" android:layout_height="15dp" android:src="@drawable/ic_verified_small"/>
+    </FrameLayout>
+    <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/transfer_button_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:layout_gravity="center_vertical" android:background="#1a333333" android:layout_width="1dp" android:layout_height="20dp" android:layout_marginStart="12dp"/>
+            <ImageButton android:layout_gravity="center_vertical" android:id="@+id/transfer_button" android:background="@drawable/null_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_contact_transfer_button" android:layout_marginStart="12dp"/>
+        </LinearLayout>
+        <p341ge.bog.designsystem.components.checkbox.CheckboxView android:id="@+id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</p341ge.bog.designsystem.components.list.ListItem>

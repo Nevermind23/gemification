@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="navigation_margin_bottom">24dp</dimen>
+    <dimen name="ny_avatar_view_margin_start">10dp</dimen>
+    <dimen name="ny_body_text_size">16sp</dimen>
+    <dimen name="ny_btn_height">52dp</dimen>
+    <dimen name="ny_btn_margin_start">0dp</dimen>
+    <dimen name="ny_greeting_text_size">25sp</dimen>
+    <dimen name="ny_ic1_margin_start">35dp</dimen>
+    <dimen name="ny_ic2_margin_end">57dp</dimen>
+    <dimen name="ny_ic2_margin_top">232dp</dimen>
+    <dimen name="ny_ic3_margin_end">105dp</dimen>
+    <dimen name="ny_ic3_margin_top">43dp</dimen>
+    <dimen name="ny_see_later_margin">24dp</dimen>
+    <dimen name="ny_see_later_text_size">14sp</dimen>
+    <dimen name="ny_starter_margin_top">83dp</dimen>
+</resources>

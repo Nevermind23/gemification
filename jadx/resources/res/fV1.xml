@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_m" android:layout_marginBottom="@dimen/spacing_xl">
+    <ImageView android:id="@+id/bank_logo" android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/thumbnail_1_1"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_s" android:text="@string/total_amount_item_label_total_amount" style="@style/TextBody1InvertComponents400Left"/>
+    <TextView android:id="@+id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_2xs" style="@style/TextH1InvertComponents400Left"/>
+</LinearLayout>

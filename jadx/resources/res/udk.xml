@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius40Shadow20">
+    <p341ge.bog.designsystem.components.loading.LoadingView android:layout_width="match_parent" android:layout_height="wrap_content" app:item_count="4" app:item_layout="@layout/skeleton_list_item"/>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

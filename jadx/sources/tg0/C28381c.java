@@ -1,0 +1,17 @@
+package tg0;
+
+/* renamed from: tg0.c */
+public enum C28381c {
+    NULL,
+    TRAN_AMOUNT,
+    CASH_AMOUNT,
+    POSITION_DELTA,
+    ACQUIREE_SYMBOL,
+    ACQUIRER_SYMBOL,
+    DIVIDEND_AMOUNT_PER_SHARE,
+    DIVIDEND_TAX_RATE,
+    INSTRUMENT_SYMBOL,
+    FILL_QTY,
+    ORDER_QTY,
+    SHARE_NAME
+}

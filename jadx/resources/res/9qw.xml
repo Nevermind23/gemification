@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.mobilebank.cleanarch.presentation.common.StateView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/state_view" android:background="@color/color_invert_background_popup" android:layout_width="match_parent" android:layout_height="match_parent" app:contentViewId="@+id/recycler_view" app:errorViewId="@+id/retry_button_container" app:loadingViewId="@+id/loading_view">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <p341ge.bog.designsystem.components.loading.LoadingView android:id="@+id/loading_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:item_count="3" app:item_layout="@layout/skeleton_products_card_wide"/>
+    <androidx.cardview.widget.CardView android:id="@+id/retry_button_container" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="@dimen/repayment_accounts_loading_view_min_height" app:cardBackgroundColor="@color/color_invert_background_canvas">
+        <include android:layout_gravity="center" android:id="@+id/retry_button" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/retry_button"/>
+    </androidx.cardview.widget.CardView>
+</p341ge.bog.mobilebank.cleanarch.presentation.common.StateView>

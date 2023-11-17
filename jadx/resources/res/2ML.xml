@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_loan_details_0" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BigDividerView android:layout_width="match_parent" android:layout_height="12dp"/>
+        <p341ge.bog.designsystem.components.inlinefeedback.InlineFeedback android:id="@+id/loan_cosigner_feedback" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_12" android:layout_marginStart="@dimen/loan_details_left_margin" android:layout_marginEnd="@dimen/loan_details_right_margin" app:state="2" app:type="radial"/>
+        <LinearLayout android:orientation="vertical" android:tag="binding_1" android:background="?attr/color_invert_background_layer" android:paddingLeft="@dimen/loan_details_left_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_capital_near_payment" style="@style/ProductDetailsBlockTitle"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_loan_date" style="@style/ProductDetailsSmallTitle"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:tag="binding_2" style="@style/ProductDetailsValue"/>
+            <View style="@style/ProductDivider"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_loan_pay_amount" style="@style/ProductDetailsSmallTitle"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:tag="binding_3" style="@style/ProductDetailsValue"/>
+            <LinearLayout style="@style/ProductBox">
+                <LinearLayout style="@style/ProductBoxItem">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_marginBottom="0dp" android:text="@string/product_details_title_from" style="@style/ProductDetailsSmallTitle"/>
+                </LinearLayout>
+                <LinearLayout style="@style/ProductBoxItem">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:layout_marginBottom="0dp" android:text="@string/product_details_title_root" style="@style/ProductDetailsSmallTitle"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:tag="binding_4" style="@style/ProductDetailsBoxValue"/>
+                </LinearLayout>
+                <LinearLayout style="@style/ProductBoxItem">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:layout_marginBottom="0dp" android:text="@string/product_details_title_percent" style="@style/ProductDetailsSmallTitle"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:tag="binding_5" style="@style/ProductDetailsBoxValue"/>
+                </LinearLayout>
+                <LinearLayout style="@style/ProductBoxItem">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:layout_marginBottom="0dp" android:text="@string/product_details_title_loan_commission" style="@style/ProductDetailsSmallTitle"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:tag="binding_6" style="@style/ProductDetailsBoxValue"/>
+                </LinearLayout>
+                <LinearLayout android:tag="binding_7" android:layout_marginBottom="0dp" style="@style/ProductBoxItem">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:layout_marginBottom="0dp" android:text="@string/product_details_title_saved_amount" style="@style/ProductDetailsSmallTitle"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:tag="binding_8" style="@style/ProductDetailsBoxValue"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BigDividerView android:tag="binding_9" android:layout_width="match_parent" android:layout_height="8dp"/>
+        <LinearLayout android:orientation="vertical" android:tag="binding_10" android:background="?attr/color_invert_background_layer" android:paddingLeft="@dimen/loan_details_left_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:id="@+id/bogTextView5" android:text="@string/product_details_title_loan_curr_state_capital" style="@style/ProductDetailsBlockTitle"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_loan_date" style="@style/ProductDetailsSmallTitle"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:tag="binding_11" style="@style/ProductDetailsValue"/>
+            <View style="@style/ProductDivider"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:id="@+id/bogTextView" android:text="@string/product_details_title_loan_amount_to_fill" style="@style/ProductDetailsSmallTitle"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:tag="binding_12" style="@style/ProductDetailsValue"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/loan_details_invoice_list_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:layout_width="match_parent" android:layout_height="16dp"/>
+        </LinearLayout>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BigDividerView android:tag="binding_13" android:layout_width="match_parent" android:layout_height="8dp"/>
+        <LinearLayout android:orientation="vertical" android:tag="binding_14" android:background="?attr/color_invert_background_layer" android:paddingLeft="@dimen/loan_details_left_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_capital_previous_payment" style="@style/ProductDetailsBlockTitle"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_loan_date" style="@style/ProductDetailsSmallTitle"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:tag="binding_15" style="@style/ProductDetailsValue"/>
+            <View style="@style/ProductDivider"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_loan_total_payed" style="@style/ProductDetailsSmallTitle"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:tag="binding_16" style="@style/ProductDetailsValue"/>
+            <LinearLayout android:tag="binding_17" style="@style/ProductBox">
+                <LinearLayout style="@style/ProductBoxItem">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_marginBottom="0dp" android:text="@string/product_details_title_from" style="@style/ProductDetailsSmallTitle"/>
+                </LinearLayout>
+                <LinearLayout style="@style/ProductBoxItem">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:layout_marginBottom="0dp" android:text="@string/product_details_title_root" style="@style/ProductDetailsSmallTitle"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:tag="binding_18" style="@style/ProductDetailsBoxValue"/>
+                </LinearLayout>
+                <LinearLayout style="@style/ProductBoxItem">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:layout_marginBottom="0dp" android:text="@string/product_details_title_percent" style="@style/ProductDetailsSmallTitle"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:tag="binding_19" style="@style/ProductDetailsBoxValue"/>
+                </LinearLayout>
+                <LinearLayout style="@style/ProductBoxItem">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:layout_marginBottom="0dp" android:text="@string/product_details_title_penalty" style="@style/ProductDetailsSmallTitle"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:tag="binding_20" style="@style/ProductDetailsBoxValue"/>
+                </LinearLayout>
+                <LinearLayout android:layout_marginBottom="0dp" style="@style/ProductBoxItem">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:layout_marginBottom="0dp" android:text="@string/product_details_title_loan_commission" style="@style/ProductDetailsSmallTitle"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:tag="binding_21" style="@style/ProductDetailsBoxValue"/>
+                </LinearLayout>
+                <View android:tag="binding_22" android:layout_width="match_parent" android:layout_height="7dp"/>
+                <LinearLayout android:tag="binding_23" android:layout_marginBottom="0dp" style="@style/ProductBoxItem">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:layout_marginBottom="0dp" android:text="@string/product_details_title_credit_insurance" style="@style/ProductDetailsSmallTitle"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:tag="binding_24" style="@style/ProductDetailsBoxValue"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:tag="binding_25" style="@style/ProductBox">
+                <LinearLayout android:layout_height="match_parent" android:layout_marginBottom="0dp" style="@style/ProductBoxItem">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:layout_marginBottom="0dp" android:text="@string/product_details_title_operation_type" style="@style/ProductDetailsSmallTitle"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:tag="binding_26" style="@style/ProductDetailsBoxValue"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BigDividerView android:tag="binding_27" android:layout_width="match_parent" android:layout_height="8dp"/>
+        <LinearLayout android:orientation="vertical" android:background="?attr/color_invert_background_layer" android:paddingLeft="@dimen/loan_details_left_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_loan_details_capital" style="@style/ProductDetailsBlockTitle"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_loan_loan_name" style="@style/ProductDetailsSmallTitle"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:tag="binding_28" android:layout_marginRight="80dp" style="@style/ProductDetailsValue"/>
+                </LinearLayout>
+                <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/details_rename_button" android:background="?attr/selectableItemBackgroundBorderless" android:paddingLeft="8dp" android:paddingRight="24dp" android:focusable="true" android:clickable="true" android:layout_width="48dp" android:layout_height="match_parent" android:src="@drawable/ic_swipe_edit"/>
+            </FrameLayout>
+            <View style="@style/ProductDivider"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_loan_left_root" style="@style/ProductDetailsSmallTitle"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:tag="binding_29" style="@style/ProductDetailsValue"/>
+            <View style="@style/ProductDivider"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_loan_start_end_date" style="@style/ProductDetailsSmallTitle"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:tag="binding_30" style="@style/ProductDetailsValue"/>
+            <View style="@style/ProductDivider"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_loan_initial_money" style="@style/ProductDetailsSmallTitle"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:tag="binding_31" style="@style/ProductDetailsValue"/>
+            <LinearLayout android:orientation="vertical" android:tag="binding_32" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View style="@style/ProductDivider"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_loan_summed_percent" style="@style/ProductDetailsSmallTitle"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:tag="binding_33" style="@style/ProductDetailsValue"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:tag="binding_34" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View style="@style/ProductDivider"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_loan_current_percent" style="@style/ProductDetailsSmallTitle"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:tag="binding_35" style="@style/ProductDetailsValue"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:tag="binding_36" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View style="@style/ProductDivider"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_loan_scheduled_current_penalty" style="@style/ProductDetailsSmallTitle"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:tag="binding_37" style="@style/ProductDetailsValue"/>
+            </LinearLayout>
+            <View style="@style/ProductDivider"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_loan_scheduled_percent" style="@style/ProductDetailsSmallTitle"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:tag="binding_38" style="@style/ProductDetailsValue"/>
+            <View android:id="@+id/bindedAccountDivider" style="@style/ProductDivider"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:id="@+id/bindedAccountTitle" android:text="@string/product_details_title_loan_binded_account" style="@style/ProductDetailsSmallTitle"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:id="@+id/bindedAccountValue" android:tag="binding_39" style="@style/ProductDetailsValue"/>
+            <LinearLayout android:orientation="vertical" android:tag="binding_40" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View style="@style/ProductDivider"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_loan_summed_earned_amount" style="@style/ProductDetailsSmallTitle"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:tag="binding_41" style="@style/ProductDetailsValue"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:tag="binding_42" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View style="@style/ProductDivider"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:text="@string/product_details_title_loan_insurance" style="@style/ProductDetailsSmallTitle"/>
+                    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:tag="binding_43" style="@style/ProductDetailsValue"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="16dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/viewAgreementBtn" android:tag="binding_44" android:background="?attr/color_invert_background_layer" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="62dp" android:foreground="?attr/selectableItemBackground">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BigDividerView android:id="@+id/agreementDivider" android:layout_width="match_parent" android:layout_height="@dimen/spacing_8" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextOverLine" android:textColor="?attr/color_primary_solid_df_500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:layout_marginBottom="@dimen/spacing_8" android:text="@string/view_agreement" android:paddingStart="@dimen/loan_details_left_margin" android:layout_marginVertical="@dimen/spacing_8" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/agreementDivider"/>
+            <androidx.appcompat.widget.AppCompatImageView android:background="@drawable/agreement_stroke_circle" android:padding="@dimen/spacing_12" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="@dimen/spacing_12" android:src="@drawable/icons_24_system_external" android:scaleType="fitCenter" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toBottomOf="@+id/agreementDivider" app:layout_goneMarginEnd="@dimen/spacing_16" app:tint="?attr/color_primary_solid_df_500"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BigDividerView android:layout_width="match_parent" android:layout_height="30dp"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_layer" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="1" layout="@layout/toolbar"/>
+    <androidx.core.widget.NestedScrollView android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadiusBottom12Shadow0">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.dynamicthumbnailcard.DynamicThumbnailCardView android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" app:interactive="false" app:title_size="0"/>
+                    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_24" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_8" android:layout_marginHorizontal="@dimen/spacing_16" app:button_type="0"/>
+                    <p341ge.bog.designsystem.components.search.SearchView android:id="@+id/search" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_16" app:search_hint="@string/search"/>
+                </LinearLayout>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+            <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/search_failed" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:drawable_src="@drawable/icons_48_system_info_outline" app:drawable_tint="?attr/color_primary_solid_df_500" app:drawable_type="3" app:text="@string/bnpl_offer_not_found"/>
+            <p341ge.bog.mobilebank.cleanarch.presentation.common.StateView android:id="@+id/loading" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:contentViewId="@+id/recycler" app:loadingViewId="@+id/recycler_loading">
+                <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+                <p341ge.bog.designsystem.components.loading.LoadingView android:id="@+id/recycler_loading" android:layout_width="match_parent" android:layout_height="match_parent" app:item_count="4" app:item_layout="@layout/skeleton_bnpl_offers_recycler" app:scrollable="false"/>
+            </p341ge.bog.mobilebank.cleanarch.presentation.common.StateView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

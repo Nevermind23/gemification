@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.pagestate.PageState android:id="@+id/page_state" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" app:page_state_type="0"/>
+    <p341ge.bog.designsystem.components.inlinefeedback.InlineFeedback android:id="@+id/feedback" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_32" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:state="2"/>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BigDividerView android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/spacing_24"/>
+    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/offers_btn" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/spacing_16"/>
+</LinearLayout>

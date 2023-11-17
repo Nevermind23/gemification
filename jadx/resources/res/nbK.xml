@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.designsystem.components.progressbar.ProgressBarView android:id="@+id/first_progress_badge" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:layout_marginStart="@dimen/spacing_16" app:layout_constraintEnd_toStartOf="@+id/second_progress_badge" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:progress_bar_full_color="1"/>
+    <p341ge.bog.designsystem.components.progressbar.ProgressBarView android:id="@+id/second_progress_badge" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_4" android:layout_marginRight="@dimen/spacing_4" android:layout_marginHorizontal="@dimen/spacing_4" app:layout_constraintEnd_toStartOf="@+id/third_progress_badge" app:layout_constraintStart_toEndOf="@+id/first_progress_badge" app:layout_constraintTop_toTopOf="@+id/first_progress_badge" app:progress_bar_full_color="1"/>
+    <p341ge.bog.designsystem.components.progressbar.ProgressBarView android:id="@+id/third_progress_badge" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/spacing_16" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/second_progress_badge" app:layout_constraintTop_toTopOf="@+id/first_progress_badge" app:progress_bar_full_color="4"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/terms_check_layout" app:layout_constraintTop_toBottomOf="@+id/first_progress_badge">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius12Shadow0">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:layout_width="match_parent" android:layout_height="wrap_content" app:empty_widget_title="@string/summary_policy_header_text"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/company" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/summary_company_title"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                    <View android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/max_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/summary_max_limit_title"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                    <View android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/startDate" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/summary_start_date_title"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                    <View android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/endDate" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/summary_end_date_title"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                    <View android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/summary_price_title"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                    <View android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/risk_insurance" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/summary_risk_insurance_title"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                </LinearLayout>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius12Shadow0">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/insured_person_info" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/first_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                    <View android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/last_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                    <View android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/personal_id" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                    <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/date_of_birth" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                </LinearLayout>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+            <p341ge.bog.designsystem.components.accountpicker.AccountPickerView android:id="@+id/account_picker" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_4" android:layout_marginHorizontal="@dimen/spacing_16" app:end_image_icon_tint="?attr/color_invert_component_solid_500"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <FrameLayout android:id="@+id/terms_check_layout" android:background="?attr/color_invert_background_layer" android:padding="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/pay_button">
+        <p341ge.bog.designsystem.components.checkbox.CheckboxView android:id="@+id/terms_check" android:layout_width="match_parent" android:layout_height="wrap_content" app:checkbox_type="1"/>
+    </FrameLayout>
+    <p341ge.bog.designsystem.components.fixedbutton.FixedButtonView android:id="@+id/pay_button" android:layout_width="0dp" android:layout_height="wrap_content" app:fixed_button_text="@string/summary_btn_pay" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+    <FrameLayout android:id="@+id/progress" android:background="?attr/color_white_tr_300" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/first_progress_badge">
+        <p341ge.bog.mobilebank.p975ui.components.BogProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:progressStyle="0"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

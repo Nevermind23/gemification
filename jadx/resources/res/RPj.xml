@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/list_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <p341ge.bog.designsystem.components.list.SingleLineTextItem android:textAppearance="@style/TextBody1InvertComponents400Left" android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" app:multiline_text="true"/>
+        <p341ge.bog.designsystem.components.checkbox.CheckboxView android:id="@+id/check_box" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <p341ge.bog.designsystem.components.input.Input android:id="@+id/note_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:hint="@string/item_source_income_with_note_hint_specify_source"/>
+</LinearLayout>

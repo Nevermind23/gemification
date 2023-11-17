@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/provider_description" android:layout_width="match_parent" android:layout_height="wrap_content" app:drawable_src="@drawable/thumbnail_circle" app:drawable_type="4"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/packages" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_8" android:layout_weight="1" android:layout_marginHorizontal="@dimen/spacing_8"/>
+    <p341ge.bog.designsystem.components.fixedbutton.FixedButtonView android:id="@+id/choose_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_24" app:fixed_button_text="@string/button_select_package_text" app:fixed_button_type="0"/>
+</LinearLayout>

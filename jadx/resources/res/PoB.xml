@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.mobilebank.cleanarch.presentation.common.compoundview.ExpandableItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/bog_white_color" android:layout_width="match_parent" android:layout_height="wrap_content" app:headerLayout="@layout/cla_details_header_layout" app:itemLayout="@layout/cla_details_description_layout"/>

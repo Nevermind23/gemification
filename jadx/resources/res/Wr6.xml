@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/offer_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16">
+    <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/empty_widget" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_5" android:layout_width="@dimen/result_offers_item_header_icon_layer_size" android:layout_height="@dimen/result_offers_item_header_icon_layer_size" app:layerStyle="@style/LayerRadiusCircleShadow0">
+            <ImageView android:layout_gravity="center" android:id="@+id/image_view" android:layout_width="@dimen/result_offers_item_header_icon_size" android:layout_height="@dimen/result_offers_item_header_icon_size" android:src="@drawable/icons_16_loan_loan_fill"/>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    </p341ge.bog.designsystem.components.emptywidget.EmptyWidget>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</LinearLayout>

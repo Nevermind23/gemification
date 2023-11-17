@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_pressed="true" android:state_activated="false" app:state_badge_visible="false">
+        <color android:color="?attr/color_invert_component_tr_25"/>
+    </item>
+    <item android:state_enabled="false" android:drawable="@color/color_invert_component_tr_5" android:state_activated="false" app:state_badge_visible="false"/>
+    <item android:drawable="@color/color_invert_component_tr_5" android:state_activated="false" app:state_badge_visible="false"/>
+    <item android:state_pressed="true" app:state_badge_visible="true">
+        <color android:color="?attr/color_primary_solid_50"/>
+    </item>
+    <item android:state_enabled="false" app:state_badge_visible="true">
+        <color android:color="?attr/color_primary_solid_5"/>
+    </item>
+    <item app:state_badge_visible="true">
+        <color android:color="?attr/color_primary_solid_25"/>
+    </item>
+</selector>

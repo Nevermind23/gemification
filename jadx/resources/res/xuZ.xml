@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/holder" android:paddingLeft="@dimen/spacing_4" android:paddingRight="@dimen/spacing_4" android:layout_width="@dimen/category_child_size" android:layout_height="@dimen/category_child_size" android:paddingHorizontal="@dimen/spacing_4">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@drawable/bg_category_child_border" android:padding="@dimen/category_child_icon_padding" android:layout_width="@dimen/category_child_icon_size" android:layout_height="@dimen/category_child_icon_size" android:layout_marginBottom="@dimen/spacing_4" app:layerStyle="@style/LayerRadius16Shadow0">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/icon" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/thumbnail_circle"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <TextView android:textAppearance="@style/TextCaption1" android:textColor="?attr/color_invert_component_tr_400" android:gravity="center_horizontal" android:id="@+id/text" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TwoLine.EllipsizeEnd"/>
+</LinearLayout>

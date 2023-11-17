@@ -1,0 +1,43 @@
+package com.google.android.gms.auth.api.identity;
+
+import android.app.PendingIntent;
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
+import p037c6.C2267c;
+import p182n6.C7258g;
+import p182n6.C7264i;
+import p195o6.C7461a;
+
+public class SavePasswordResult extends AbstractSafeParcelable {
+    public static final Parcelable.Creator<SavePasswordResult> CREATOR = new C2267c();
+
+    /* renamed from: d */
+    private final PendingIntent f12111d;
+
+    public SavePasswordResult(PendingIntent pendingIntent) {
+        this.f12111d = (PendingIntent) C7264i.m27902k(pendingIntent);
+    }
+
+    public boolean equals(Object obj) {
+        if (!(obj instanceof SavePasswordResult)) {
+            return false;
+        }
+        return C7258g.m27880a(this.f12111d, ((SavePasswordResult) obj).f12111d);
+    }
+
+    public int hashCode() {
+        return C7258g.m27881b(this.f12111d);
+    }
+
+    /* renamed from: v */
+    public PendingIntent mo11715v() {
+        return this.f12111d;
+    }
+
+    public void writeToParcel(Parcel parcel, int i) {
+        int a = C7461a.m28369a(parcel);
+        C7461a.m28390v(parcel, 1, mo11715v(), i, false);
+        C7461a.m28370b(parcel, a);
+    }
+}

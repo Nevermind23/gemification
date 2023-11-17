@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" app:layout_constraintTop_toTopOf="0" layout="@layout/toolbar"/>
+    <View android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/deposit_header" app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+    <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/page_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_xl" app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+    <p341ge.bog.designsystem.components.depositheader.DepositHeaderView android:id="@+id/deposit_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_xl" app:deposit_header_type="1" app:layout_constraintTop_toBottomOf="@+id/page_description"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

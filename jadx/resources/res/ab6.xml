@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:insetLeft="2dp" android:insetRight="2dp" android:insetTop="1dp" android:insetBottom="1dp">
+    <selector android:enterFadeDuration="@integer/bottom_nav_bar_item_fade_dur" android:exitFadeDuration="@integer/bottom_nav_bar_item_fade_dur">
+        <item android:state_checked="true" android:drawable="@drawable/ic_bottom_nav_bar_more_active"/>
+        <item android:drawable="@drawable/ic_bottom_nav_bar_more"/>
+    </selector>
+</inset>

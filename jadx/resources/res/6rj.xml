@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/p2p_link_sharing_nav_graph" app:startDestination="@+id/p2PLinkSharingRouter">
+    <fragment android:name="p341ge.bog.mobilebank.linksharing.presentation.link.P2PLinkSharingFragment" android:id="@+id/p2PLinkSharingFragment">
+        <action android:id="@+id/action_P2PLinkSharingFragment_to_P2PLinkSharingIntroFragment" app:destination="@+id/p2PLinkSharingIntroFragment" app:popUpTo="@+id/p2PLinkSharingIntroFragment"/>
+        <action android:id="@+id/action_p2PLinkSharingFragment_to_p2PLinkGenerationFragment" app:destination="@+id/p2PLinkGenerationFragment" app:popUpTo="@+id/p2PLinkSharingFragment" app:popUpToInclusive="true"/>
+        <action android:id="@+id/action_p2PLinkSharingFragment_to_p2PHelpFragment" app:destination="@+id/p2PHelpFragment"/>
+        <action android:id="@+id/action_p2PLinkSharingFragment_to_chooseAccountDialogFragment" app:destination="@+id/chooseAccountDialogFragment">
+            <argument android:name="selectedAccountPosition" android:defaultValue="-1" app:argType="integer"/>
+        </action>
+    </fragment>
+    <fragment android:name="p341ge.bog.mobilebank.linksharing.presentation.link.P2PLinkSharingIntroFragment" android:id="@+id/p2PLinkSharingIntroFragment">
+        <action android:id="@+id/action_p2PLinkSharingIntroFragment_to_p2PLinkGenerationFragment" app:destination="@+id/p2PLinkGenerationFragment"/>
+    </fragment>
+    <fragment android:name="p341ge.bog.mobilebank.linksharing.presentation.p2p_link_generation.P2PLinkGenerationFragment" android:id="@+id/p2PLinkGenerationFragment">
+        <action android:id="@+id/action_p2PLinkGenerationFragment_to_chooseAccountDialogFragment" app:destination="@+id/chooseAccountDialogFragment">
+            <argument android:name="selectedAccountPosition" android:defaultValue="-1" app:argType="integer"/>
+        </action>
+        <action android:id="@+id/action_p2PLinkGenerationFragment_to_p2PLinkSharingFragment" app:destination="@+id/p2PLinkSharingFragment" app:popUpTo="@+id/p2p_link_sharing_nav_graph" app:popUpToInclusive="true"/>
+        <action android:id="@+id/action_p2PLinkGenerationFragment_to_p2PLinkSharingRouter" app:destination="@+id/p2PLinkSharingRouter" app:popUpTo="@+id/p2p_link_sharing_nav_graph" app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment android:name="p341ge.bog.mobilebank.linksharing.presentation.help.P2PHelpFragment" android:id="@+id/p2PHelpFragment"/>
+    <dialog android:name="p341ge.bog.mobilebank.linksharing.presentation.chooseaccount.ChooseAccountDialogFragment" android:id="@+id/chooseAccountDialogFragment">
+        <argument android:name="selectedAccountPosition" android:defaultValue="-1" app:argType="integer"/>
+    </dialog>
+    <fragment android:label="P2PLinkSharingRouter" android:name="p341ge.bog.mobilebank.linksharing.presentation.link.router.P2PLinkRouterFragment" android:id="@+id/p2PLinkSharingRouter">
+        <action android:id="@+id/action_p2PLinkSharingRouter_to_p2PLinkSharingFragment" app:destination="@+id/p2PLinkSharingFragment" app:popUpTo="@+id/p2PLinkSharingRouter" app:popUpToInclusive="true"/>
+        <action android:id="@+id/action_p2PLinkSharingRouter_to_p2PLinkSharingIntroFragment" app:destination="@+id/p2PLinkSharingIntroFragment" app:popUpTo="@+id/p2PLinkSharingRouter" app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

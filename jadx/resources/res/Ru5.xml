@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:id="@+id/payment_status_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_12" android:src="@drawable/ic_result_success" app:tintType="0"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="@dimen/search_error_text_size" android:textColor="@color/color_positive_solid_df_500" android:id="@+id/payment_status_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:fontFamily="@font/bog_medium"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/success_payments_rv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:background="@drawable/shadow_bottom" android:layout_width="match_parent" android:layout_height="@dimen/bottom_shadow_height"/>
+        </LinearLayout>
+        <include android:id="@+id/full_progress_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bog_full_progressbar"/>
+    </FrameLayout>
+</LinearLayout>

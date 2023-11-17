@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius40Shadow20">
+    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/account_number_item" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/share_button" android:layout_width="match_parent" android:layout_height="wrap_content" app:button_icon="@drawable/icons_24_system_share_ios" app:button_type="9"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

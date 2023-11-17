@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/kyc_root_graph" app:startDestination="@+id/identityDataInputFragment">
+    <fragment android:label="@string/title_identity_input" android:name="p341ge.bog.mobilebank.kyc.presentation.identity.IdentityDataInputFragment" android:id="@+id/identityDataInputFragment">
+        <action android:id="@+id/action_identityDataInputFragment_to_countrySelectorActionSheet" app:destination="@+id/countrySelectorActionSheet"/>
+        <action android:id="@+id/action_identityDataInputFragment_to_citySelectorActionSheet" app:destination="@+id/citySelectorActionSheet"/>
+        <action android:id="@+id/action_identityDataInputFragment_to_occupationInputFragment" app:destination="@+id/occupationInputFragment"/>
+    </fragment>
+    <dialog android:name="p341ge.bog.mobilebank.kyc.presentation.selectcountry.CountrySelectorActionSheet" android:id="@+id/countrySelectorActionSheet"/>
+    <dialog android:name="p341ge.bog.mobilebank.kyc.presentation.selectcity.CitySelectorActionSheet" android:id="@+id/citySelectorActionSheet"/>
+    <fragment android:label="@string/title_occupation_selector" android:name="p341ge.bog.mobilebank.kyc.presentation.occupation.OccupationInputFragment" android:id="@+id/occupationInputFragment">
+        <action android:id="@+id/action_occupationInputFragment_to_jobPositionSelectorActionSheet" app:destination="@+id/jobPositionSelectorActionSheet"/>
+        <action android:id="@+id/action_occupationInputFragment_to_incomeSourceSelectorFragment" app:destination="@+id/incomeSourceSelectorFragment"/>
+    </fragment>
+    <dialog android:label="@string/title_action_sheet_job_position_selector" android:name="p341ge.bog.mobilebank.kyc.presentation.jobposition.JobPositionSelectorActionSheet" android:id="@+id/jobPositionSelectorActionSheet"/>
+    <fragment android:label="@string/title_property_source_selector" android:name="p341ge.bog.mobilebank.kyc.presentation.incomeproperty.IncomeSourceSelectorFragment" android:id="@+id/incomeSourceSelectorFragment">
+        <action android:id="@+id/action_incomeSourceSelectorFragment_self" app:destination="@+id/incomeSourceSelectorFragment"/>
+        <action android:id="@+id/action_incomeSourceSelectorFragment_to_kycResultFragment" app:destination="@+id/kycResultFragment" app:popUpTo="@+id/kyc_root_graph" app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment android:label="@string/title_result_page" android:name="p341ge.bog.mobilebank.kyc.presentation.result.KycResultFragment" android:id="@+id/kycResultFragment"/>
+</navigation>

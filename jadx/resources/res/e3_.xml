@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/selected_date_stroke" android:left="@dimen/pfm_calendar_tile_horizontal_padding" android:top="@dimen/pfm_calendar_tile_vertical_padding" android:right="@dimen/pfm_calendar_tile_horizontal_padding" android:bottom="@dimen/pfm_calendar_tile_vertical_padding">
+        <shape android:shape="oval">
+            <stroke android:width="@dimen/pfm_calendar_selected_stroke_width" android:color="@color/color_accent_retail"/>
+        </shape>
+    </item>
+    <item android:id="@+id/date_color" android:left="@dimen/pfm_calendar_selected_date_inner_circle_margin_h" android:top="@dimen/pfm_calendar_selected_date_inner_circle_margin_v" android:right="@dimen/pfm_calendar_selected_date_inner_circle_margin_h" android:bottom="@dimen/pfm_calendar_selected_date_inner_circle_margin_v">
+        <shape android:shape="oval">
+            <solid android:color="@color/color_invert_component_tr_5"/>
+        </shape>
+    </item>
+</layer-list>

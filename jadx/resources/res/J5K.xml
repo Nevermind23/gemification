@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16">
+    <p341ge.bog.designsystem.components.inlinefeedback2.InlineFeedback2 android:id="@+id/feedback" android:layout_width="match_parent" android:layout_height="wrap_content" app:status="0"/>
+    <p341ge.bog.designsystem.components.input.Input android:id="@+id/amount_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:has_input_button="true"/>
+    <p341ge.bog.designsystem.components.buttons.Button android:enabled="false" android:id="@+id/button_continue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16"/>
+    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/button_reset" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" android:layout_marginVertical="@dimen/spacing_16" app:button_icon="@drawable/icons_16_system_reset" app:button_type="2"/>
+</LinearLayout>

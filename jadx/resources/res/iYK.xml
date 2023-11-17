@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/content_view" android:background="?attr/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.core.widget.NestedScrollView android:id="@+id/scroll_view" android:background="?attr/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="vertical" android:background="?attr/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.productheader.NewProductHeaderView android:id="@+id/pension_amount_card" android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:chevronVisible="false"/>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" android:layout_marginVertical="@dimen/spacing_16" app:layerStyle="@style/LayerRadius12Shadow0">
+                <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/hide_pension_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_16" app:button_icon="@drawable/icons_24_eye_off" app:button_type="2" app:icon_before_text="true"/>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius12Shadow0">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/pension_details_header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <TextView android:textColor="?attr/color_invert_component_tr_400" android:id="@+id/pension_details_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/link_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_16" app:button_icon="@drawable/icons_16_system_external" app:button_type="19" app:icon_before_text="true"/>
+                </LinearLayout>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:id="@+id/toolbar" app:layout_constraintTop_toTopOf="0" layout="@layout/toolbar"/>
+    <FrameLayout android:id="@+id/progress_bar_container" android:background="?attr/color_invert_background_canvas" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <p341ge.bog.mobilebank.p975ui.components.BogProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:progressStyle="0"/>
+    </FrameLayout>
+    <androidx.cardview.widget.CardView android:id="@+id/retry_button_container" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:cardBackgroundColor="?attr/color_invert_background_canvas">
+        <include android:layout_gravity="center" android:id="@+id/retry_button" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/retry_button"/>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

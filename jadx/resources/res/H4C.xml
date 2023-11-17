@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/bog_white_color" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@color/default_gray_color" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/you_have_not_transactions_yet" android:fontFamily="@font/bog_medium"/>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogFlatButton android:gravity="center" android:id="@+id/pay_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" app:btn_large="true" app:btn_show_image="false" app:btn_text_color="?attr/colorPrimary" app:btn_txt="@string/pay"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/button_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:background="@drawable/above_shadow" android:layout_width="match_parent" android:layout_height="4dp"/>
+        <p341ge.bog.designsystem.components.buttons.Button android:textSize="@dimen/payment_pay_btn_text_size" android:textColor="@color/color_white_solid_df_500" android:id="@+id/save_btn" android:layout_width="match_parent" android:layout_height="@dimen/payments_pay_btn_height" android:layout_marginLeft="@dimen/item_default_margin" android:layout_marginTop="@dimen/item_default_margin" android:layout_marginRight="@dimen/item_default_margin" android:layout_marginBottom="13dp" android:onClick="onSaveClick" android:textAllCaps="true" android:fontFamily="@font/bog_headline_medium" app:button_text="@string/button_text_save_remember" style="@style/BogButtonNormalStyle"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/button_wrapper" android:layout_below="@+id/toolbar"/>
+    <FrameLayout android:id="@+id/full_progress_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar" android:alpha="0.6">
+        <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bog_full_progressbar"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/error_layout" android:background="@color/bog_activity_background_color" android:paddingTop="@dimen/payment_pay_group_item_margin" android:paddingBottom="@dimen/payment_pay_group_item_margin" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <include layout="@layout/layout_horizontal_error"/>
+    </LinearLayout>
+</RelativeLayout>

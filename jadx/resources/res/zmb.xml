@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/currency_rate_widget_item" android:paddingLeft="@dimen/widget_ccy_medium_left_padding" android:paddingRight="@dimen/widget_ccy_medium_right_padding" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="@dimen/widget_ccy_item_height">
+        <TextView android:textSize="13.5sp" android:textStyle="bold" android:textColor="@color/bog_white_color" android:id="@+id/ccy_logo" android:background="@drawable/ccy_logo_background_green" android:layout_width="@dimen/widget_list_item_icon_size" android:layout_height="@dimen/widget_list_item_icon_size" android:layout_marginRight="12dp" android:textAllCaps="true" android:fontFamily="@font/bog_bold" android:textAlignment="center" style="?android:attr/borderlessButtonStyle"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.3sp" android:textColor="@color/dark_text_color_333" android:gravity="center" android:id="@+id/official_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/bog_medium"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4dp">
+                <TextView android:textSize="11.3sp" android:textColor="@color/widget_ccy_change_txt_color" android:id="@+id/rate_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0014" android:maxLines="1" android:fontFamily="@font/bog_medium"/>
+                <ImageView android:id="@+id/diff_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:src="@drawable/widget_ccy_up"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="@dimen/widget_right_layout_width_medium" android:layout_height="wrap_content" android:layout_marginLeft="6dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="16.3sp" android:textColor="@color/dark_text_color_333" android:ellipsize="end" android:id="@+id/buy_rate" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/bog_medium"/>
+                <TextView android:textSize="11.3sp" android:textColor="@color/widget_ccy_change_txt_color" android:ellipsize="end" android:id="@+id/bad_buy_rate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-4dp" android:maxLines="1" android:fontFamily="@font/bog_medium"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="16.3sp" android:textColor="@color/dark_text_color_333" android:ellipsize="end" android:id="@+id/sell_rate" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/bog_medium"/>
+                <TextView android:textSize="11.3sp" android:textColor="@color/widget_ccy_change_txt_color" android:ellipsize="end" android:id="@+id/bad_sell_rate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-4dp" android:maxLines="1" android:fontFamily="@font/bog_medium"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

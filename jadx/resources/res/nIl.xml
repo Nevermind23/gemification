@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_enabled="true" android:state_checked="true" app:state_half_checked="false">
+        <inset android:inset="@dimen/spacing_4">
+            <layer-list>
+                <item>
+                    <shape android:shape="rectangle">
+                        <corners android:radius="@dimen/spacing_4"/>
+                        <size android:height="@dimen/checkbox_button_size" android:width="@dimen/checkbox_button_size"/>
+                        <solid android:color="?attr/color_primary_solid_df_500"/>
+                    </shape>
+                </item>
+                <item android:drawable="@drawable/icons_12_check" android:left="@dimen/checkbox_check_drawable_padding" android:top="@dimen/checkbox_check_drawable_padding" android:right="@dimen/checkbox_check_drawable_padding" android:bottom="@dimen/checkbox_check_drawable_padding"/>
+            </layer-list>
+        </inset>
+    </item>
+    <item android:state_enabled="true" android:state_checked="false" app:state_half_checked="true">
+        <inset android:inset="@dimen/spacing_4">
+            <layer-list>
+                <item>
+                    <shape android:shape="rectangle">
+                        <corners android:radius="@dimen/spacing_4"/>
+                        <size android:height="@dimen/checkbox_button_size" android:width="@dimen/checkbox_button_size"/>
+                        <solid android:color="?attr/color_primary_solid_df_500"/>
+                    </shape>
+                </item>
+                <item android:left="@dimen/checkbox_half_checked_drawable_horizontal_padding" android:top="@dimen/checkbox_half_checked_drawable_vertical_padding" android:right="@dimen/checkbox_half_checked_drawable_horizontal_padding" android:bottom="@dimen/checkbox_half_checked_drawable_vertical_padding">
+                    <color android:color="?attr/color_white_solid_df_500"/>
+                </item>
+            </layer-list>
+        </inset>
+    </item>
+    <item android:state_enabled="true" android:state_checked="false">
+        <inset android:inset="@dimen/spacing_4">
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/spacing_4"/>
+                <size android:height="@dimen/checkbox_button_size" android:width="@dimen/checkbox_button_size"/>
+                <stroke android:width="@dimen/checkbox_button_border_size" android:color="?attr/color_invert_component_tr_50"/>
+            </shape>
+        </inset>
+    </item>
+    <item android:state_enabled="false" android:state_checked="true">
+        <inset android:inset="@dimen/spacing_4">
+            <layer-list>
+                <item>
+                    <shape android:shape="rectangle">
+                        <corners android:radius="@dimen/spacing_4"/>
+                        <size android:height="@dimen/checkbox_button_size" android:width="@dimen/checkbox_button_size"/>
+                        <solid android:color="?attr/color_primary_solid_300"/>
+                    </shape>
+                </item>
+                <item android:drawable="@drawable/icons_12_check" android:left="@dimen/checkbox_check_drawable_padding" android:top="@dimen/checkbox_check_drawable_padding" android:right="@dimen/checkbox_check_drawable_padding" android:bottom="@dimen/checkbox_check_drawable_padding"/>
+            </layer-list>
+        </inset>
+    </item>
+    <item android:state_enabled="false">
+        <inset android:inset="@dimen/spacing_4">
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/spacing_4"/>
+                <size android:height="@dimen/checkbox_button_size" android:width="@dimen/checkbox_button_size"/>
+                <stroke android:width="@dimen/checkbox_button_border_size" android:color="?attr/color_invert_component_tr_25"/>
+            </shape>
+        </inset>
+    </item>
+</selector>

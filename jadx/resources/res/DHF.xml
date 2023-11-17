@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground" android:paddingHorizontal="@dimen/spacing_16">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/item_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icons_24_smile" android:tint="?attr/color_primary_solid_df_500"/>
+    <p341ge.bog.designsystem.components.list.SingleLineTextItem android:textAppearance="@style/TextSubtitle2Black400Left" android:ellipsize="end" android:id="@+id/owner_name" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="1"/>
+</p341ge.bog.designsystem.components.list.ListItem>

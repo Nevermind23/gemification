@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <p341ge.bog.mobilebank.cleanarch.presentation.common.StateView android:id="@+id/form_state_view" android:layout_width="match_parent" android:layout_height="match_parent" app:applyAlphaAnimationToLoadingView="true" app:contentViewId="@+id/content" app:errorViewId="@+id/error_view" app:loadingViewId="@+id/skin_loader">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/main_button_container" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_weight="1">
+                <p341ge.bog.mobilebank.payments.presentation.form.base.FormLayout android:id="@+id/form_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/main_button_container" android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadiusTop12Shadow30" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0">
+                <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/main_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_16"/>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include android:id="@+id/skin_loader" android:background="?attr/color_invert_background_layer" layout="@layout/skeleton_payment_form"/>
+        <include android:id="@+id/error_view" layout="@layout/error_payment_form"/>
+    </p341ge.bog.mobilebank.cleanarch.presentation.common.StateView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/title_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" app:layout_constraintTop_toTopOf="0">
+        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <p341ge.bog.designsystem.components.list.TwoLineReverseTextItem android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/delete_button" android:layout_width="32dp" android:layout_height="32dp" android:backgroundTint="@color/color_invert_component_tr_5" app:button_icon="@drawable/icons_16_system_delete" app:button_icon_tint="@color/color_invert_component_tr_400" app:button_type="17"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <ScrollView android:id="@+id/conteiner_web_view" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/navigation_button" app:layout_constraintTop_toBottomOf="@+id/title_item">
+        <WebView android:id="@+id/content_web_view" android:background="@color/color_invert_background_layer" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:layout_marginBottom="@dimen/spacing_16" android:layout_marginStart="@dimen/spacing_16" android:layout_marginEnd="@dimen/spacing_16"/>
+    </ScrollView>
+    <p341ge.bog.designsystem.components.buttons.Button android:layout_gravity="center_horizontal" android:id="@+id/navigation_button" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_16" android:layout_marginStart="@dimen/spacing_16" android:layout_marginEnd="@dimen/spacing_16" app:button_type="1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

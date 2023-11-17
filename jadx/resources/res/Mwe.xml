@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/color_invert_background_layer" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:paddingHorizontal="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow0">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/gift_card_code_banner_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/gift_card_code_two_line_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:layout_gravity="center" android:id="@+id/gift_card_code_layer_container" android:background="?attr/color_primary_tr_25" android:padding="@dimen/spacing_12" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius50Shadow0">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/terms_conditions_image_view" android:layout_width="@dimen/spacing_16" android:layout_height="@dimen/spacing_16" android:src="@drawable/copy_gift_card_code_image" app:tint="?attr/color_primary_solid_df_500"/>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

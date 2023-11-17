@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/loan_activation_nav_graph" app:startDestination="@+id/fragment_activation_form">
+    <fragment android:name="p341ge.bog.mobilebank.loanactivation.presentation.activation.form.ActivationFormFragment" android:id="@+id/fragment_activation_form">
+        <action android:id="@+id/action_fragment_activation_form_to_fragment_activation_details" app:destination="@+id/fragment_activation_details" app:enterAnim="@anim/anim_slide_in_slow" app:popExitAnim="@anim/anim_slide_out_slow"/>
+    </fragment>
+    <fragment android:name="p341ge.bog.mobilebank.loanactivation.presentation.activation.details.ActivationDetailsFragment" android:id="@+id/fragment_activation_details"/>
+    <fragment android:name="p341ge.bog.mobilebank.loanactivation.presentation.activation.result.ActivationResultFragment" android:id="@+id/fragment_activation_result"/>
+</navigation>

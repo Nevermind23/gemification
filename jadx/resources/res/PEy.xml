@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/service_point_item" android:paddingLeft="@dimen/widget_ccy_medium_left_padding" android:paddingRight="@dimen/widget_atms_medium_list_item_right_padding" android:layout_width="match_parent" android:layout_height="@dimen/widget_service_point_item_height">
+        <FrameLayout android:gravity="center" android:id="@+id/rounded_container" android:background="@drawable/widget_service_points_icon_background" android:padding="@dimen/loan_stroke_width" android:layout_width="@dimen/widget_list_item_icon_size" android:layout_height="@dimen/widget_list_item_icon_size" android:layout_marginRight="12dp">
+            <ImageView android:layout_gravity="center" android:id="@+id/service_point_icon" android:layout_width="28dp" android:layout_height="28dp"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/address" android:layout_width="0dp" android:layout_height="wrap_content" android:scaleType="fitStart" android:layout_weight="1"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="@dimen/widget_atms_medium_distance_label_width" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+            <ImageView android:layout_gravity="center" android:id="@+id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:src="@drawable/direction"/>
+            <TextView android:textSize="15sp" android:textColor="@color/dark_text_color_333" android:ellipsize="end" android:id="@+id/distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/bog_medium"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

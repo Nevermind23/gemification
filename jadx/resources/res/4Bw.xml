@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/page_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_24" android:layout_marginBottom="@dimen/spacing_24" android:layout_marginVertical="@dimen/spacing_24"/>
+        <p341ge.bog.designsystem.components.packagecard.PackageCardView android:id="@+id/offer_package" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_24"/>
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/cancel_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:button_text="პაკეტის გაუქმება" app:button_type="15"/>
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/cancel_primary_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:button_text="პაკეტის გაუქმება" app:button_type="0"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

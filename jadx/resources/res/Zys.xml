@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/skeleton_gift_card_empty_widget_header" android:layout_marginTop="@dimen/spacing_16">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_25" android:layout_width="@dimen/skeleton_gift_card_header_left_width" android:layout_height="@dimen/skeleton_gift_card_header_left_height" android:layout_marginStart="@dimen/spacing_16" app:layerStyle="@style/LayerRadiusCircleShadow0"/>
+            <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_25" android:layout_width="@dimen/skeleton_gift_card_header_middle_width" android:layout_height="@dimen/skeleton_gift_card_header_middle_height" android:layout_marginStart="@dimen/spacing_12" app:layerStyle="@style/LayerRadius4Shadow0"/>
+            </FrameLayout>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_25" android:layout_width="@dimen/skeleton_gift_card_header_right_width" android:layout_height="@dimen/skeleton_gift_card_header_right_height" android:layout_marginStart="@dimen/spacing_12" android:layout_marginEnd="@dimen/spacing_16" app:layerStyle="@style/LayerRadius24Shadow0"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/text_image_card_small_height" android:layout_marginTop="@dimen/spacing_16">
+            <include android:layout_width="@dimen/text_image_card_small_width" android:layout_height="@dimen/text_image_card_small_height" android:layout_marginStart="@dimen/spacing_16" layout="@layout/skeleton_text_image_card_small"/>
+            <include android:layout_width="@dimen/text_image_card_small_width" android:layout_height="@dimen/text_image_card_small_height" android:layout_marginStart="@dimen/spacing_8" layout="@layout/skeleton_text_image_card_small"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/skeleton_gift_card_empty_widget_header" android:layout_marginTop="@dimen/spacing_16">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_25" android:layout_width="@dimen/skeleton_gift_card_header_left_width" android:layout_height="@dimen/skeleton_gift_card_header_left_height" android:layout_marginStart="@dimen/spacing_16" app:layerStyle="@style/LayerRadiusCircleShadow0"/>
+            <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_25" android:layout_width="@dimen/skeleton_gift_card_header_middle_width" android:layout_height="@dimen/skeleton_gift_card_header_middle_height" android:layout_marginStart="@dimen/spacing_12" app:layerStyle="@style/LayerRadius4Shadow0"/>
+            </FrameLayout>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_25" android:layout_width="@dimen/skeleton_gift_card_header_right_width" android:layout_height="@dimen/skeleton_gift_card_header_right_height" android:layout_marginStart="@dimen/spacing_12" android:layout_marginEnd="@dimen/spacing_16" app:layerStyle="@style/LayerRadius24Shadow0"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/text_image_card_small_height" android:layout_marginTop="@dimen/spacing_16">
+            <include android:layout_width="@dimen/text_image_card_small_width" android:layout_height="@dimen/text_image_card_small_height" android:layout_marginStart="@dimen/spacing_16" layout="@layout/skeleton_text_image_card_small"/>
+            <include android:layout_width="@dimen/text_image_card_small_width" android:layout_height="@dimen/text_image_card_small_height" android:layout_marginStart="@dimen/spacing_8" layout="@layout/skeleton_text_image_card_small"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

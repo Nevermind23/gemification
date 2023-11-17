@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_5" android:paddingLeft="@dimen/spacing_16" android:paddingTop="128dp" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16" app:layerStyle="@style/LayerRadiusBottom16Shadow0">
+        <View android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="45dp"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <View android:layout_gravity="start" android:background="?attr/color_invert_component_tr_5" android:layout_width="240dp" android:layout_height="40dp" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="186dp" android:layout_margin="@dimen/spacing_32" app:layerStyle="@style/LayerRadius16Shadow0"/>
+    <View android:background="?attr/color_invert_component_tr_25" android:layout_width="144dp" android:layout_height="20dp"/>
+    <View android:background="?attr/color_invert_component_tr_5" android:layout_width="104dp" android:layout_height="15dp" android:layout_marginTop="@dimen/spacing_8"/>
+    <View android:background="?attr/color_invert_component_tr_50" android:layout_width="308dp" android:layout_height="40dp" android:layout_marginTop="@dimen/spacing_16"/>
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_5" android:layout_width="match_parent" android:layout_height="104dp" android:layout_margin="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow0"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

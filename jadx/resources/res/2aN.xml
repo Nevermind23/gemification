@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_canvas" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/layerView2" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadiusBottom40Shadow30" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:padding="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.pagestate.PageState android:id="@+id/pageState" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/delay_description" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0" app:layout_goneMarginBottom="@dimen/spacing_64"/>
+            <p341ge.bog.designsystem.components.inlinefeedback.InlineFeedback android:id="@+id/delay_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:description_type="2" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/pageState" app:page_description_type="2" app:state="3"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_s" app:layerStyle="@style/LayerRadius40Shadow20" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/layerView2">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_m">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/gt_exchange_result_details_title" style="@style/TextButton1InvertComponents400Left"/>
+            <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/spacing_m"/>
+            <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/tickerInfo" android:layout_width="match_parent" android:layout_height="wrap_content" app:semibold="true" app:title="@string/gt_review_title_ticker"/>
+            <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/spacing_xs"/>
+            <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/quantityInfo" android:layout_width="match_parent" android:layout_height="wrap_content" app:semibold="true" app:title="@string/gt_review_title_quanitty"/>
+            <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/spacing_xs"/>
+            <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/amountInfo" android:layout_width="match_parent" android:layout_height="wrap_content" app:semibold="true" app:title="@string/gt_review_title_amount"/>
+            <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/spacing_xs"/>
+            <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/commissionInfo" android:layout_width="match_parent" android:layout_height="wrap_content" app:semibold="true" app:title="@string/gt_review_title_comission"/>
+            <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/spacing_xs"/>
+            <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/totalInfo" android:layout_width="match_parent" android:layout_height="wrap_content" app:semibold="true"/>
+        </LinearLayout>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+</androidx.constraintlayout.widget.ConstraintLayout>

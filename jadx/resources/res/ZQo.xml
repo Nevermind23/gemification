@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="@drawable/background_liability_overdue_icon" android:layout_width="@dimen/liability_overdue_item_icon_background_size" android:layout_height="@dimen/liability_overdue_item_icon_background_size" app:layerStyle="@color/color_invert_component_tr_5">
+        <ImageView android:layout_gravity="center" android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_16_loan_loan_outline" app:tint="@color/color_negative_solid_df_500"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextCaption1" android:textColor="?attr/color_invert_component_tr_200" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textAppearance="@style/TextBody1" android:textColor="@color/color_negative_solid_df_500" android:id="@+id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:layout_width="0dp" android:layout_height="0dp"/>
+    <View android:id="@+id/divider" android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp"/>
+</p341ge.bog.designsystem.components.list.ListItem>

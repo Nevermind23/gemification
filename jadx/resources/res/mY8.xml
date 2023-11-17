@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.checkbox.CheckboxView android:layout_gravity="center_vertical" android:id="@+id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_m"/>
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:background="?attr/color_primary_tr_5" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginStart="@dimen/spacing_3xs" app:layerStyle="@style/LayerRadiusCircleShadow0">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/icons_24_system_info_outline" android:tint="?attr/color_primary_solid_df_500"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <p341ge.bog.designsystem.components.list.SingleLineTextItem android:layout_gravity="start" android:id="@+id/my_devices_single_line_text_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_s" android:layout_marginRight="@dimen/spacing_s" android:layout_marginHorizontal="@dimen/spacing_s"/>
+</LinearLayout>

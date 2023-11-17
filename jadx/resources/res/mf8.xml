@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/card_not_selected_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:layout_marginBottom="@dimen/spacing_2"/>
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/cards_recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/spacing_8" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/no_card_view" android:padding="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:layout_gravity="center_horizontal" android:id="@+id/no_card_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:drawable_src="@drawable/ic_no_payment_card" app:drawable_type="2"/>
+                <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/order_card_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:layout_marginBottom="@dimen/spacing_16" app:button_type="0"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow20">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </p341ge.bog.designsystem.components.list.ListItem>
+        <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+        <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/personal_number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </p341ge.bog.designsystem.components.list.ListItem>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

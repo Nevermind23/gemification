@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textAppearance="@style/TextBody1" android:textColor="@color/color_invert_component_tr_400" android:id="@+id/point_name" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/next_button" android:padding="@dimen/spacing_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_16_system_chevron_right" app:tint="@color/color_invert_component_tr_400"/> &gt; 
+</p341ge.bog.designsystem.components.list.ListItem>

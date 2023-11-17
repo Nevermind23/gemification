@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/payment_wizard_left_margin" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="65dp">
+    <FrameLayout android:id="@+id/item_contact_avatar_layout" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp">
+        <p341ge.bog.mobilebank.p975ui.views.lettertile.LetterTileView android:id="@+id/item_contact_letter_tile" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/item_contact_avatar" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    </FrameLayout>
+    <View android:id="@+id/item_contact_divider" android:background="@color/bog_white_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_toRightOf="@+id/item_contact_avatar_layout" android:layout_alignParentBottom="true" android:alpha="0.3"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/item_contact_avatar_layout" android:layout_above="@+id/item_contact_divider">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="@color/bog_white_color" android:id="@+id/item_contact_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:fontFamily="@font/bog_regular"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="@color/bog_white_color" android:id="@+id/item_contact_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:fontFamily="@font/bog_medium"/>
+    </LinearLayout>
+</RelativeLayout>

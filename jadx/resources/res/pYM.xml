@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/deposit_header_padding" android:paddingBottom="@dimen/spacing_24" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/color_invert_component_tr_50" android:layout_width="@dimen/skeleton_header_title_text_width" android:layout_height="@dimen/skeleton_header_title_text_height" android:layout_marginTop="@dimen/spacing_16"/>
+    <View android:background="@color/color_invert_component_tr_50" android:layout_width="@dimen/skeleton_header_value_text_width" android:layout_height="@dimen/skeleton_header_value_text_height" android:layout_marginTop="@dimen/spacing_8"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

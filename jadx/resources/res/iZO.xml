@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+    <include layout="@layout/layout_bog_input_layout"/>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="10sp" android:ellipsize="marquee" android:id="@+id/layout_text_input_underhint" android:layout_width="wrap_content" android:layout_height="@dimen/bog_input_layout_underhint_height" android:maxLines="2" android:fontFamily="@font/bog_medium"/>
+</LinearLayout>

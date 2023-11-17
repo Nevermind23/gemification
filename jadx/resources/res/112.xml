@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/ic_filter_calendar" android:scaleType="centerInside" app:tintType="0"/>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="11sp" android:textColor="@color/transfer_result_offload_congrats_txt_color" android:id="@+id/dateTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.3dp" android:includeFontPadding="false" android:fontFamily="@font/bog_medium" android:layout_marginStart="6.3dp"/>
+</LinearLayout>

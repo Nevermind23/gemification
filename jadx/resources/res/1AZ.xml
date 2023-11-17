@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_layer" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/text_group" android:background="@drawable/result_item_loan_amount_info_background" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/page_description">
+        <p341ge.bog.designsystem.components.textgroup.TextGroupView android:id="@+id/requested_amount" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <p341ge.bog.designsystem.components.textgroup.TextGroupView android:id="@+id/offer_amount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

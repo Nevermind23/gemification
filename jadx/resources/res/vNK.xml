@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/AppBarLayout">
+    <p341ge.bog.designsystem.components.toolbar.ToolbarView android:id="@+id/toolbar_new" android:layout_width="match_parent" android:layout_height="@dimen/height_toolbar" app:fillAnimation="true" app:fillColor="@color/color_invert_background_layer" app:navigationEnabled="true" style="@style/Toolbar"/>
+</com.google.android.material.appbar.AppBarLayout>

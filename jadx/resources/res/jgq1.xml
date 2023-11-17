@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/wizard_input_container" android:background="@color/color_invert_background_layer" android:paddingTop="@dimen/bog_input_dialog_padding" android:paddingBottom="@dimen/bog_input_dialog_padding" android:layout_width="match_parent" android:layout_height="@dimen/payment_wizard_input_layout_height">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogInputLayout android:layout_gravity="center" android:id="@+id/wizard_input_layout" android:paddingLeft="@dimen/bog_input_dialog_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bog_input_dialog_padding" app:backgroundLightColor="true" app:changeColorOnFocus="false" app:focusMeViewIgnored="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_24" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16">
+        <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/page_description" android:layout_width="wrap_content" android:layout_height="wrap_content" app:description_type="3" app:drawable_src="@drawable/img_deposit_prolongation" app:drawable_type="2"/>
+        <p341ge.bog.designsystem.components.inlinefeedback2.InlineFeedback2 android:id="@+id/inline_feedback" android:layout_width="match_parent" android:layout_height="wrap_content" app:icon_visible="true" app:status="1"/>
+        <p341ge.bog.designsystem.components.actioncard.ActionCardView android:id="@+id/initial_amount_interest" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16"/>
+        <p341ge.bog.designsystem.components.actioncard.ActionCardView android:id="@+id/initial_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16"/>
+        <p341ge.bog.designsystem.components.actioncard.ActionCardView android:id="@+id/lower_then_initial_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16"/>
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/dont_want_to_renew" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_24" app:button_type="19"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

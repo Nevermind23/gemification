@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/color_invert_background_layer" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.designsystem.components.toolbar.ToolbarView android:id="@+id/toolbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="@dimen/height_toolbar" app:navigationEnabled="false" app:title="@string/sso_choose_account_title" style="@style/Toolbar"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextBody1InvertComponents400Left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_xl" android:text="@string/sso_choose_company_header_title" android:paddingStart="@dimen/spacing_m" android:paddingEnd="@dimen/spacing_m"/>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/spacing_s" android:layout_weight="1" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/bottom_layer" android:background="?attr/color_invert_background_popup" android:layout_width="match_parent" android:layout_height="118dp" app:layerStyle="@style/LayerRadiusTop30Shadow0">
+        <include android:id="@+id/sign_in_bottom_layout" layout="@layout/sign_in_bottom_layout"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+</LinearLayout>

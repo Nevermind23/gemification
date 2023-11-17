@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:layout_gravity="center" android:id="@+id/icon_layer_view" android:background="@drawable/selector_button_action" android:padding="@dimen/spacing_16" android:duplicateParentState="true" android:layout_width="56dp" android:layout_height="56dp" app:layerStyle="@style/LayerRadius24Shadow0">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/action_button" android:duplicateParentState="true" android:layout_width="24dp" android:layout_height="24dp" app:tint="@color/selector_button_action_icon"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextCaption1InvertComponents400Left" android:ellipsize="end" android:gravity="center" android:id="@+id/action_type_text" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4" android:maxLines="2"/>
+</LinearLayout>

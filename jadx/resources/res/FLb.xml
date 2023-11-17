@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/gt_root" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_gravity="center" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="1" layout="@layout/toolbar"/>
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="match_parent" app:layerStyle="@style/LayerRadiusTop40Shadow20" app:layout_collapseMode="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.search.SearchView android:id="@+id/search_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_default_margin" android:layout_marginBottom="@dimen/margin_small" android:layout_marginStart="@dimen/item_default_margin" android:layout_marginEnd="@dimen/item_default_margin" app:search_hint="@string/gt_toolbar_search_company"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+</LinearLayout>

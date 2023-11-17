@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/drawable">
+        <shape android:shape="oval">
+            <solid android:color="?attr/color_invert_component_tr_5"/>
+            <size android:height="@dimen/spacing_32" android:width="@dimen/spacing_32"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:drawable="@drawable/icons_16_system_chevron_right"/>
+</layer-list>

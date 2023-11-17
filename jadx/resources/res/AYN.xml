@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/spacing_16" app:layout_constraintBottom_toTopOf="@+id/divider" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius16Shadow0">
+                <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="@dimen/spacing_8" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:id="@+id/card_animation_layout" android:layout_width="0dp" android:layout_height="0dp" android:layout_margin="@dimen/spacing_16" app:layout_constraintDimensionRatio="16:9" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                        <com.airbnb.lottie.LottieAnimationView android:id="@+id/card_background" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/thumbnail_16_9" app:lottie_autoPlay="true" app:lottie_loop="false"/>
+                        <p341ge.bog.designsystem.components.gyroanimation.GyroAnimationView android:id="@+id/gyro_animation_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    </FrameLayout>
+                    <TextView android:textAppearance="@style/TextH1" android:id="@+id/amount_text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/merchant_logo" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_chainStyle="2"/>
+                    <ImageView android:id="@+id/merchant_logo" android:layout_width="@dimen/gift_card_merchant_logo_size" android:layout_height="@dimen/gift_card_merchant_logo_size" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="@+id/card_animation_layout" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/amount_text"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/gift_card_store_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layout_constraintTop_toBottomOf="@+id/card_animation_layout">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/store_two_line_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                    <View android:id="@+id/number_divider" android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:layout_constraintTop_toBottomOf="@+id/gift_card_store_layout"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/number_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/number_divider">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/number_two_line_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                    <View android:id="@+id/owner_divider" android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:layout_constraintTop_toBottomOf="@+id/number_layout"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/owner_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/owner_divider">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/owner_two_line_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow0">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/details_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/amount_two_line_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                    <View android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/date_two_line_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                    <View android:id="@+id/date_divider" android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/validity_two_line_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </p341ge.bog.designsystem.components.list.ListItem>
+                    <p341ge.bog.designsystem.components.inlinefeedback2.InlineFeedback2 android:id="@+id/feedback" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="12dp" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                </LinearLayout>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/card_picker_layer_container" android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" android:layout_marginVertical="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow0">
+                <p341ge.bog.designsystem.components.creditcardsmallpicker.CreditCardSmallPickerView android:id="@+id/card_picker" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_16"/>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BigDividerView android:id="@+id/divider" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" app:layout_constraintBottom_toTopOf="@+id/terms_check_layout"/>
+    <FrameLayout android:id="@+id/terms_check_layout" android:background="@color/color_invert_background_layer" android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16" app:layout_constraintBottom_toTopOf="@+id/purchase_button">
+        <p341ge.bog.designsystem.components.checkbox.CheckboxView android:id="@+id/terms_check" android:layout_width="match_parent" android:layout_height="wrap_content" app:checkbox_type="1"/>
+    </FrameLayout>
+    <p341ge.bog.designsystem.components.fixedbutton.FixedButtonView android:id="@+id/purchase_button" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+    <View android:id="@+id/cover" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

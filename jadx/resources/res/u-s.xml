@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.mobilebank.p975ui.views.widgets.TextTypeView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="@dimen/item_default_margin" android:layout_width="match_parent" android:layout_height="wrap_content" app:isEditable="false" app:separator="400" app:view_color="@color/banner_text_color_grey"/>

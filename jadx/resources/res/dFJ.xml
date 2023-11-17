@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius12Shadow0">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/empty_widget" android:layout_width="match_parent" android:layout_height="match_parent">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/icon_layer_view" android:layout_width="@dimen/lifestyle_offers_empty_widget_left_layer_size" android:layout_height="@dimen/lifestyle_offers_empty_widget_left_layer_size" app:layerStyle="@style/LayerRadiusCircleShadow0">
+                <ImageView android:layout_gravity="center" android:id="@+id/image_view" android:layout_width="@dimen/lifestyle_offers_empty_widget_left_image_size" android:layout_height="@dimen/lifestyle_offers_empty_widget_left_image_size" android:src="@drawable/icons_16_general_offer"/>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        </p341ge.bog.designsystem.components.emptywidget.EmptyWidget>
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/all_offers_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:button_type="1"/>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

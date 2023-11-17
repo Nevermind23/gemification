@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="@dimen/spacing_4" android:paddingBottom="@dimen/spacing_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" android:paddingVertical="@dimen/spacing_4" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+    <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="@style/TextBody2" android:textColor="@color/color_invert_component_tr_200" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="@style/TextSmallTitle1" android:textColor="@color/color_invert_component_solid_500" android:id="@+id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</p341ge.bog.designsystem.components.list.ListItem>

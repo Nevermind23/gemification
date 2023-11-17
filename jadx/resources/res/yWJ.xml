@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/instant_option" layout="@layout/item_instant_delivery_option"/>
+    <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+    <include android:id="@+id/standard_option" layout="@layout/item_instant_delivery_option"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

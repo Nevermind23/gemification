@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="@dimen/map_sliding_layout_panel_height">
+        <FrameLayout android:layout_gravity="right" android:paddingLeft="@dimen/item_default_margin" android:paddingTop="@dimen/spacing_8" android:paddingRight="@dimen/item_default_margin" android:paddingBottom="@dimen/item_default_margin" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/filtration_close_button" android:layout_width="@dimen/map_close_button_size" android:layout_height="@dimen/map_close_button_size" android:src="@drawable/icons_24_system_close" android:tint="@color/color_invert_component_tr_150"/>
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="18sp" android:textColor="@color/filtration_title_gray" android:paddingLeft="@dimen/map_sliding_menu_side_padding" android:paddingRight="@dimen/map_sliding_menu_side_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/button_text_filtration" android:fontFamily="@font/bog_headline_light"/>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:paddingLeft="@dimen/map_sliding_menu_side_padding" android:paddingRight="@dimen/map_sliding_menu_side_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+            <FrameLayout android:id="@+id/filtration_city_layout" android:background="?attr/selectableItemBackground" android:paddingTop="5dp" android:paddingBottom="5dp" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextBody1" android:textColor="@color/filtration_dark_gray" android:id="@+id/filtration_city_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="@string/map_filtration_choose_city" android:maxLines="1" android:singleLine="true" android:drawableRight="@drawable/ic_trianle_drop_down" android:fontFamily="@font/bog_medium"/>
+                <View android:layout_gravity="bottom" android:background="@color/filtration_title_gray" android:layout_width="match_parent" android:layout_height="1px"/>
+            </FrameLayout>
+            <View android:layout_width="0dp" android:layout_height="1px" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:background="@color/filtration_title_gray" android:layout_width="match_parent" android:layout_height="1px"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/euro_atm_check_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/filtration_item_height">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/euro_atm_check_image" android:background="@drawable/circle_image_background" android:layout_width="@dimen/filtration_image_size" android:layout_height="@dimen/filtration_image_size" android:scaleX="-1" android:layout_marginStart="16dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextBody1" android:textColor="@color/color_invert_component_tr_300" android:gravity="center_vertical" android:id="@+id/euro_atm_check_title" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/euro_banknotes" android:maxLines="1" android:singleLine="true" android:layout_marginStart="@dimen/filtration_title_left_margin" android:layout_marginEnd="16dp"/>
+        <View android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/filtration_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

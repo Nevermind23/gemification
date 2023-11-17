@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <p341ge.bog.mobilebank.cleanarch.presentation.common.StateView android:id="@+id/state_view" android:layout_width="match_parent" android:layout_height="match_parent" app:contentViewId="@+id/content_layout" app:errorViewId="@+id/error_layout" app:loadingViewId="@+id/loading_layout">
+        <FrameLayout android:id="@+id/content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius12Shadow20">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/transfer_list_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <androidx.recyclerview.widget.RecyclerView android:id="@+id/transfer_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                        </LinearLayout>
+                    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+                    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius12Shadow20">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" android:layout_marginVertical="@dimen/spacing_16">
+                            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextButton1InvertComponents400Left" android:gravity="center_vertical" android:id="@+id/transfer_number_title" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/spacing_16" style="@style/SingleLine.EllipsizeEnd"/>
+                            <p341ge.bog.designsystem.components.input.Input android:id="@+id/transfer_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_16" app:input_button_text="@string/button_text_check" app:input_type="0"/>
+                        </LinearLayout>
+                    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+                    <include android:id="@+id/bannerView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="132dp" android:layout_marginTop="@dimen/spacing_16" android:layout_marginStart="@dimen/spacing_16" android:layout_marginEnd="@dimen/spacing_16" layout="@layout/banner_layout"/>
+                </LinearLayout>
+            </ScrollView>
+            <FrameLayout android:id="@+id/progress_bar" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/loading_layout" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/error_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/error_text" android:layout_width="match_parent" android:layout_height="wrap_content" app:drawable_src="@drawable/icons_48_system_error_outline" app:drawable_tint="?attr/color_primary_solid_df_500" app:drawable_type="1"/>
+            <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/refresh_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_m" android:layout_marginTop="@dimen/spacing_xs" android:layout_marginRight="@dimen/spacing_m" android:layout_marginHorizontal="@dimen/spacing_m" app:button_type="1"/>
+        </LinearLayout>
+    </p341ge.bog.mobilebank.cleanarch.presentation.common.StateView>
+</LinearLayout>

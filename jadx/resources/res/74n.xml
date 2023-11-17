@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="@dimen/payment_wizard_left_margin" android:paddingRight="@dimen/payment_wizard_left_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="@color/color_white_tr_400" android:id="@+id/key_value_item_value" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/TextH4InvertComponents400Left"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:id="@+id/key_value_item_divider" android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

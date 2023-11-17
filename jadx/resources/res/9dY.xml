@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="14sp" android:textColor="@color/dark_text_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/otp_wizard_recover_send_again_disabled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_text_send_again" android:fontFamily="@font/bog_medium"/>
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/try_again_container" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="14sp" android:textColor="?attr/colorPrimary" android:gravity="center_vertical" android:id="@+id/otp_wizard_recover_send_again" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/common_text_send_again" android:maxLines="1" android:fontFamily="@font/bog_medium"/>
+    </FrameLayout>
+</merge>

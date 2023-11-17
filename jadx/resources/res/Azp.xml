@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/holder" android:paddingTop="@dimen/spacing_12" android:paddingBottom="@dimen/spacing_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/spacing_12">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@drawable/bg_category_child_border" android:layout_width="@dimen/category_child_icon_size" android:layout_height="@dimen/category_child_icon_size" app:layerStyle="@style/LayerRadiusCircleShadow0">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/icon" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/thumbnail_circle"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <TextView android:textAppearance="@style/TextBody1" android:textColor="?attr/color_invert_component_tr_400" android:id="@+id/text" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/TwoLine.EllipsizeEnd"/>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icons_16_system_chevron_right" android:tint="?attr/color_black_solid_100"/>
+</p341ge.bog.designsystem.components.list.ListItem>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="@dimen/spacing_m" android:paddingTop="@dimen/spacing_s" android:paddingRight="@dimen/spacing_m" android:paddingBottom="@dimen/spacing_m" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_m">
+    <p341ge.bog.designsystem.components.input.Input android:id="@+id/email_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_m" android:inputType="textEmailAddress" app:hint="@string/common_text_email" app:input_type="0"/>
+    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/confirm_button" android:layout_width="match_parent" android:layout_height="wrap_content" app:button_type="0"/>
+</LinearLayout>

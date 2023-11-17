@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:fillAfter="true">
+    <objectAnimator android:interpolator="@android:interpolator/fast_out_slow_in" android:duration="300" android:valueFrom="1.0f" android:valueTo="0.0f" android:valueType="floatType" android:propertyName="trimPathStart"/>
+</set>

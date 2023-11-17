@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_popup" android:paddingTop="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingVertical="@dimen/spacing_16">
+    <p341ge.bog.designsystem.components.list.ListItem android:paddingTop="@dimen/spacing_8" android:paddingBottom="@dimen/spacing_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/spacing_8">
+        <p341ge.bog.designsystem.components.notificationbadges.NotificationBadgeView android:id="@+id/first_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" app:badge_color="@color/color_positive_tr_400" app:badge_type="2"/>
+        <TextView android:textAppearance="@style/TextBody1" android:textColor="@color/color_invert_component_solid_500" android:id="@+id/first_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <p341ge.bog.designsystem.components.list.ListItem android:paddingTop="@dimen/spacing_8" android:paddingBottom="@dimen/spacing_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/spacing_8">
+        <p341ge.bog.designsystem.components.notificationbadges.NotificationBadgeView android:id="@+id/second_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" app:badge_color="@color/color_positive_tr_400" app:badge_type="2"/>
+        <TextView android:textAppearance="@style/TextBody1" android:textColor="@color/color_invert_component_solid_500" android:id="@+id/second_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <p341ge.bog.designsystem.components.list.ListItem android:paddingTop="@dimen/spacing_8" android:paddingBottom="@dimen/spacing_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/spacing_8">
+        <p341ge.bog.designsystem.components.notificationbadges.NotificationBadgeView android:id="@+id/third_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" app:badge_color="@color/color_positive_tr_400" app:badge_type="2"/>
+        <TextView android:textAppearance="@style/TextBody1" android:textColor="@color/color_invert_component_solid_500" android:id="@+id/third_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <p341ge.bog.designsystem.components.list.ListItem android:paddingTop="@dimen/spacing_8" android:paddingBottom="@dimen/spacing_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:paddingVertical="@dimen/spacing_8">
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@drawable/bg_circle_border_color_invert_component_tr_5" android:layout_width="@dimen/common_icon_layer_medium_size" android:layout_height="@dimen/common_icon_layer_medium_size" app:layerStyle="@style/LayerRadiusCircleShadow0">
+            <ImageView android:layout_gravity="center" android:id="@+id/police_icon_image" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/ic_police"/>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        <TextView android:textAppearance="@style/TextBody1" android:textColor="@color/color_invert_component_tr_400" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/police_department"/>
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/call_police_button" android:background="?attr/color_primary_tr_25" android:layout_width="@dimen/common_icon_layer_medium_size" android:layout_height="@dimen/common_icon_layer_medium_size" app:layerStyle="@style/LayerRadiusCircleShadow0">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/common_icon_medium_size" android:layout_height="@dimen/common_icon_medium_size" android:src="@drawable/icons_48_contacts_call_fill" app:tint="?attr/color_primary_solid_df_500"/>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+    <p341ge.bog.designsystem.components.list.ListItem android:paddingTop="@dimen/spacing_8" android:paddingBottom="@dimen/spacing_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/spacing_8">
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@drawable/bg_circle_border_color_invert_component_tr_5" android:layout_width="@dimen/common_icon_layer_medium_size" android:layout_height="@dimen/common_icon_layer_medium_size" app:layerStyle="@style/LayerRadiusCircleShadow0">
+            <ImageView android:layout_gravity="center" android:id="@+id/provider_icon_image" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        <TextView android:textAppearance="@style/TextBody1" android:textColor="@color/color_invert_component_tr_400" android:id="@+id/provider_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/call_provider_button" android:background="?attr/color_primary_tr_25" android:layout_width="@dimen/common_icon_layer_medium_size" android:layout_height="@dimen/common_icon_layer_medium_size" app:layerStyle="@style/LayerRadiusCircleShadow0">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/common_icon_medium_size" android:layout_height="@dimen/common_icon_medium_size" android:src="@drawable/icons_48_contacts_call_fill" app:tint="?attr/color_primary_solid_df_500"/>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    </p341ge.bog.designsystem.components.list.ListItem>
+</LinearLayout>

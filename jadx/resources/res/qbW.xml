@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.mobilebank.cleanarch.presentation.common.StateView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/state_view" android:layout_width="match_parent" android:layout_height="match_parent" app:contentViewId="@+id/content" app:errorViewId="@+id/layout_error" app:loadingViewId="@+id/loading_content">
+    <androidx.core.widget.NestedScrollView android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius12Shadow0">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/empty_widget_accounts" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <p341ge.bog.designsystem.components.creditcardsmallpicker.CreditCardSmallPickerView android:id="@+id/card_picker_account" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                </LinearLayout>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius12Shadow0">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/empty_widget_nickname" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" app:empty_widget_enable_multi_line_sub_title="true" app:empty_widget_enable_twoLine_text="true"/>
+                    <p341ge.bog.designsystem.components.input.Input android:id="@+id/input_nickname" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_8" android:layout_marginHorizontal="@dimen/spacing_16"/>
+                    <p341ge.bog.designsystem.components.strength.StrengthView android:id="@+id/strength_nickname" android:layout_width="match_parent" android:layout_height="wrap_content" app:strength_progress_visible="false"/>
+                    <p341ge.bog.designsystem.components.checkbox.CheckboxView android:id="@+id/check_box_conditions" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:checkbox_type="1"/>
+                    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/btn_generate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_16" app:button_type="0"/>
+                </LinearLayout>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/loading_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.loading.LoadingView android:layout_width="match_parent" android:layout_height="wrap_content" app:item_count="1" app:item_layout="@layout/skeleton_p2p_link_sharing"/>
+    </LinearLayout>
+</p341ge.bog.mobilebank.cleanarch.presentation.common.StateView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <p341ge.bog.designsystem.components.list.SingleLineTextItem android:textAppearance="@style/TextBody1" android:id="@+id/contact" android:layout_width="match_parent" android:layout_height="wrap_content" app:multiline_text="true" app:text_color="@color/color_invert_component_tr_400"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/call_btn" android:background="@drawable/oval_bg_primary_solid_25" android:padding="@dimen/oval_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_16_contacts_call" app:tint="?attr/color_primary_solid_df_500"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <View android:id="@+id/divider" android:background="@color/color_invert_component_tr_25" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+</LinearLayout>

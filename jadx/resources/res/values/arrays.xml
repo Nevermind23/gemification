@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bonus_points_provider_services">
+        <item>@string/product_details_bonus_exchange_utility_payments</item>
+        <item>@string/product_details_bonus_exchange_mobile</item>
+    </array>
+    <array name="cardSwipeRightColors">
+        <item>@color/swipe_menu_delete_item_color</item>
+    </array>
+    <array name="cardSwipeRightDrawables">
+        <item>@drawable/ic_swipe_delete</item>
+    </array>
+    <array name="cardSwipeRightTextColors">
+        <item>@color/swipe_menu_item_text_white_color</item>
+    </array>
+    <array name="cardSwipeRightTexts">
+        <item>@string/template_swipe_menu_delete</item>
+    </array>
+    <array name="crypto_fingerprint_fallback_prefixes">
+        <item>SM-G95</item>
+        <item>SM-G96</item>
+        <item>SM-G97</item>
+        <item>SM-N95</item>
+        <item>SM-N96</item>
+        <item>SM-N97</item>
+        <item>SM-A20</item>
+    </array>
+    <array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </array>
+    <array name="express_points_exchange_services">
+        <item>@string/product_details_bonus_exchange_to_mr</item>
+        <item>@string/product_details_bonus_exchange_utility_payments</item>
+        <item>@string/product_details_bonus_exchange_mobile</item>
+        <item>@string/product_details_bonus_exchange_transport</item>
+    </array>
+    <array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-G97</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SM-N97</item>
+        <item>SC-01M</item>
+        <item>SCV45</item>
+    </array>
+    <array name="md_ambient_shadow_drawables_z18">
+        <item>@null</item>
+        <item>@drawable/md_ambient_shadow_z1_x2</item>
+        <item>@drawable/md_ambient_shadow_z2_x2</item>
+        <item>@drawable/md_ambient_shadow_z3_x2</item>
+        <item>@drawable/md_ambient_shadow_z4_x2</item>
+        <item>@drawable/md_ambient_shadow_z5_x2</item>
+        <item>@drawable/md_ambient_shadow_z6_x2</item>
+        <item>@drawable/md_ambient_shadow_z7_x2</item>
+        <item>@drawable/md_ambient_shadow_z8_x2</item>
+        <item>@drawable/md_ambient_shadow_z9_x2</item>
+        <item>@drawable/md_ambient_shadow_z10_x2</item>
+        <item>@drawable/md_ambient_shadow_z11_x2</item>
+        <item>@drawable/md_ambient_shadow_z12_x2</item>
+        <item>@drawable/md_ambient_shadow_z13_x2</item>
+        <item>@drawable/md_ambient_shadow_z14_x2</item>
+        <item>@drawable/md_ambient_shadow_z15_x2</item>
+        <item>@drawable/md_ambient_shadow_z16_x2</item>
+        <item>@drawable/md_ambient_shadow_z17_x2</item>
+        <item>@drawable/md_ambient_shadow_z18_x2</item>
+    </array>
+    <array name="md_spot_shadow_drawables_z18">
+        <item>@null</item>
+        <item>@drawable/md_spot_shadow_z1_x2</item>
+        <item>@drawable/md_spot_shadow_z2_x2</item>
+        <item>@drawable/md_spot_shadow_z3_x2</item>
+        <item>@drawable/md_spot_shadow_z4_x2</item>
+        <item>@drawable/md_spot_shadow_z5_x2</item>
+        <item>@drawable/md_spot_shadow_z6_x2</item>
+        <item>@drawable/md_spot_shadow_z7_x2</item>
+        <item>@drawable/md_spot_shadow_z8_x2</item>
+        <item>@drawable/md_spot_shadow_z9_x2</item>
+        <item>@drawable/md_spot_shadow_z10_x2</item>
+        <item>@drawable/md_spot_shadow_z11_x2</item>
+        <item>@drawable/md_spot_shadow_z12_x2</item>
+        <item>@drawable/md_spot_shadow_z13_x2</item>
+        <item>@drawable/md_spot_shadow_z14_x2</item>
+        <item>@drawable/md_spot_shadow_z15_x2</item>
+        <item>@drawable/md_spot_shadow_z16_x2</item>
+        <item>@drawable/md_spot_shadow_z17_x2</item>
+        <item>@drawable/md_spot_shadow_z18_x2</item>
+    </array>
+    <array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+    <array name="notification_left_swipe_menu_colors">
+        <item>@color/swipe_menu_item_1</item>
+    </array>
+    <array name="notification_left_swipe_menu_icons">
+        <item>@drawable/swipe_mark</item>
+    </array>
+    <array name="notification_left_swipe_menu_icons_color">
+        <item>@color/swipe_menu_item_icon_tint_color</item>
+    </array>
+    <array name="notification_left_swipe_menu_txt_colors">
+        <item>@color/swipe_menu_item_text_color</item>
+    </array>
+    <array name="notification_left_swipe_menu_txts">
+        <item>@string/notifications_mark_as_unread</item>
+    </array>
+    <array name="notification_right_swipe_menu_colors">
+        <item>@color/swipe_menu_delete_item_color</item>
+    </array>
+    <array name="notification_right_swipe_menu_icons">
+        <item>@drawable/ic_swipe_delete</item>
+    </array>
+    <array name="notification_right_swipe_menu_txt_colors">
+        <item>@color/swipe_menu_item_text_white_color</item>
+    </array>
+    <array name="notification_right_swipe_menu_txts">
+        <item>@string/notifications_delete_notification</item>
+    </array>
+    <array name="plus_points_exchange_services">
+        <item>@string/product_details_bonus_exchange_utility_payments</item>
+        <item>@string/product_details_bonus_exchange_mobile</item>
+        <item>@string/product_details_bonus_exchange_transport</item>
+    </array>
+    <array name="rightColors">
+        <item>?attr/color_primary_solid_5</item>
+        <item>?attr/color_primary_solid_25</item>
+    </array>
+    <array name="rightDrawables">
+        <item>@drawable/icons_24_system_star_outline</item>
+        <item>@drawable/icons_24_system_log_in</item>
+    </array>
+    <array name="rightTexts">
+        <item>@string/customer_devices_swipe_button_trust_text</item>
+        <item>@string/customer_devices_swipe_button_exit_text</item>
+    </array>
+    <array name="shortcut_types_authorized">
+        <item>@null</item>
+        <item>2</item>
+        <item>13</item>
+        <item>11</item>
+        <item>3</item>
+        <item>4</item>
+        <item>14</item>
+        <item>5</item>
+        <item>6</item>
+        <item>9</item>
+        <item>10</item>
+        <item>8</item>
+    </array>
+    <array name="swipe_menu_background_colors">
+        <item>@color/swipe_menu_item_1</item>
+        <item>@color/swipe_menu_item_2</item>
+        <item>@color/swipe_menu_item_3</item>
+        <item>@color/swipe_menu_item_4</item>
+    </array>
+</resources>

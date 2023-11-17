@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" app:layerStyle="@style/LayerRadius24Shadow0">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/amount_badge_container" android:background="@drawable/selector_amount_sign_badge_background" android:duplicateParentState="true" android:layout_width="@dimen/amount_sign_badge_width_big" android:layout_height="@dimen/amount_sign_badge_height_big">
+        <TextView android:textAppearance="@style/TextH3InvertComponents400Left" android:textColor="@color/selector_amount_sign_badge_text_color" android:gravity="center" android:id="@+id/amount_badge_big_sign_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <View android:id="@+id/click_catcher" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

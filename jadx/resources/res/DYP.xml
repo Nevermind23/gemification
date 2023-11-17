@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_layer" android:paddingLeft="@dimen/spacing_16" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16" app:layerStyle="@style/LayerRadiusTop12Shadow0">
+    <LinearLayout android:orientation="vertical" android:id="@+id/no_email_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.inlinefeedback.InlineFeedback android:id="@+id/no_email_feedback" android:layout_width="match_parent" android:layout_height="wrap_content" app:state="1" app:type="linear"/>
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/add_email_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8" app:button_icon="@drawable/icons_24_system_add" app:button_type="2"/>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

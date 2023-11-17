@@ -1,0 +1,21 @@
+{
+  "appVersion": "451",
+  "features": [
+    {
+      "featureId": "P2P_LINK_1",
+      "titleResName": "text.p2p.link.release.note.hd.p1",
+      "descriptionResName": "text.p2p.link.release.note.desc.p1",
+      "buttonResName": "text.p2p.link.release.note.btn.p1",
+      "imageResName": "pic_1",
+      "isAnimation": false
+    },
+    {
+      "featureId": "P2P_LINK_2",
+      "titleResName": "text.p2p.link.release.note.hd.p2",
+      "descriptionResName": "text.p2p.link.release.note.desc.p2",
+      "buttonResName": "text.p2p.link.release.note.btn.p2",
+      "imageResName": "pic_2",
+      "isAnimation": false
+    }
+  ]
+}

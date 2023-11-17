@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/remittance_item_icon_layer" android:background="@drawable/remittance_provider_item_icon_circle" android:padding="@dimen/spacing_8" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadiusCircleShadow0">
+        <ImageView android:id="@+id/remittance_item_icon" android:layout_width="@dimen/icon_size_40" android:layout_height="@dimen/icon_size_40"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <TextView android:textAppearance="@style/TextCaption1InvertComponents400Left" android:gravity="center" android:id="@+id/remittance_item_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_4"/>
+</LinearLayout>

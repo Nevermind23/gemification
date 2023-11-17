@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.productcards.AccountCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_horizontal" android:id="@+id/account_wide_card" android:layout_width="match_parent" android:layout_height="match_parent" app:account_card_theme="1" app:card_shape="0" app:is_badge_visible="true" app:title="wide"/>

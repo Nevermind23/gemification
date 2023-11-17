@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/two_line_text_item" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:multiline_text="true"/>
+    <p341ge.bog.designsystem.components.buttons.Button android:layout_gravity="center_vertical" android:id="@+id/share_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:backgroundTint="?attr/color_invert_component_tr_25" app:button_icon="@drawable/icons_24_system_share_ios" app:button_icon_tint="?attr/color_invert_component_tr_400" app:button_type="9"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

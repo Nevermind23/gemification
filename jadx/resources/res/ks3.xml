@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/color_invert_background_layer" android:paddingTop="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/spacing_16" app:layerStyle="@style/LayerRadius12Shadow0">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textColor="?attr/color_invert_component_tr_400" android:id="@+id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_negative_8" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" style="@style/TextBody2"/>
+            <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/recycler_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            <p341ge.bog.designsystem.components.categorycard.CategoryCardView android:id="@+id/single_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:category_card_type="0"/>
+        </LinearLayout>
+    </FrameLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

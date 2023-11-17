@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/$facetec_animated_activity_indicator_vector_drawable__0">
+    <target android:name="backCircleGroup" android:animation="@drawable/$facetec_animated_activity_indicator_vector_drawable__1"/>
+    <target android:name="backCircleGroup" android:animation="@drawable/$facetec_animated_activity_indicator_vector_drawable__2"/>
+    <target android:name="backCirclePath" android:animation="@drawable/$facetec_animated_activity_indicator_vector_drawable__3"/>
+    <target android:name="frontCircleGroup" android:animation="@drawable/$facetec_animated_activity_indicator_vector_drawable__4"/>
+    <target android:name="frontCircleGroup" android:animation="@drawable/$facetec_animated_activity_indicator_vector_drawable__5"/>
+    <target android:name="frontCirclePath" android:animation="@drawable/$facetec_animated_activity_indicator_vector_drawable__6"/>
+</animated-vector>

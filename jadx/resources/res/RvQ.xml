@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/icons_16_system_more_horizontal" android:id="@+id/more_menu_item" android:orderInCategory="100" android:title="@string/more" app:actionProviderClass="ge.bog.designsystem.components.toolbar.IconActionButtonProvider" app:showAsAction="always"/>
+</menu>

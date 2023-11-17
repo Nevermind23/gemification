@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.radiobutton.RadioButtonView android:enabled="false" android:layout_gravity="center" android:id="@+id/card_limit_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <p341ge.bog.designsystem.components.list.SingleLineTextItem android:id="@+id/card_limit_title" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+</LinearLayout>

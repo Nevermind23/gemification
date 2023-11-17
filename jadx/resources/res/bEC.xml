@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadiusTop40Shadow0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_xl">
+            <p341ge.bog.designsystem.components.buttonlist.ButtonListView android:id="@+id/statement_category_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:bottom_text="" app:button_text="@string/common_text_change" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:top_text="@string/common_text_user"/>
+            <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/page_description" android:layout_width="match_parent" android:layout_height="wrap_content" app:drawable_src="@drawable/icons_48_general_user_settings_fill" app:drawable_tint="?attr/color_primary_solid_df_500" app:drawable_type="1"/>
+            <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/change_username_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_m" android:layout_marginRight="@dimen/spacing_m" android:layout_marginHorizontal="@dimen/spacing_m" app:button_text="@string/sign_in_offer_change_username_action_button_text" app:button_type="0"/>
+        </LinearLayout>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+</ScrollView>

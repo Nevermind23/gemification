@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:height="16dp" android:width="16dp" android:viewportWidth="16" android:viewportHeight="16">
+    <group>
+        <clip-path android:pathData="M13.68,2C14.9613,2 16,3.0387 16,4.32L16,4.32L16,11.55C16,12.8313 14.9613,13.87 13.68,13.87L13.68,13.87L2.32,13.87C1.0387,13.87 0,12.8313 0,11.55L0,11.55L0,4.32C0,3.0387 1.0387,2 2.32,2L2.32,2ZM13.68,3.55L2.32,3.55C1.897,3.5554 1.5554,3.897 1.55,4.32L1.55,4.32L1.55,5.1L12.13,5.1C12.335,5.0973 12.5325,5.1775 12.6775,5.3225C12.8225,5.4675 12.9027,5.665 12.9,5.87C12.9027,6.0759 12.8227,6.2744 12.678,6.4209C12.5333,6.5675 12.336,6.65 12.13,6.65L12.13,6.65L1.55,6.65L1.55,11.55C1.55,11.9753 1.8947,12.32 2.32,12.32L2.32,12.32L13.68,12.32C14.1053,12.32 14.45,11.9753 14.45,11.55L14.45,11.55L14.45,4.32C14.4446,3.897 14.103,3.5554 13.68,3.55L13.68,3.55ZM5.94,9.23C6.3653,9.23 6.71,9.5747 6.71,10C6.71,10.4253 6.3653,10.77 5.94,10.77L5.94,10.77L3.87,10.77C3.4447,10.77 3.1,10.4253 3.1,10C3.1,9.5747 3.4447,9.23 3.87,9.23L3.87,9.23Z"/>
+        <path android:fillColor="#010101" android:pathData="M0,0h16v16h-16z" android:strokeColor="#00000000" android:strokeWidth="1" android:fillAlpha="0.92" android:fillType="1"/>
+    </group>
+</vector>

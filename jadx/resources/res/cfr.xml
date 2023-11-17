@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_64" android:layout_marginBottom="@dimen/spacing_48" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/select_raw"/>
+    <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/texts" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_16"/>
+    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/button" android:layout_width="match_parent" android:layout_height="wrap_content" app:button_type="0"/>
+</LinearLayout>

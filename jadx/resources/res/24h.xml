@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/identomat_main_navigation" app:startDestination="@+id/startFragment">
+    <fragment android:label="fragment_agreement" android:name="com.identomat.fragments.AgreementFragment" android:id="@+id/agreementFragment"/>
+    <fragment android:label="fragment_document_types" android:name="com.identomat.fragments.selectors.DocumentTypesFragment" android:id="@+id/documentTypesFragment"/>
+    <fragment android:label="fragment_upload_types" android:name="com.identomat.fragments.selectors.UploadTypesFragment" android:id="@+id/uploadTypesFragment"/>
+    <fragment android:label="fragment_scan_document" android:name="com.identomat.fragments.scan_document.ScanDocumentFragment" android:id="@+id/scanDocumentFragment"/>
+    <fragment android:label="fragment_liveness" android:name="com.identomat.fragments.liveness.LivenessFragment" android:id="@+id/livenessFragment"/>
+    <fragment android:label="fragment_upload_document" android:name="com.identomat.fragments.scan_document.UploadDocumentFragment" android:id="@+id/uploadDocumentFragment"/>
+    <fragment android:label="fragment_match_photo" android:name="com.identomat.fragments.liveness.MatchPhotoFragment" android:id="@+id/matchPhotoFragment"/>
+    <fragment android:label="fragment_start" android:name="com.identomat.fragments.StartFragment" android:id="@+id/startFragment"/>
+    <fragment android:label="fragment_hold_document" android:name="com.identomat.fragments.face_document.FaceDocumentFragment" android:id="@+id/holdDocumentFragment"/>
+    <fragment android:label="fragment_call" android:name="com.identomat.fragments.call.CallFragment" android:id="@+id/callFragment"/>
+    <fragment android:label="fragment_retry" android:name="com.identomat.fragments.RetryFragment" android:id="@+id/retryFragment"/>
+    <fragment android:label="fragment_camera_deny" android:name="com.identomat.fragments.CameraDenyFragment" android:id="@+id/cameraDenyFragment"/>
+    <fragment android:label="fragment_flow" android:name="com.identomat.fragments.call.FlowFragment" android:id="@+id/flowFragment"/>
+    <fragment android:label="cascading_fragment" android:name="com.identomat.fragments.liveness.cascading.CascadingFragment" android:id="@+id/cascadingFragment"/>
+</navigation>

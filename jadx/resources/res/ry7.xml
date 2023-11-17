@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="@dimen/spacing_m" android:paddingTop="@dimen/spacing_m" android:paddingRight="@dimen/spacing_m" android:paddingBottom="@dimen/spacing_xl" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/spacing_m">
+    <p341ge.bog.designsystem.components.inlinefeedback.InlineFeedback android:id="@+id/inline_feedback" android:layout_width="match_parent" android:layout_height="wrap_content" app:state="1" app:type="linear"/>
+    <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/add_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_m" app:button_text="@string/products_expired_button_add_account_again" app:button_type="12"/>
+</LinearLayout>

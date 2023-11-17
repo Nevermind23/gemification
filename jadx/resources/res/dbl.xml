@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_xs" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@+id/divider" app:layout_constraintTop_toTopOf="0"/>
+    <View android:id="@+id/divider" android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" app:layout_constraintBottom_toTopOf="@+id/fixed_button"/>
+    <p341ge.bog.designsystem.components.fixedbutton.FixedButtonView android:id="@+id/fixed_button" android:layout_width="match_parent" android:layout_height="wrap_content" app:fixed_button_text="@string/chat_selector_component_choose" app:layout_constraintBottom_toBottomOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

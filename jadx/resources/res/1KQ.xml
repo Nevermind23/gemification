@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground">
+    <p341ge.bog.designsystem.components.radiobutton.RadioButtonView android:id="@+id/radio_button" android:background="@android:color/transparent" android:layout_width="16dp" android:layout_height="16dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/company_icon" android:layout_width="32dp" android:layout_height="32dp"/>
+        <p341ge.bog.designsystem.components.list.SingleLineTextItem android:id="@+id/company_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_m"/>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.list.ListItem>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@+id/agree_button" app:layout_constraintTop_toTopOf="0">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextBody2" android:textColor="?attr/color_invert_component_solid_500" android:id="@+id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_4" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_4" android:layout_marginHorizontal="@dimen/spacing_16" android:layout_marginVertical="@dimen/spacing_4"/>
+    </androidx.core.widget.NestedScrollView>
+    <p341ge.bog.designsystem.components.fixedbutton.FixedButtonCheckboxView android:id="@+id/agree_button" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

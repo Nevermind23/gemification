@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="62dp">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="61.5dp" android:layout_marginLeft="@dimen/item_default_margin" android:layout_marginRight="@dimen/item_default_margin">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="?attr/color_white_solid_df_500" android:id="@+id/key_value_item_key" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextTitle2"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="?attr/color_white_solid_df_500" android:ellipsize="marquee" android:id="@+id/key_value_item_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/TextSubtitle2InvertComponents400Left"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/bog_input_layout_et_right_drawable" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="32dp" android:layout_height="32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/key_value_item_divider" android:background="?attr/color_white_tr_300" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

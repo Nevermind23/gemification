@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/solo_application_nav_graph" app:startDestination="@+id/applicationNavigatorFragment">
+    <dialog android:name="p341ge.bog.mobilebank.categorypackages.presentation.application.navigator.ApplicationNavigatorFragment" android:id="@+id/applicationNavigatorFragment">
+        <action android:id="@+id/action_applicationNavigatorFragment_to_applicationFirstStageFragment" app:destination="@+id/applicationFirstStageFragment" app:popUpTo="@+id/solo_application_nav_graph" app:popUpToInclusive="true"/>
+        <action android:id="@+id/action_applicationNavigatorFragment_to_applicationSecondStageFragment" app:destination="@+id/applicationSecondStageFragment" app:popUpTo="@+id/solo_application_nav_graph" app:popUpToInclusive="true"/>
+        <action android:id="@+id/action_applicationNavigatorFragment_to_applicationResultScreenFragment" app:destination="@+id/applicationResultScreenFragment" app:popUpTo="@+id/solo_application_nav_graph" app:popUpToInclusive="true"/>
+    </dialog>
+    <fragment android:name="p341ge.bog.mobilebank.categorypackages.presentation.application.firststage.FirstStageFragment" android:id="@+id/applicationFirstStageFragment">
+        <action android:id="@+id/action_applicationFirstStageFragment_to_applicationSecondStageFragment" app:destination="@+id/applicationSecondStageFragment"/>
+        <action android:id="@+id/action_applicationFirstStageFragment_applicationNavigatorFragment" app:destination="@+id/applicationNavigatorFragment"/>
+    </fragment>
+    <fragment android:name="p341ge.bog.mobilebank.categorypackages.presentation.application.secondstage.SecondStageFragment" android:id="@+id/applicationSecondStageFragment">
+        <action android:id="@+id/action_applicationSecondStageFragment_applicationNavigatorFragment" app:destination="@+id/applicationNavigatorFragment"/>
+    </fragment>
+    <fragment android:label="ApplicationResultFragment" android:name="p341ge.bog.mobilebank.categorypackages.presentation.application.result.ApplicationResultFragment" android:id="@+id/applicationResultScreenFragment"/>
+</navigation>

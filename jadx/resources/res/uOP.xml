@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/benef_link_layer" android:background="?attr/color_invert_background_layer" android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/spacing_8" android:paddingRight="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextBody1" android:textColor="?attr/color_invert_component_tr_400" android:id="@+id/info_link_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextBody1" android:textColor="?attr/color_primary_solid_df_500" android:id="@+id/info_link_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bog_medium" android:layout_marginEnd="@dimen/spacing_4"/>
+            <ImageView android:id="@+id/info_link_icon" android:layout_width="10dp" android:layout_height="10dp" android:src="@drawable/icons_16_system_external" app:tint="?attr/color_primary_solid_df_500"/>
+        </LinearLayout>
+        <View android:id="@+id/divider" android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginTop="@dimen/spacing_8"/>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="@dimen/spacing_xl" android:paddingBottom="@dimen/spacing_xl" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/spacing_xl">
+    <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/alternatives_description" android:layout_width="match_parent" android:layout_height="wrap_content" app:description_type="1"/>
+    <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/pause_item" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_l">
+        <p341ge.bog.designsystem.components.buttons.Button android:layout_width="match_parent" android:layout_height="match_parent" app:button_icon="@drawable/icons_24_system_timer_outline" app:button_type="9"/>
+        <p341ge.bog.designsystem.components.list.SingleLineTextItem android:id="@+id/pause_label" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <p341ge.bog.designsystem.components.common.EmptyView android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <View android:id="@+id/pause_divider" style="@style/PiggyBankListItemDivider"/>
+    <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/change_amount_item" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.buttons.Button android:layout_width="match_parent" android:layout_height="match_parent" app:button_icon="@drawable/icons_24_payment_transfer_payment" app:button_type="9"/>
+        <p341ge.bog.designsystem.components.list.SingleLineTextItem android:id="@+id/amount_label" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <View style="@style/PiggyBankListItemDivider"/>
+    <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/close_item" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/close_icon_button" android:layout_width="match_parent" android:layout_height="match_parent" app:button_icon="@drawable/icons_24_system_delete" app:button_icon_tint="@color/color_negative_solid_df_500" app:button_type="9"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextBody1Negative500Left" android:id="@+id/close_label" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+</androidx.appcompat.widget.LinearLayoutCompat>

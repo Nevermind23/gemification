@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:padding="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="15sp" android:textColor="@color/dark_text_color_333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plus_activation_dialog_title" android:fontFamily="@font/bog_headline_medium"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@color/dark_text_color_333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/plus_activation_dialog_special_offer" android:fontFamily="@font/bog_regular"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:padding="16dp" android:paddingTop="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogButton android:textSize="13.5sp" android:id="@+id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="36dp" android:text="@string/button_text_cancel" android:fontFamily="@font/bog_headline_medium"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogButton android:textSize="13.5sp" android:gravity="center" android:id="@+id/more_btn" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="@dimen/bog_button_height" android:text="@string/plus_activation_dialog_more_btn" android:fontFamily="@font/bog_headline_medium" app:isActive="true"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+package p847oq;
+
+/* renamed from: oq.a */
+public enum C27056a {
+    CONTACT_NUMBER,
+    EMAIL,
+    WORK_PLACE,
+    MONTHLY_INCOME,
+    DEPOSIT_PROMPT,
+    DEPOSIT_AMOUNT,
+    SOLO_LOUNGE,
+    SOLO_LOUNGE_CITY,
+    SOLO_LOUNGE_REGION,
+    SOLO_LOUNGE_BRANCH,
+    PAYMENT_TYPE
+}

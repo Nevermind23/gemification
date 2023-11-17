@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/animation_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="bottom" android:id="@+id/ic_26_may_flag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/campaign_logo_bottom_offset" android:src="@drawable/ic_26_may_flag" android:scaleType="fitEnd"/>
+        <View android:id="@+id/launcher_white_bg" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:layout_gravity="right" android:id="@+id/launcher_space_object" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100dp" android:layout_marginRight="20dp"/>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/launcher_logo_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/launcher_logo_margin" android:layout_marginRight="@dimen/launcher_logo_margin">
+            <FrameLayout android:layout_gravity="center" android:id="@+id/launcher_logo_holder" android:layout_width="@dimen/launcher_logo_size" android:layout_height="@dimen/launcher_logo_size">
+                <ImageView android:id="@+id/launcher_logo_light" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_wide_logo_light" android:adjustViewBounds="true"/>
+                <ImageView android:id="@+id/launcher_logo_dark" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_wide_logo_dark" android:adjustViewBounds="true"/>
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/launcher_solo_logo_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/launcher_logo_margin" android:layout_marginRight="@dimen/launcher_logo_margin">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_gravity="center" android:id="@+id/launcher_solo_logo_holder" android:layout_width="@dimen/launcher_logo_solo_size" android:layout_height="@dimen/launcher_logo_solo_size">
+                    <ImageView android:id="@+id/launcher_solo_logo_light" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_wide_logo_light" android:adjustViewBounds="true"/>
+                    <ImageView android:id="@+id/launcher_solo_logo_dark" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_solo_background_logo" android:adjustViewBounds="true" android:alpha="0"/>
+                </FrameLayout>
+                <ImageView android:id="@+id/launcher_solo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="20dp" android:layout_marginRight="50dp" android:src="@drawable/ic_solo_background_text" android:adjustViewBounds="true" android:alpha="0"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/launcher_wealth_logo_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/launcher_logo_margin" android:layout_marginRight="@dimen/launcher_logo_margin">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_gravity="center" android:id="@+id/launcher_wealth_logo_holder" android:layout_width="@dimen/launcher_logo_wealth_size" android:layout_height="@dimen/launcher_logo_wealth_size">
+                    <ImageView android:id="@+id/launcher_wealth_logo_light" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_wide_logo_light_wealth" android:adjustViewBounds="true"/>
+                    <ImageView android:id="@+id/launcher_wealth_logo_dark" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_wide_logo_dark_wealth" android:adjustViewBounds="true" android:alpha="0"/>
+                </FrameLayout>
+                <ImageView android:layout_gravity="center" android:id="@+id/launcher_wealth_text" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginTop="20dp" android:src="@drawable/ic_wealth_background_text" android:adjustViewBounds="true" android:alpha="0"/>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_main"/>
+    <FrameLayout android:visibility="visible" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <FrameLayout android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.viewpager2.widget.ViewPager2 android:id="@+id/view_pager" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0dp" android:layout_marginBottom="@dimen/login_tab_height" android:animateLayoutChanges="true" app:calculateHeight="false"/>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/tab_view_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+                <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@+id/main_bottom_nav_bar" android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="@dimen/login_tab_height" style="@style/MainBottomNavigationView"/>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <include layout="@layout/full_progress_layout"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

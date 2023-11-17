@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/summary_activity" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:layout_constraintBottom_toTopOf="@+id/button_frame" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+    <FrameLayout android:id="@+id/button_frame" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <com.google.android.material.button.MaterialButton android:id="@+id/next_button" android:layout_width="match_parent" android:layout_marginLeft="16dp" android:layout_marginTop="14dp" android:layout_marginRight="16dp" android:layout_marginBottom="19dp" android:text="@string/money_request_search_header" android:layout_marginHorizontal="16dp" style="@style/ContainedButtonStyle"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/progress_bar_frame" android:background="@color/color_invert_background_layer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:translationZ="50dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <ProgressBar android:layout_gravity="center" android:layout_width="40dp" android:layout_height="40dp"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

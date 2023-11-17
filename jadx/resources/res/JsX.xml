@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="60.5dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60dp">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/bank_logo_image" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginBottom="3dp" android:scaleType="centerInside"/>
+            <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/favorite_image" android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/ic_vector_star_filled"/>
+        </FrameLayout>
+        <TextView android:textSize="16sp" android:textColor="?attr/color_invert_component_tr_400" android:id="@+id/account_number_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawablePadding="16dp" android:layout_marginStart="16dp" style="@style/TextTitle2"/>
+    </LinearLayout>
+    <View android:id="@+id/divider_view" android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

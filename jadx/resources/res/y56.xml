@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/AppBarLayout">
+        <p341ge.bog.designsystem.components.toolbar.ToolbarView android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="@dimen/height_toolbar" app:drawBottomLine="false" app:fillColor="@color/color_invert_background_layer" app:navigationEnabled="true" app:unfillColor="@color/color_invert_background_canvas" style="@style/Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/faq_recycler" android:background="@color/color_invert_background_layer" android:paddingTop="@dimen/spacing_xs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_m" android:layout_marginBottom="@dimen/spacing_m" android:layout_marginVertical="@dimen/spacing_m" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</LinearLayout>

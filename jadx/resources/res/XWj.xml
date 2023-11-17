@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    </FrameLayout>
+    <p341ge.bog.mobilebank.cleanarch.presentation.common.StateView android:id="@+id/state_view" android:layout_width="match_parent" android:layout_height="match_parent" app:contentViewId="@+id/policies_recycler" app:errorViewId="@+id/error_layout" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toTopOf="0" app:loadingViewId="@+id/skeleton_loading">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/policies_recycler" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <p341ge.bog.designsystem.components.loading.LoadingView android:id="@+id/skeleton_loading" android:layout_width="match_parent" android:layout_height="wrap_content" app:item_count="1" app:item_layout="@layout/layout_insurance_polices_loading"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/error_layout" android:padding="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="match_parent">
+            <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/error_desc" android:layout_width="match_parent" android:layout_height="wrap_content" app:drawable_src="@drawable/icons_48_system_error_outline" app:drawable_tint="?attr/color_primary_solid_df_500"/>
+            <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/refresh_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:button_text="@string/common_button_refresh" app:button_type="1"/>
+        </LinearLayout>
+    </p341ge.bog.mobilebank.cleanarch.presentation.common.StateView>
+</LinearLayout>

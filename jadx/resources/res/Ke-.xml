@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0" layout="@layout/toolbar"/>
+    <androidx.core.widget.NestedScrollView android:paddingTop="@dimen/spacing_m" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/spacing_m" android:layout_marginTop="@dimen/spacing_m" android:layout_marginRight="@dimen/spacing_m" android:layout_marginHorizontal="@dimen/spacing_m">
+            <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/pageDesc" android:layout_width="match_parent" android:layout_height="wrap_content" app:drawable_src="@drawable/ic_icon_mail" app:drawable_tint="?attr/color_primary_solid_df_500" app:drawable_type="1" app:text="@string/gt_onboarding_mail_input_description"/>
+            <p341ge.bog.designsystem.components.input.Input android:id="@+id/gtInput" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:hint="@string/gt_onboarding_mail_input_hint"/>
+            <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/nextButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_s" app:button_text="@string/gt_onboarding_mail_send_code" app:button_type="0"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

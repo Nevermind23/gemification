@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="@dimen/loan_history_collapsed_height">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="13sp" android:textColor="@color/dark_text_color_333" android:layout_gravity="center" android:id="@+id/history_item_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_default_margin" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:fontFamily="@font/bog_medium"/>
+        <FrameLayout android:id="@+id/item_arrow" android:layout_width="16dp" android:layout_height="10dp" android:layout_marginLeft="38dp" android:layout_marginRight="23dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <View android:background="@drawable/ic_light_gray_arrow_down" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <View android:id="@+id/item_orange_arrow" android:background="@drawable/ic_orange_arrow_down" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0" android:backgroundTint="?attr/colorAccent"/>
+        </FrameLayout>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/dark_text_color_333" android:id="@+id/item_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/item_arrow" android:layout_centerVertical="true" android:fontFamily="@font/bog_medium"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/hitory_details" android:background="@color/loan_some_background_color" android:padding="@dimen/item_default_margin" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/payments_last_operations_divider_grey" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+</LinearLayout>

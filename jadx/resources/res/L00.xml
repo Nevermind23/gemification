@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/list_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/product_icon" android:layout_width="24dp" android:layout_height="24dp"/>
+    <p341ge.bog.designsystem.components.list.TwoLineReverseTextItem android:id="@+id/product_texts" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/total_stars" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextSubtitle1Positive500Left" android:id="@+id/stars_text_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/spacing_xs"/>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/stars_icon_main" android:layout_width="18dp" android:layout_height="13dp" app:srcCompat="@drawable/icons_24_system_star_fill" app:tint="@color/color_invert_component_tr_150"/>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.list.ListItem>

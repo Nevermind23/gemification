@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="dark_mode_toggle_icon">@drawable/icons_16_general_mode_dark_fill</drawable>
+</resources>

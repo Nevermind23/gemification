@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/chip_background" android:background="@drawable/selector_chip_view" android:layout_width="wrap_content" android:layout_height="@dimen/height_chip_view" app:layerStyle="@style/LayerRadius24Shadow0">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/select_chip_container" android:paddingLeft="@dimen/spacing_12" android:paddingRight="@dimen/spacing_12" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingHorizontal="@dimen/spacing_12">
+        <p341ge.bog.designsystem.components.checkbox.CheckboxView android:id="@+id/select_chip_checkbox" android:clickable="false" android:layout_width="@dimen/icon_container_size" android:layout_height="@dimen/icon_container_size" android:layout_marginEnd="@dimen/spacing_4"/>
+        <androidx.appcompat.widget.AppCompatTextView android:id="@+id/chip_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/icon_close" android:padding="@dimen/trailing_icon_padding" android:layout_width="@dimen/icon_container_size" android:layout_height="@dimen/icon_container_size" android:src="@drawable/icons_24_system_close" android:layout_marginStart="@dimen/spacing_2" app:tint="@color/selector_chip_close_icon"/>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

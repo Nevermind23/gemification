@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/content_layout" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/toolbar"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/button_frame" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+            <include android:id="@+id/receivers_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" app:layout_scrollFlags="5" layout="@layout/layout_select_contact_top"/>
+            <include android:id="@+id/search_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="0" layout="@layout/layout_contact_search"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <include android:id="@+id/contact_list_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" layout="@layout/layout_money_request_select_contact_list"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout android:id="@+id/button_frame" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/next_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_12" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_20" android:layout_marginHorizontal="@dimen/spacing_16" app:button_text="@string/button_text_next"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

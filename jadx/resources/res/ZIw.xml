@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/financial_info_component" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/financial_info" android:paddingTop="@dimen/spacing_8" android:paddingBottom="@dimen/spacing_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/spacing_8">
+        <FrameLayout android:background="@drawable/financial_info_item_img_bg" android:layout_width="@dimen/financial_info_icon_container_size" android:layout_height="@dimen/financial_info_icon_container_size">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/financial_info_icon_size" android:layout_height="@dimen/financial_info_icon_size" android:src="@drawable/icons_16_system_add" app:tint="@color/color_brand_solo_pr_solid_df_500"/>
+        </FrameLayout>
+        <TextView android:id="@+id/financial_type" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <View android:id="@+id/divider" android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+</LinearLayout>

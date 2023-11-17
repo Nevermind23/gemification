@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:background="@drawable/activation_detail_item_icon_background" android:layout_width="@dimen/activation_detail_item_icon_background_size" android:layout_height="@dimen/activation_detail_item_icon_background_size">
+            <ImageView android:layout_gravity="center" android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tint="?attr/color_primary_solid_df_500"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/text_group" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/height_list_item">
+                <TextView android:textColor="?attr/color_invert_component_tr_400" android:id="@+id/desc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextCaption1"/>
+                <TextView android:textColor="?attr/color_invert_component_tr_400" android:id="@+id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextBody1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/reverse_text_group" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/height_list_item">
+                <TextView android:textColor="?attr/color_invert_component_tr_400" android:id="@+id/title_tv_reverse" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextBody1"/>
+                <TextView android:textColor="?attr/color_invert_component_tr_400" android:id="@+id/desc_tv_reverse" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextCaption1"/>
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textColor="?attr/color_invert_component_tr_400" android:id="@+id/value_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextTitle1"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <View android:id="@+id/divider" android:background="?attr/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+</LinearLayout>

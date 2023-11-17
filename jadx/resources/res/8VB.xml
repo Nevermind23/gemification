@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.mobilebank.cleanarch.presentation.common.StateView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" app:contentViewId="@+id/content_layout" app:loadingViewId="@+id/loading_layout">
+    <LinearLayout android:orientation="vertical" android:id="@+id/content_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/page_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/spacing_16" android:layout_weight="1" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <p341ge.bog.designsystem.components.fixedbutton.FixedButtonView android:id="@+id/fixed_button" android:layout_width="match_parent" android:layout_height="wrap_content" app:fixed_button_text="@string/button_text_continue"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/loading_layout" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+    </FrameLayout>
+</p341ge.bog.mobilebank.cleanarch.presentation.common.StateView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/chartDivider" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintTop_toTopOf="0"/>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTabLayout android:id="@+id/tabLayout" android:background="@drawable/tab_layout_background" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/chartDivider" app:tabSelectedTextColor="@color/orange_txt_color" app:tabTextAppearance="@style/CustomTabViewStyle" app:tabTextColor="#8c333333">
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/expenses"/>
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/income"/>
+    </p341ge.bog.mobilebank.p975ui.views.widgets.BogTabLayout>
+    <include android:id="@+id/pagerDivider" android:layout_width="match_parent" android:layout_height="7dp" app:layout_constraintTop_toBottomOf="@+id/tabLayout" layout="@layout/analysis_recycler_divider_item"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

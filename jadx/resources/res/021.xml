@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.mobilebank.cleanarch.presentation.common.StateView android:id="@+id/stateView" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="130dp" app:contentViewId="@+id/cards_rv" app:loadingViewId="@+id/recycler_loading">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:orientation="vertical" android:id="@+id/cards_rv" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <p341ge.bog.designsystem.components.loading.LoadingView android:id="@+id/recycler_loading" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_8" app:item_count="3" app:item_layout="@layout/cards_rv_shimmer"/>
+    </p341ge.bog.mobilebank.cleanarch.presentation.common.StateView>
+    <FrameLayout android:id="@+id/regular_loader_container" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@color/color_invert_component_tr_25">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</FrameLayout>

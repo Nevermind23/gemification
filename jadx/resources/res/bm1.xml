@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_layer" android:paddingLeft="20dp" android:paddingTop="20dp" android:paddingRight="20dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="15sp" android:textColor="@color/color_invert_component_solid_500" android:id="@+id/dialog_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:fontFamily="@font/bog_bold"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <NumberPicker android:theme="@style/PickerStyle" android:id="@+id/month_picker" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <NumberPicker android:theme="@style/PickerStyle" android:id="@+id/year_picker" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginStart="50dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25.5dp">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogButton android:textSize="15sp" android:textColor="?attr/colorAccent" android:id="@+id/cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.5dp" android:text="@string/button_text_cancel" android:fontFamily="@font/bog_headline_bold" android:layout_marginEnd="17.5dp"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogButton android:textSize="15sp" android:textColor="?attr/colorAccent" android:id="@+id/ok_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_btn_ok" android:fontFamily="@font/bog_headline_bold"/>
+    </LinearLayout>
+</LinearLayout>

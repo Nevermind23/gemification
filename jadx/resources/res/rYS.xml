@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/full_progress_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.6">
+        <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bog_full_progressbar"/>
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/AppBarLayout">
+        <p341ge.bog.designsystem.components.toolbar.ToolbarView android:id="@+id/toolbar_new" android:layout_width="match_parent" android:layout_height="@dimen/height_toolbar" app:controlsFillAnimation="true" app:controlsFillColor="@color/color_invert_component_tr_400" app:controlsUnfillColor="@color/color_invert_background_layer" app:fillAnimation="true" app:fillColor="@color/color_invert_background_canvas" app:navigationEnabled="true" app:unfillColor="@android:color/transparent" style="@style/Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

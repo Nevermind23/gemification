@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt">
+    <shortcut android:icon="@drawable/ic_app_shortcuts_qr" android:enabled="true" android:shortcutId="qr_pay" android:shortcutShortLabel="@string/qr_pay" android:shortcutLongLabel="@string/qr_pay">
+        <intent android:targetPackage="ge.bog.mobilebank" android:action="ge.bog.mobilebank.appshortcuts.QR_PAY" android:targetClass="ge.bog.mobilebank.cleanarch.qrscanner.presentation.QrScannerActivity"/>
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_app_shortcuts_atms" android:enabled="true" android:shortcutId="atms_and_service_centers" android:shortcutShortLabel="@string/main_activity_widget_atms" android:shortcutLongLabel="@string/main_activity_widget_atms">
+        <intent android:targetPackage="ge.bog.mobilebank" android:action="ge.bog.mobilebank.appshortcuts.ATMS_AND_SERVICE_CENTERS" android:targetClass="ge.bog.mobilebank.ui.activities.MapActivity"/>
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_app_shortcuts_ccy_rates" android:enabled="true" android:shortcutId="currency_rates" android:shortcutShortLabel="@string/common_text_ccy_rates" android:shortcutLongLabel="@string/common_text_ccy_rates">
+        <intent android:targetPackage="ge.bog.mobilebank" android:action="ge.bog.mobilebank.appshortcuts.CURRENCY_RATES" android:targetClass="ge.bog.mobilebank.ui.activities.ExchangeActivity"/>
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_app_shortcuts_mobile" android:enabled="false" android:shortcutId="mobile_topup" android:shortcutShortLabel="@string/app_shortcuts_mobile_topup" android:shortcutLongLabel="@string/app_shortcuts_mobile_topup">
+        <intent android:targetPackage="ge.bog.mobilebank" android:action="ge.bog.mobilebank.appshortcuts.MOBILE_TOPUP" android:targetClass="ge.bog.mobilebank.payment.activities.PaymentFormActivity">
+            <extra android:name="PAYMENT_SERVICE_ID" android:value="bog-comp-mobilepayments"/>
+        </intent>
+    </shortcut>
+    <shortcut android:icon="@drawable/ic_app_shortcuts_payments" android:enabled="true" android:shortcutId="payments" android:shortcutShortLabel="@string/app_shortcuts_payments" android:shortcutLongLabel="@string/app_shortcuts_payments">
+        <intent android:targetPackage="ge.bog.mobilebank" android:action="ge.bog.mobilebank.appshortcuts.PAYMENTS" android:targetClass="ge.bog.mobilebank.ui.activities.MainActivity"/>
+    </shortcut>
+</shortcuts>

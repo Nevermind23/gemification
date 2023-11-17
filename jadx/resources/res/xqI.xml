@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/deposit_prolongation_nav_graph" app:startDestination="@+id/deposit_prolongation_main">
+    <fragment android:label="" android:name="p341ge.bog.mobilebank.deposits.presentation.prolongation.fragment.main.DepositProlongationMainFragment" android:id="@+id/deposit_prolongation_main">
+        <argument android:name="@string/deposit_prolongation_fragment_args_key" app:argType="ge.bog.mobilebank.deposits.presentation.prolongation.fragment.main.DepositProlongationMainFragmentArgs"/>
+        <action android:id="@+id/action_deposit_prolongation_main_to_deposit_prolongation_result" app:destination="@+id/deposit_prolongation_result" app:launchSingleTop="true" app:popUpTo="@+id/deposit_prolongation_nav_graph" app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment android:label="" android:name="p341ge.bog.mobilebank.deposits.presentation.prolongation.fragment.result.DepositProlongationResultFragment" android:id="@+id/deposit_prolongation_result">
+        <argument android:name="@string/deposit_prolongation_result_fragment_args_key" app:argType="ge.bog.mobilebank.deposits.presentation.prolongation.fragment.result.DepositProlongationResultFragmentArgs"/>
+    </fragment>
+</navigation>

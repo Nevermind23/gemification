@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textAppearance="@style/TextBody2InvertComponents400Left" android:id="@+id/withdrawal_type_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.google.android.flexbox.FlexboxLayout android:id="@+id/withdrawal_types_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_2xs" app:flexDirection="0" app:flexWrap="1" app:justifyContent="2"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

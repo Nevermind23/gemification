@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/widget_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/widget_ccy_medium_left_padding" android:paddingRight="@dimen/widget_ccy_header_medium_right_padding" android:layout_width="match_parent" android:layout_height="@dimen/widget_atms_header_height">
+        <ImageView android:id="@+id/service_centers_label" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:scaleType="fitStart" android:layout_weight="1"/>
+        <FrameLayout android:id="@+id/refresh_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="center" android:id="@+id/refresh_progress" android:visibility="gone" android:layout_width="@dimen/widget_refresh_button_size" android:layout_height="@dimen/widget_refresh_button_size" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/refresh_progress_rotate"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/refresh" android:layout_width="@dimen/widget_refresh_button_size" android:layout_height="@dimen/widget_refresh_button_size" android:src="@drawable/refresh"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/widget_ccy_medium_left_padding" android:paddingTop="5dp" android:paddingRight="@dimen/widget_atms_medium_list_item_right_padding" android:paddingBottom="6.3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/address_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="34.5dp" android:scaleType="fitStart"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <ImageView android:id="@+id/distance_lbl" android:layout_width="@dimen/widget_atms_medium_distance_label_width" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:scaleType="fitStart"/>
+    </LinearLayout>
+    <FrameLayout android:paddingBottom="@dimen/widget_bottom_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ListView android:gravity="center" android:id="@+id/service_centers_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0dp"/>
+        <TextView android:textStyle="bold" android:textColor="@color/bog_black_color" android:gravity="center" android:id="@+id/empty_view" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/common_text_empty_list" android:fontFamily="@font/bog_bold"/>
+    </FrameLayout>
+</LinearLayout>

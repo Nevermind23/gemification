@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/swipe_refresh" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <androidx.core.widget.NestedScrollView android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadiusBottom40Shadow20">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <p341ge.bog.designsystem.components.inlinefeedback.InlineFeedback android:id="@+id/infoClosedMarket" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_m" app:state="2" app:type="linear"/>
+                    <p341ge.bog.mobilebank.cleanarch.presentation.common.StateView android:id="@+id/portfel_state_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_m" android:layout_marginBottom="@dimen/spacing_8" android:layout_marginStart="@dimen/spacing_m" android:layout_marginEnd="@dimen/spacing_m" app:contentViewId="@+id/portfelCard" app:errorViewId="@+id/portfelCard" app:loadingViewId="@+id/loaderPortfelCard" app:noDataViewId="@+id/portfelCard">
+                        <p341ge.bog.designsystem.components.loading.LoadingView android:id="@+id/loaderPortfelCard" android:layout_width="match_parent" android:layout_height="wrap_content" app:item_count="1" app:item_layout="@layout/skeleton_gt_portfel_card"/>
+                        <p341ge.bog.designsystem.components.balancewidget.BalanceWidgetView android:id="@+id/portfelCard" android:layout_width="match_parent" android:layout_height="wrap_content" app:leftTitle="@string/gt_portfolio_daily" app:rightTitle="@string/gt_portfolio_sum"/>
+                    </p341ge.bog.mobilebank.cleanarch.presentation.common.StateView>
+                    <include android:id="@+id/chart_container" layout="@layout/layout_gt_chart"/>
+                </LinearLayout>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_m" android:layout_marginBottom="@dimen/spacing_m" app:layerStyle="@style/LayerRadius40Shadow20">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="@style/TextButton1InvertComponents400Left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_m" android:text="@string/gt_title_my_balance" android:layout_marginStart="@dimen/spacing_m"/>
+                    <p341ge.bog.mobilebank.cleanarch.presentation.common.StateView android:id="@+id/buyingPowerStateView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_s" android:layout_marginBottom="@dimen/spacing_s" android:layout_marginVertical="@dimen/spacing_s" app:contentViewId="@+id/buyingPowerContainer" app:loadingViewId="@+id/loadingView">
+                        <p341ge.bog.designsystem.components.loading.LoadingView android:id="@+id/loadingView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/spacing_m" android:layout_marginRight="@dimen/spacing_m" android:layout_marginBottom="@dimen/spacing_m" android:layout_marginHorizontal="@dimen/spacing_m" app:item_count="1" app:item_layout="@layout/skeleton_list_item"/>
+                        <FrameLayout android:id="@+id/buyingPowerContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <p341ge.bog.designsystem.components.buttonlist.ButtonListView android:id="@+id/buyingPowerZero" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:bottom_text="@string/buying_power_zero_value" app:button_list_button_type="1" app:button_text="@string/gt_deposit_text" app:icon_background_color="?attr/color_primary_tr_25" app:icon_tint="?attr/color_primary_solid_df_500"/>
+                            <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/buyingPower" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:leftItemLayout="@layout/layout_buying_power_left_item" app:rightItemLayout="@layout/layout_text_with_arrow"/>
+                        </FrameLayout>
+                    </p341ge.bog.mobilebank.cleanarch.presentation.common.StateView>
+                </LinearLayout>
+            </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

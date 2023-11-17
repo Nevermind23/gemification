@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/item_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+    <RelativeLayout android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="@dimen/payments_last_operations_static_header_text_container_height">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextTitle1" android:textColor="?attr/color_invert_component_tr_200" android:id="@+id/header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_default_margin" android:text="@string/payments_last_operations_header_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <include android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_alignParentBottom="true" layout="@layout/payments_last_operations_list_divider"/>
+    </RelativeLayout>
+</LinearLayout>

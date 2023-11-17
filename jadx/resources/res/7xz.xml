@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/color_invert_background_layer" android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/spacing_12" android:paddingRight="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16">
+    <p341ge.bog.designsystem.components.input.Input android:id="@+id/select" android:layout_width="match_parent" android:layout_height="wrap_content" app:end_icon_small="@drawable/icons_48_system_chevron_up_down" app:end_icon_small_tint_color="?attr/color_invert_component_tr_400" app:input_type="2"/>
+</LinearLayout>

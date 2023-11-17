@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="@dimen/map_sliding_menu_item_height">
+    <FrameLayout android:id="@+id/detail_close_button" android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/spacing_8" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:paddingHorizontal="@dimen/spacing_16">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/map_close_button_size" android:layout_height="@dimen/map_close_button_size" android:src="@drawable/icons_24_system_close" android:tint="@color/color_invert_component_tr_150"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/map_sliding_menu_side_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/detail_close_button" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <FrameLayout android:gravity="center" android:id="@+id/rounded_container" android:padding="@dimen/loan_stroke_width" android:layout_width="@dimen/map_sliding_menu_list_item_icon_size" android:layout_height="@dimen/map_sliding_menu_list_item_icon_size">
+            <ImageView android:layout_gravity="center" android:id="@+id/rounded_image" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <View android:layout_gravity="right" android:id="@+id/object_status" android:padding="@dimen/loan_stroke_width" android:layout_width="8dp" android:layout_height="8dp" android:layout_margin="1dp"/>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/map_sliding_menu_side_padding">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextTitle3" android:textColor="@color/color_invert_component_solid_500" android:ellipsize="end" android:id="@+id/item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextSmallTitle1" android:textColor="@color/color_invert_component_tr_300" android:ellipsize="end" android:id="@+id/item_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+                <ImageView android:id="@+id/direction_icon" android:layout_width="@dimen/map_sliding_menu_header_distance_image_size" android:layout_height="@dimen/map_sliding_menu_header_distance_image_size" android:layout_marginLeft="3dp" android:src="@drawable/ic_map_item_direction"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextSmallTitle1" android:textColor="@color/color_invert_component_tr_300" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/map_sliding_menu_list_item_details_container_top_margin" android:layout_marginRight="@dimen/map_sliding_menu_list_item_details_container_top_margin" android:text="|" android:maxLines="1"/>
+                <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextSmallTitle1" android:textColor="@color/color_invert_component_tr_300" android:ellipsize="end" android:id="@+id/item_travel_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

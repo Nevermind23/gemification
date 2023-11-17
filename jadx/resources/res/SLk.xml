@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_canvas" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/transfer_header_layout" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="100dp">
+                <androidx.appcompat.widget.AppCompatButton android:textSize="@dimen/payments_header_ellipsis_size" android:textStyle="bold" android:textColor="@color/color_white_tr_400" android:id="@+id/transfer_details_menu_button" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="@dimen/payments_header_settings_btn_size" android:layout_height="@dimen/payments_header_settings_btn_size" android:layout_marginRight="@dimen/payments_header_margin" android:text="@string/vertical_ellipsis" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:id="@+id/dummy" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginLeft="@dimen/item_default_margin" android:layout_alignParentLeft="true"/>
+                <ImageView android:id="@+id/transfer_details_header_image" android:background="@drawable/white_circle" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginLeft="@dimen/item_default_margin" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="22sp" android:textColor="@color/color_black_tr_400" android:gravity="center" android:id="@+id/transfer_header_initials" android:background="@drawable/white_circle" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginLeft="@dimen/item_default_margin" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:fontFamily="@font/bog_headline_medium"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="16sp" android:textColor="@color/color_white_tr_400" android:layout_gravity="center_vertical" android:id="@+id/transfer_details_header_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_default_margin" android:layout_marginRight="@dimen/item_default_margin" android:maxLines="2" android:layout_toLeftOf="@+id/transfer_details_menu_button" android:layout_toRightOf="@+id/dummy" android:layout_centerVertical="true" android:fontFamily="@font/bog_headline_medium"/>
+            </RelativeLayout>
+            <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:background="@color/color_invert_background_layer" android:paddingBottom="@dimen/payment_pay_group_item_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:id="@+id/arrow_layout_holder" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <p341ge.bog.mobilebank.p975ui.views.widgets.ArrowLayout android:id="@+id/arrow_layout" android:layout_width="match_parent" android:layout_height="@dimen/arrow_layout_height" android:layout_marginLeft="@dimen/arrow_layout_margin_sides" android:layout_marginTop="@dimen/arrow_layout_margin_sides" android:layout_marginRight="@dimen/arrow_layout_margin_sides" android:layout_marginBottom="@dimen/arrow_layout_margin_bottom"/>
+                        </FrameLayout>
+                        <FrameLayout android:id="@+id/transfer_details_header_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/payment_pay_group_item_margin">
+                            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/transfer_details_header_layout"/>
+                        </FrameLayout>
+                        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/payment_pay_group_item_margin" android:paddingRight="@dimen/payment_pay_group_item_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <FrameLayout android:id="@+id/photo_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/name_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/transfer_from_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <p341ge.bog.mobilebank.p975ui.views.widgets.ProviderDetailTypeView android:id="@+id/transfer_from_balance" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/sto_bill_acc_src" android:background="?attr/selectableItemBackground" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_default_margin">
+                                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="10sp" android:textColor="@color/color_invert_component_tr_200" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_text_from" android:fontFamily="@font/bog_medium"/>
+                                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="18sp" android:textColor="@color/color_invert_component_tr_400" android:ellipsize="end" android:id="@+id/sto_from_acct_text_view" android:paddingTop="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="1" android:fontFamily="@font/bog_medium"/>
+                                <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="10dp"/>
+                            </LinearLayout>
+                            <FrameLayout android:id="@+id/domestic_transfer_to_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <p341ge.bog.mobilebank.p975ui.views.widgets.ProviderDetailTypeView android:id="@+id/transfer_to_balance" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/other_transfer_to_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <p341ge.bog.mobilebank.p975ui.views.widgets.ProviderDetailTypeView android:id="@+id/transfer_bank_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/other_transfer_to_acct_no_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/other_transfer_to_name_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/trusted_badge" android:visibility="gone" android:layout_width="17dp" android:layout_height="20dp" android:src="@drawable/ic_verified_small"/>
+                            </FrameLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/within_bank_name_container" android:background="?attr/selectableItemBackground" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+                                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@color/color_invert_component_tr_200" android:id="@+id/within_bank_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bog_medium"/>
+                                <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="6dp"/>
+                            </LinearLayout>
+                            <FrameLayout android:id="@+id/foreign_transfer_recepient_country" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/foreign_transfer_recepient_city" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/foreign_transfer_recepient_address" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/transfer_payer_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/transfer_payer_pin_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/foreign_transfer_intermidiary_bank_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/foreign_transfer_beneficiary_bank_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/foreign_transfer_reporting_code_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="9sp" android:textColor="@color/color_invert_component_tr_200" android:id="@+id/reporting_code_description" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:fontFamily="@font/bog_medium"/>
+                            <FrameLayout android:id="@+id/transfer_amount_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/transfer_amount_to_receive_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <p341ge.bog.mobilebank.p975ui.views.widgets.ProviderDetailTypeView android:id="@+id/transfer_mbank_rate" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="10sp" android:textColor="?attr/color_invert_component_tr_200" android:id="@+id/sto_ccy_conversion_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:fontFamily="@font/bog_medium"/>
+                            <p341ge.bog.mobilebank.p975ui.views.widgets.ProviderDetailTypeView android:id="@+id/transfer_standard_rate" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <p341ge.bog.mobilebank.p975ui.views.widgets.ProviderDetailTypeView android:id="@+id/transfer_saved_amount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/credit_type_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/cadastral_code_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:orientation="vertical" android:id="@+id/transfer_type_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="9sp" android:textColor="@color/color_invert_component_tr_200" android:id="@+id/transfer_type_details" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:fontFamily="@font/bog_medium"/>
+                            <FrameLayout android:id="@+id/foreign_transfer_invoice_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="10.5sp" android:textColor="?attr/colorAccent" android:id="@+id/attached_invoices" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/bog_headline_medium"/>
+                            <FrameLayout android:id="@+id/transfer_nomination_list_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/transfer_subject_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/foreign_transfer_additional_info_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/sto_phone_number_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/sto_period_type_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/sto_start_date_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <FrameLayout android:id="@+id/sto_end_date_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            <p341ge.bog.designsystem.components.inlinefeedback.InlineFeedback android:id="@+id/commission_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:type="linear"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:background="@drawable/above_shadow" android:layout_width="match_parent" android:layout_height="4dp"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/terms_container" android:background="@color/color_invert_background_layer" android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/spacing_8" android:paddingRight="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16"/>
+                <include android:id="@+id/trans_button_container" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/payments_pay_group"/>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/transfer_progress" android:background="@color/transparent" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <p341ge.bog.mobilebank.p975ui.components.BogProgressBar android:layout_gravity="center" android:layout_width="40dp" android:layout_height="40dp"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/error_layout" android:background="@color/color_invert_background_layer" android:paddingTop="@dimen/payment_pay_group_item_margin" android:paddingBottom="@dimen/payment_pay_group_item_margin" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/layout_horizontal_error"/>
+        </LinearLayout>
+        <include android:id="@+id/full_progress_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/bog_full_progressbar"/>
+    </FrameLayout>
+</LinearLayout>

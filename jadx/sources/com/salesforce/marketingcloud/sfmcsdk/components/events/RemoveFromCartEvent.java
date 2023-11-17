@@ -1,0 +1,12 @@
+package com.salesforce.marketingcloud.sfmcsdk.components.events;
+
+import kotlin.jvm.internal.C41536l;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+
+public final class RemoveFromCartEvent extends CartEvent {
+    /* JADX INFO: super call moved to the top of the method (can break code semantics) */
+    public RemoveFromCartEvent(LineItem lineItem) {
+        super("Remove From Cart", C41339p.m119900e(lineItem), (DefaultConstructorMarker) null);
+        C41536l.m120489i(lineItem, "lineItem");
+    }
+}

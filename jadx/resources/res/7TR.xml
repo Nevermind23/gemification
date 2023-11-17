@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/description_container" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadiusBottom16Shadow0" app:layout_constraintTop_toTopOf="0">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:paddingLeft="@dimen/spacing_16" android:paddingTop="@dimen/toolbar_height" android:paddingRight="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_24" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_16">
+            <p341ge.bog.designsystem.components.pagestate.PageState android:id="@+id/page_state" android:layout_width="match_parent" android:layout_height="wrap_content" app:page_state_type="0"/>
+            <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/return_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:button_icon="@drawable/icons_16_deposit_deposit_outline" app:button_type="2"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <include android:id="@+id/toolbar" app:layout_constraintTop_toTopOf="0" layout="@layout/toolbar"/>
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" android:layout_marginVertical="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow0" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/description_container" app:layout_constraintVertical_bias="0">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/break_details_header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/details_items" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+</androidx.constraintlayout.widget.ConstraintLayout>

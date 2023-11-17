@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.notificationbadges.BadgeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/badgeLayout" android:padding="@dimen/image_selector_padding" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:horizontal_offset="-5dp" app:inner_align="true" app:is_badge_visible="false" app:vertical_offset="-5dp">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/layer_view" android:background="?attr/color_white_tr_100" android:layout_width="match_parent" android:layout_height="match_parent" app:layerStyle="@style/LayerRadius16Shadow0">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/thumbnail" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside" app:srcCompat="@drawable/thumbnail_1_1"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+</p341ge.bog.designsystem.components.notificationbadges.BadgeRelativeLayout>

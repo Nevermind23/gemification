@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow20">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/spacing_8" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/title" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@+id/details_btn" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/details_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/spacing_16" app:button_type="6" app:layout_constraintBottom_toBottomOf="@+id/title" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="@+id/title"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:background="@drawable/background_circle_primary_25" android:padding="@dimen/details_pln_history_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/loan_start_icon_image" android:layout_width="@dimen/details_icon_size" android:layout_height="@dimen/details_icon_size" android:src="@drawable/icons_48_statement_bank_statement" app:tint="?attr/color_primary_solid_df_500"/>
+            </FrameLayout>
+            <p341ge.bog.designsystem.components.list.TwoLineReverseTextItem android:id="@+id/info" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_8">
+                <TextView android:textAppearance="@style/TextTitle1" android:textColor="?attr/color_invert_component_tr_400" android:id="@+id/amount_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textAppearance="@style/TextCaption1" android:textColor="?attr/color_invert_component_tr_200" android:id="@+id/amount_hint" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </p341ge.bog.designsystem.components.list.ListItem>
+    </LinearLayout>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

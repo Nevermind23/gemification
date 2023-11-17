@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingLeft="@dimen/spacing_24" android:paddingRight="@dimen/spacing_24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/spacing_24">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_2">
+        <TextSwitcher android:id="@+id/minutes_ts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inAnimation="@anim/anim_slide_in_from_top" android:outAnimation="@anim/anim_slide_out_to_bot">
+            <TextView android:textAppearance="@style/TextH4InvertComponents400Left" android:gravity="center" android:id="@+id/minutes_one" android:layout_width="@dimen/countdown_timer_text_width" android:layout_height="@dimen/countdown_timer_text_height" android:includeFontPadding="false"/>
+            <TextView android:textAppearance="@style/TextH4InvertComponents400Left" android:gravity="center" android:id="@+id/minutes_two" android:layout_width="@dimen/countdown_timer_text_width" android:layout_height="@dimen/countdown_timer_text_height" android:includeFontPadding="false"/>
+        </TextSwitcher>
+        <TextView android:textAppearance="@style/TextH4InvertComponents400Left" android:id="@+id/colon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_2" android:layout_marginRight="@dimen/spacing_2" android:layout_marginBottom="@dimen/countdown_timer_colon_bottom_margin" android:text="@string/colon" android:includeFontPadding="false" android:layout_marginHorizontal="@dimen/spacing_2"/>
+        <TextSwitcher android:id="@+id/seconds_ts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inAnimation="@anim/anim_slide_in_from_top" android:outAnimation="@anim/anim_slide_out_to_bot">
+            <TextView android:textAppearance="@style/TextH4InvertComponents400Left" android:gravity="center" android:id="@+id/seconds_one" android:layout_width="@dimen/countdown_timer_text_width" android:layout_height="@dimen/countdown_timer_text_height" android:includeFontPadding="false"/>
+            <TextView android:textAppearance="@style/TextH4InvertComponents400Left" android:gravity="center" android:id="@+id/seconds_two" android:layout_width="@dimen/countdown_timer_text_width" android:layout_height="@dimen/countdown_timer_text_height" android:includeFontPadding="false"/>
+        </TextSwitcher>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="@dimen/countdown_timer_progress_height" android:max="100" android:progressDrawable="@drawable/shape_countdown_timer_progress" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+</LinearLayout>

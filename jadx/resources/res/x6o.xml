@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/banner_container" android:layout_width="match_parent" android:layout_height="136dp">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/banner_image" android:layout_width="wrap_content" android:layout_height="84dp" android:adjustViewBounds="true"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="15sp" android:ellipsize="end" android:id="@+id/banner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_alignParentTop="true" android:fontFamily="@font/bog_medium"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogButton android:textSize="10sp" android:id="@+id/banner_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_alignParentBottom="true" android:fontFamily="@font/bog_headline_medium"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

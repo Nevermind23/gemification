@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/spacing_m" android:paddingBottom="@dimen/spacing_m" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/spacing_m">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_component_tr_25" android:layout_width="@dimen/thumbnail_skeleton_circle_size" android:layout_height="@dimen/thumbnail_skeleton_circle_size" android:layout_marginEnd="@dimen/spacing_m" app:layerStyle="@style/LayerRadius10Shadow0"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_component_tr_25" android:layout_width="125dp" android:layout_height="@dimen/skeleton_line_height" app:layerStyle="@style/LayerRadius10Shadow0"/>
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_component_tr_25" android:layout_width="75dp" android:layout_height="@dimen/skeleton_line_height_small" android:layout_marginTop="@dimen/spacing_2xs" app:layerStyle="@style/LayerRadius10Shadow0"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_component_tr_25" android:layout_width="75dp" android:layout_height="@dimen/skeleton_line_height" app:layerStyle="@style/LayerRadius10Shadow0"/>
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="@color/color_invert_component_tr_25" android:layout_width="50dp" android:layout_height="@dimen/skeleton_line_height_small" android:layout_marginTop="@dimen/spacing_2xs" app:layerStyle="@style/LayerRadius10Shadow0"/>
+    </LinearLayout>
+</LinearLayout>

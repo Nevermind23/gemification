@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/success_container_shape" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadiusBottom12Shadow0">
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/spacing_16" android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="match_parent">
+                <p341ge.bog.designsystem.components.pagestate.PageState android:id="@+id/page_state" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/home_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_16" android:layout_marginStart="@dimen/spacing_16" android:layout_marginEnd="@dimen/spacing_16" app:button_icon="@drawable/icons_16_general_home" app:button_icon_tint="?attr/color_primary_solid_df_500" app:button_type="2"/>
+            </LinearLayout>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/info_container_shape" android:background="@color/color_invert_background_layer" android:paddingBottom="@dimen/spacing_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius12Shadow0">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/empty_state_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/name_last_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_16" android:layout_marginEnd="@dimen/spacing_16"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BigDividerView android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="@dimen/spacing_16" android:layout_marginEnd="@dimen/spacing_16"/>
+                <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/birth_day" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_16" android:layout_marginEnd="@dimen/spacing_16"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BigDividerView android:id="@+id/id_number_divider" android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="@dimen/spacing_16" android:layout_marginEnd="@dimen/spacing_16"/>
+                <p341ge.bog.designsystem.components.list.TwoLineTextItem android:id="@+id/id_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_16" android:layout_marginEnd="@dimen/spacing_16"/>
+            </LinearLayout>
+        </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

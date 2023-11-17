@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <p341ge.bog.mobilebank.cleanarch.presentation.common.StateView android:id="@+id/content_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:contentViewId="@+id/authorization_web_view" app:errorViewId="@+id/error_layout" app:loadingViewId="@+id/progress_bar">
+        <WebView android:id="@+id/authorization_web_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <p341ge.bog.mobilebank.p975ui.components.BogProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:progressStyle="0"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/error_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/error_page" android:layout_width="match_parent" android:layout_height="wrap_content" app:drawable_src="@drawable/icons_48_system_error_outline" app:drawable_tint="?attr/color_primary_solid_df_500" app:drawable_type="1"/>
+            <p341ge.bog.designsystem.components.buttons.Button android:id="@+id/refresh_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_m" android:layout_marginTop="@dimen/spacing_xs" android:layout_marginRight="@dimen/spacing_m" android:layout_marginHorizontal="@dimen/spacing_m" app:button_text="@string/common_button_refresh" app:button_type="0"/>
+        </LinearLayout>
+    </p341ge.bog.mobilebank.cleanarch.presentation.common.StateView>
+</LinearLayout>

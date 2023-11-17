@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <androidx.fragment.app.FragmentContainerView android:name="p341ge.bog.mobilebank.openbanking.presentation.details.ProductDetailsFragment" android:id="@+id/fragment_container" android:tag="productDetails" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

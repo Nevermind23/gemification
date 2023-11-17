@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="5">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@color/default_gray_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/empty_templates_text" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/templates_text_no_templates" android:fontFamily="@font/bog_medium"/>
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</LinearLayout>

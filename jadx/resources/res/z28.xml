@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt">
+    <p341ge.bog.designsystem.components.notificationbadges.BadgeRelativeLayout android:id="@+id/badgeLayout" android:paddingTop="0dp" android:paddingBottom="0dp" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="0dp" android:paddingEnd="10dp" app:horizontal_offset="-10dp" app:inner_align="true" app:is_badge_visible="false" app:vertical_offset="0dp">
+        <FrameLayout android:id="@+id/thumbnails" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </p341ge.bog.designsystem.components.notificationbadges.BadgeRelativeLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/thumbnail_chevron_image" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/icons_24_system_chevron_up_down"/>
+</merge>

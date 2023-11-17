@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/car_number_container" android:background="@drawable/car_number_view_oval_shape" android:layout_width="@dimen/circular_view_item_circle_size" android:layout_height="@dimen/circular_view_item_circle_size">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:background="@drawable/ic_car_template" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+        <TextView android:textSize="10sp" android:textColor="@color/bog_black_color" android:gravity="center" android:id="@+id/car_number_tv" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1" android:fontFamily="@font/bog_bold"/>
+        <TextView android:textSize="10sp" android:textColor="@color/bog_white_color" android:gravity="center" android:background="@color/car_number_country_bg_color" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ge" android:textAllCaps="true" android:fontFamily="@font/bog_bold"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/background_low" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/back_button" android:layout_width="30dp" android:layout_height="match_parent" android:src="@drawable/identomat_back_arrow"/>
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/back_button_title_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="" android:textAlignment="center"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="120dp" android:layout_marginRight="10dp">
+        <TextView android:textSize="24sp" android:id="@+id/title_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/identomat_select_document"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/documents_list_view" android:layoutAnimation="@anim/identomat_layout_animation" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </LinearLayout>
+</RelativeLayout>

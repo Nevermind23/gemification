@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/add_item_height">
+    <View android:background="@drawable/add_item_background" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/item_default_margin" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/item_default_margin" android:layout_marginBottom="10dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/create_new_layout" android:background="@drawable/white_rounded_rect" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?attr/selectableItemBackground">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:layout_gravity="center" android:background="?attr/oval_stroke_orange" android:padding="15dp" android:layout_width="@dimen/rounded_image_container_small_width_height" android:layout_height="@dimen/rounded_image_container_small_width_height" android:src="@drawable/ic_add_small" app:tintType="0"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="?attr/colorAccent" android:layout_gravity="center" android:id="@+id/add_item_layout_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_list_item_text_left_margin" android:text="@string/create_new_deposit" android:fontFamily="@font/bog_medium"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

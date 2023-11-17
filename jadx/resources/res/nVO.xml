@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_25" android:layout_width="@dimen/repayment_details_loading_header_width" android:layout_height="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_8" android:layout_marginStart="@dimen/spacing_16" app:layerStyle="@style/LayerRadius4Shadow0"/>
+        <include layout="@layout/skeleton_list_item"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="@dimen/spacing_8" android:layout_marginBottom="@dimen/spacing_16">
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_25" android:layout_width="@dimen/repayment_details_loading_list_left_width" android:layout_height="match_parent" android:layout_marginStart="@dimen/spacing_16" app:layerStyle="@style/LayerRadius2Shadow0" app:layout_constraintStart_toStartOf="0"/>
+            <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_component_tr_25" android:layout_width="@dimen/repayment_details_loading_list_right_width" android:layout_height="match_parent" android:layout_marginEnd="@dimen/spacing_16" app:layerStyle="@style/LayerRadius2Shadow0" app:layout_constraintEnd_toEndOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

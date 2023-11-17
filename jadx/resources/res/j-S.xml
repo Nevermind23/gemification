@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/toolbar_container" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0">
+        <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    </FrameLayout>
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/header" android:background="@color/color_invert_background_layer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius12Shadow0" app:layout_constraintTop_toBottomOf="@+id/toolbar_container">
+        <p341ge.bog.designsystem.components.tabs.TabsView android:id="@+id/categories_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabMode="0"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/offers_recycler_view" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/header"/>
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/loading_view" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="0dp" app:layerStyle="@style/LayerRadius40Shadow20" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/header">
+        <p341ge.bog.designsystem.components.loading.LoadingView android:layout_width="match_parent" android:layout_height="match_parent" app:item_count="2" app:item_layout="@layout/skeleton_text_image_card_big" app:scrollable="false"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <androidx.cardview.widget.CardView android:id="@+id/retry_button_container" android:background="@color/color_invert_background_canvas" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar_container">
+        <include android:layout_gravity="center" android:id="@+id/retry_button" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/retry_button"/>
+    </androidx.cardview.widget.CardView>
+    <p341ge.bog.designsystem.components.pagestate.PageState android:id="@+id/category_not_found_state" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_24" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar_container" app:layout_constraintVertical_bias="0" app:page_state_type="1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

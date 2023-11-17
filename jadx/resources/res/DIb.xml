@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ccy_item_root" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="@dimen/ccy_rate_item_height" android:layout_marginLeft="@dimen/ccy_rate_item_margin" android:layout_marginTop="@dimen/ccy_rate_item_margin" android:layout_marginRight="@dimen/ccy_rate_item_margin">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ccy_rate_item_border_left_margin" android:paddingRight="@dimen/ccy_rate_item_border_right_margin" android:paddingBottom="@dimen/ccy_rate_item_border_bottom_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/clickable_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/spacing_2xs" android:layout_width="match_parent" android:layout_height="@dimen/ccy_rate_item_height_without_inner_margin">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/header" android:layout_width="match_parent" android:layout_height="@dimen/ccy_rate_item_header_height">
+                    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextTitle1" android:textColor="@color/color_invert_component_tr_300" android:id="@+id/rate_ccy_header_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:textAllCaps="true"/>
+                    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/arrow_iv" android:layout_width="@dimen/rotating_arrow_circle_size" android:layout_height="@dimen/ccy_rate_ccy_icon_size" android:src="@drawable/icons_24_system_chevron_down" app:tint="@color/color_invert_component_tr_200"/>
+                </LinearLayout>
+                <View android:background="@color/ccy_rate_item_divider_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7.3dp" android:weightSum="1">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/left_group" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5">
+                        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextTitle3" android:textColor="@color/color_invert_component_tr_300" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ccy_rate_item_official_label_left_margin" android:layout_marginBottom="@dimen/ccy_rate_item_buy_sell_layout_height" android:text="@string/ccy_official_rate_short" android:includeFontPadding="false"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <androidx.appcompat.widget.AppCompatButton android:textSize="13sp" android:textStyle="bold" android:textColor="@color/bog_white_color" android:layout_gravity="center" android:id="@+id/ccy_logo" android:background="@drawable/background_rounded_corner_rectangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:minWidth="40dp" android:minHeight="30dp" android:textAllCaps="true" android:textAlignment="center" style="?android:attr/borderlessButtonStyle"/>
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/ccy_rate_official_rate_text_size" android:textStyle="bold" android:textColor="@color/color_invert_component_tr_300" android:id="@+id/official_rate_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="@font/bog_medium"/>
+                                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <androidx.appcompat.widget.AppCompatTextView android:textSize="11.3sp" android:id="@+id/rate_difference_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/ccy_rate_item_margin_small" android:includeFontPadding="false" android:fontFamily="@font/bog_medium"/>
+                                    <ImageView android:id="@+id/rate_difference_indicator_iv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/right_group" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5">
+                        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextTitle3" android:textColor="@color/color_invert_component_tr_300" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_mobile_bank_rate" android:includeFontPadding="false"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+                            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5">
+                                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/ccy_rate_text_size_small" android:textColor="@color/color_invert_component_tr_200" android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/ccy_rate_item_buy_sell_layout_height" android:text="@string/ccy_buy" android:includeFontPadding="false" android:fontFamily="@font/bog_medium"/>
+                                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/ccy_rate_item_bank_rate_value_text_size" android:textStyle="bold" android:textColor="@color/color_invert_component_tr_300" android:id="@+id/buy_rate_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="@font/bog_medium"/>
+                                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/ccy_rate_text_size_small" android:textColor="@color/ccy_rate_item_bad_rate_color" android:id="@+id/bad_buy_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="@font/bog_medium"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5">
+                                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/ccy_rate_text_size_small" android:textColor="@color/color_invert_component_tr_200" android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/ccy_rate_item_buy_sell_layout_height" android:text="@string/ccy_sell" android:includeFontPadding="false" android:fontFamily="@font/bog_medium"/>
+                                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/ccy_rate_item_bank_rate_value_text_size" android:textStyle="bold" android:textColor="@color/color_invert_component_tr_300" android:id="@+id/sell_rate_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="@font/bog_medium"/>
+                                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/ccy_rate_text_size_small" android:textColor="@color/ccy_rate_item_bad_rate_color" android:id="@+id/bad_sell_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="@font/bog_medium"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/ccy_rate_item_border_left_margin" android:paddingRight="@dimen/ccy_rate_item_border_right_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/rotation_view" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView android:textColor="@color/color_invert_component_tr_300" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ccy_year_view" android:fontFamily="@font/bog_headline_light" android:textAlignment="center"/>
+            <ImageView android:layout_width="@dimen/ccy_rate_item_rotation_icon_size" android:layout_height="@dimen/ccy_rate_item_rotation_icon_size" android:layout_marginLeft="@dimen/ccy_rate_item_margin_medium" android:src="@drawable/ic_rotate"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/ccy_rate_item_chart_height" android:layout_marginTop="@dimen/spacing_8">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BOGLineChart android:id="@+id/line_chart" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <FrameLayout android:id="@+id/error_view" android:background="@color/bog_white_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.appcompat.widget.AppCompatTextView android:textColor="?attr/colorPrimary" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_text_no_data_found" android:fontFamily="@font/bog_medium" android:textAlignment="center"/>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

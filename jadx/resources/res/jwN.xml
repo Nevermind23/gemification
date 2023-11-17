@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/bog_card_view_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BigDividerView android:layout_width="match_parent" android:layout_height="12dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/history_recycler" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:id="@+id/error_wrapper" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" layout="@layout/operation_error_item"/>
+    <include android:id="@+id/loading_wrapper" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/account_statement_loading_item"/>
+</LinearLayout>

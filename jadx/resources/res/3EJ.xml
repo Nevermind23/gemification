@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="56dp" android:paddingStart="16dp" android:paddingEnd="16dp">
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@color/color_invert_component_tr_400" android:id="@+id/tvInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4sp" android:fontFamily="@font/bog_medium"/>
+</LinearLayout>

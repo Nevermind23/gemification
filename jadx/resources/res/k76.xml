@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="5">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.OtpButton android:id="@+id/otp_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/agree_wrapper" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/card_input_agree_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/ic_checkbox_unselected_color" android:contentDescription="@null"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/card_input_agree_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="@android:color/black" android:layout_gravity="center_vertical" android:id="@+id/card_input_agree_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/common_text_i_agree_with" android:fontFamily="@font/bog_medium"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="12sp" android:textColor="?attr/colorPrimary" android:layout_gravity="center_vertical" android:id="@+id/card_input_conditions_button" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/common_text_to_conditions" android:fontFamily="@font/bog_medium"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <p341ge.bog.mobilebank.p975ui.views.widgets.BogButton android:layout_gravity="center_vertical" android:id="@+id/otp_wizard_save_button" android:layout_width="0dp" android:layout_height="@dimen/bog_button_height" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" android:text="@string/common_text_accept_long" android:layout_weight="4" android:fontFamily="@font/bog_headline_medium" android:elevation="5dp" style="@style/BogButtonNormalStyle"/>
+</LinearLayout>

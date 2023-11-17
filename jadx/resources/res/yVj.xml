@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="@dimen/spacing_20" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:id="@+id/image_container" android:background="@color/color_invert_component_tr_25" android:layout_width="@dimen/gt_close_parameteres_icon_wrapper_size" android:layout_height="@dimen/gt_close_parameteres_icon_wrapper_size" app:layerStyle="@style/LayerRadiusCircleShadow0">
+        <ImageView android:layout_gravity="center" android:id="@+id/image" android:layout_width="@dimen/gt_close_parameteres_icon_size" android:layout_height="@dimen/gt_close_parameteres_icon_size" android:src="@drawable/ic_eating_out"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <TextView android:textAppearance="@style/TextBody2" android:textColor="@color/color_invert_component_solid_500" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</p341ge.bog.designsystem.components.list.ListItem>

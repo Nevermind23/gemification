@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/toolbar"/>
+    <p341ge.bog.designsystem.components.tabs.TabsView android:id="@+id/loan_type_tabs" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/toolbar" app:layout_scrollFlags="0" app:tabMode="1">
+        <com.google.android.material.tabs.TabItem android:layout="@layout/item_tab_custom_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_loans"/>
+        <com.google.android.material.tabs.TabItem android:layout="@layout/item_tab_custom_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cosigner"/>
+    </p341ge.bog.designsystem.components.tabs.TabsView>
+    <androidx.core.widget.NestedScrollView android:id="@+id/viewpager_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/spacing_16" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/loan_type_tabs">
+        <androidx.viewpager2.widget.ViewPager2 android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </androidx.core.widget.NestedScrollView>
+    <p341ge.bog.designsystem.components.loading.LoadingView android:id="@+id/loans_loader" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:item_count="4" app:item_layout="@layout/skeleton_products_card_wide" app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+    <FrameLayout android:id="@+id/progress_bar" android:background="@color/color_white_tr_150" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

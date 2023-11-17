@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.list.ListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_primary_tr_5" android:padding="@dimen/spacing_12" android:layout_width="match_parent" android:layout_height="match_parent" app:layerStyle="@style/LayerRadius50Shadow0">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/icon" android:layout_width="@dimen/gt_start_investing_intro_icon_size" android:layout_height="@dimen/gt_start_investing_intro_icon_size" app:tint="?attr/color_primary_solid_df_500"/>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <p341ge.bog.designsystem.components.list.SingleLineTextItem android:id="@+id/single_line_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:multiline_text="true"/>
+        <p341ge.bog.designsystem.components.list.TwoLineReverseTextItem android:id="@+id/two_line_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:multiline_bottom_text="true" app:multiline_text="true"/>
+        <p341ge.bog.designsystem.components.list.ThreeLineTextItem android:id="@+id/three_line_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:multiline_bottom_text="true" app:multiline_middle_text="true" app:multiline_text="true"/>
+    </FrameLayout>
+</p341ge.bog.designsystem.components.list.ListItem>

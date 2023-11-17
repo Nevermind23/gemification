@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/fragment_bond_details_0" android:paddingTop="@dimen/spacing_8" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <p341ge.bog.designsystem.components.layersandshadows.LayerView android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="wrap_content" app:layerStyle="@style/LayerRadius12Shadow0">
+        <LinearLayout android:orientation="vertical" android:background="?attr/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="match_parent">
+            <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" app:empty_widget_title="@string/product_details_title_capital_details"/>
+            <LinearLayout android:orientation="vertical" android:background="?attr/color_invert_background_layer" android:paddingLeft="@dimen/loan_details_left_margin" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="?attr/color_invert_component_tr_200" android:text="@string/product_details_title_deposit_bond_company_name" style="@style/ProductDetailsSmallTitle"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="?attr/color_invert_component_tr_400" android:tag="binding_1" style="@style/ProductDetailsValue"/>
+                <View style="@style/ProductDivider"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="?attr/color_invert_component_tr_200" android:text="@string/product_details_title_deposit_bond_ticker" style="@style/ProductDetailsSmallTitle"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="?attr/color_invert_component_tr_400" android:tag="binding_2" style="@style/ProductDetailsValue"/>
+                <View style="@style/ProductDivider"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="?attr/color_invert_component_tr_200" android:text="@string/product_details_title_deposit_bond_type" style="@style/ProductDetailsSmallTitle"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="?attr/color_invert_component_tr_400" android:tag="binding_3" style="@style/ProductDetailsValue"/>
+                <View style="@style/ProductDivider"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="?attr/color_invert_component_tr_200" android:text="@string/product_details_title_deposit_bond_count" style="@style/ProductDetailsSmallTitle"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="?attr/color_invert_component_tr_400" android:tag="binding_4" style="@style/ProductDetailsValue"/>
+                <View style="@style/ProductDivider"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="?attr/color_invert_component_tr_200" android:text="@string/product_details_title_deposit_bond_buy_price" style="@style/ProductDetailsSmallTitle"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="?attr/color_invert_component_tr_400" android:tag="binding_5" style="@style/ProductDetailsValue"/>
+                <View style="@style/ProductDivider"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="?attr/color_invert_component_tr_200" android:text="@string/product_details_title_deposit_bond_bazaar_price" style="@style/ProductDetailsSmallTitle"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="?attr/color_invert_component_tr_400" android:tag="binding_6" style="@style/ProductDetailsValue"/>
+                <View style="@style/ProductDivider"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="?attr/color_invert_component_tr_200" android:text="@string/product_details_title_deposit_bond_realised_earn" style="@style/ProductDetailsSmallTitle"/>
+                <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="?attr/color_invert_component_tr_400" android:tag="binding_7" android:layout_marginBottom="16dp" style="@style/ProductDetailsValue"/>
+            </LinearLayout>
+        </LinearLayout>
+    </p341ge.bog.designsystem.components.layersandshadows.LayerView>
+</androidx.core.widget.NestedScrollView>

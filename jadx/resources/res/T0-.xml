@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.pagedescription.PageDescriptionView android:id="@+id/car_number_input_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:drawable_src="@drawable/mtpl_car_number" app:drawable_type="2"/>
+            <p341ge.bog.designsystem.components.biginput.BigInputView android:id="@+id/car_number_input" android:layout_width="match_parent" android:layout_height="wrap_content" app:big_input_type="1" app:hint="@string/car_number_input_hint" app:textAllCaps="true"/>
+            <p341ge.bog.designsystem.components.chips.ChipGroup android:layout_gravity="center_horizontal" android:id="@+id/car_owner_chip_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:multiple_select="false">
+                <p341ge.bog.designsystem.components.chips.Chip android:id="@+id/my_car_chip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:chip_title="@string/car_number_input_chip_title_my_card"/>
+                <p341ge.bog.designsystem.components.chips.Chip android:id="@+id/somebody_elses_car_chip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:chip_title="@string/car_number_input_chip_title_other_persons_car"/>
+            </p341ge.bog.designsystem.components.chips.ChipGroup>
+            <p341ge.bog.designsystem.components.inlinefeedback.InlineFeedback android:id="@+id/car_number_input_feedback" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginTop="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16" app:state="2"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:background="@color/color_invert_background_layer" android:padding="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.checkbox.CheckboxView android:id="@+id/insurance_conditions_check_box" android:layout_width="match_parent" android:layout_height="wrap_content" app:checkbox_type="1"/>
+        <p341ge.bog.designsystem.components.checkbox.CheckboxView android:id="@+id/mia_conditions_check_box" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:checkbox_type="1"/>
+    </LinearLayout>
+    <p341ge.bog.designsystem.components.fixedbutton.FixedButtonView android:id="@+id/continue_button" android:layout_width="match_parent" android:layout_height="wrap_content" app:fixed_button_text="@string/button_text_continue"/>
+</LinearLayout>

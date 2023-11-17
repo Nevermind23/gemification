@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/overdraft_item_header" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="@dimen/loan_history_collapsed_height">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textColor="@android:color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/product_details_title_overdraft_limit" android:fontFamily="@font/bog_medium"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="18sp" android:textColor="@android:color/black" android:gravity="right" android:layout_gravity="center" android:id="@+id/overdraft_item_total_amount" android:layout_width="0dp" android:layout_height="wrap_content" android:text="88,710.00" android:layout_weight="1" android:fontFamily="@font/bog_regular"/>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/overdraft_item_arrow" android:layout_width="16dp" android:layout_height="10dp" android:layout_marginLeft="28dp" android:layout_marginRight="28dp">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:background="@drawable/ic_light_gray_arrow_down" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:id="@+id/overdraft_item_orange_arrow" android:background="@drawable/ic_orange_arrow_down" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0" android:backgroundTint="?attr/colorAccent" app:tintType="0"/>
+        </FrameLayout>
+    </LinearLayout>
+    <View android:id="@+id/loan_history_divider" android:layout_marginTop="0dp" android:layout_marginBottom="0dp" style="@style/ProductDivider"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/loan_history_item_details" android:background="@color/loan_some_background_color" android:paddingLeft="16dp" android:paddingRight="72dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent" android:layout_marginTop="16dp" android:layout_marginBottom="0dp" style="@style/ProductBoxItem">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:layout_marginBottom="0dp" android:text="@string/product_details_title_overdraft_earned_money" style="@style/ProductDetailsSmallTitle"/>
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:id="@+id/overdraft_item_first_tv" android:text="7.998.30 ლ" style="@style/ProductDetailsBoxValue"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_marginTop="@dimen/loan_history_item_details_item_bottom_margin" android:layout_marginBottom="0dp" style="@style/ProductBoxItem">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:id="@+id/bogTextView6" android:layout_marginBottom="0dp" android:text="@string/product_details_title_overdraft_yearly_percent" style="@style/ProductDetailsSmallTitle"/>
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:id="@+id/overdraft_item_second_tv" android:layout_marginBottom="0dp" android:text="1500.00 ლ" style="@style/ProductDetailsBoxValue"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_marginTop="@dimen/loan_history_item_details_item_bottom_margin" android:layout_marginBottom="0dp" style="@style/ProductBoxItem">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:layout_marginBottom="0dp" android:text="@string/product_details_title_overdraft_earned_percent" style="@style/ProductDetailsSmallTitle"/>
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:id="@+id/overdraft_item_third_tv" android:text="1500.00 ლ" style="@style/ProductDetailsBoxValue"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_marginTop="@dimen/loan_history_item_details_item_bottom_margin" android:layout_marginBottom="@dimen/loan_history_item_details_item_bottom_margin" style="@style/ProductBoxItem">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:layout_marginBottom="0dp" android:text="@string/product_details_title_overdraft_valid_until" style="@style/ProductDetailsSmallTitle"/>
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:layout_gravity="center" android:id="@+id/overdraft_item_forth_tv" android:text="@string/common_text_permanent" style="@style/ProductDetailsBoxValue"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:layout_width="0dp" android:layout_height="6dp" android:layout_weight="6"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogButton android:id="@+id/overdraft_item_top_up" android:layout_width="0dp" android:layout_height="@dimen/bog_button_height" android:layout_marginBottom="10dp" android:text="@string/product_details_title_overdraft_top_up" android:layout_weight="4" android:fontFamily="@font/bog_headline_medium" style="@style/BogButtonActiveStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_marginTop="0dp" android:layout_marginBottom="0dp" style="@style/ProductDivider"/>
+</LinearLayout>

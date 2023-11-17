@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/parent_view" android:background="@color/bog_white_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/item_wrapper" android:background="?attr/selectableItemBackground" android:paddingRight="@dimen/item_default_margin" android:layout_width="match_parent" android:layout_height="@dimen/transaction_category_item_height">
+        <View android:id="@+id/category_color" android:background="@color/color_primary_retail" android:layout_width="@dimen/transaction_category_indicator_width" android:layout_height="match_parent" android:layout_alignParentLeft="true"/>
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:id="@+id/category_logo" android:background="@drawable/circle_image_background" android:layout_width="@dimen/pfm_category_logo_image_size" android:layout_height="@dimen/pfm_category_logo_image_size" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_toRightOf="@+id/category_color" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/arrow_image" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_light_gray_arrow_down" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toLeftOf="@+id/arrow_image" android:layout_toRightOf="@+id/category_logo" android:layout_centerVertical="true">
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="14sp" android:textColor="@color/bog_black_text_color" android:id="@+id/category_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bog_bold"/>
+            <p341ge.bog.mobilebank.p975ui.views.widgets.BogTextView android:textSize="10sp" android:textColor="@color/color_accent_retail" android:id="@+id/selected_child" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bog_medium"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/default_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/divider_height"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/collapsing_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

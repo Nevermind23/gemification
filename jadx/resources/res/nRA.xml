@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingBottom="@dimen/spacing_12" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/edit_button" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:layout_gravity="center" android:background="@drawable/edit_income_round_shape" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_16_system_edit_outline" app:tint="@color/color_invert_component_tr_200"/>
+        <p341ge.bog.designsystem.components.list.SingleLineTextItem android:textColor="@color/color_invert_component_tr_400" android:id="@+id/edit_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextBody1"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+    <View android:background="@color/color_invert_component_tr_25" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginHorizontal="@dimen/spacing_16"/>
+    <p341ge.bog.designsystem.components.list.ListItem android:id="@+id/delete_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_8">
+        <p341ge.bog.mobilebank.p975ui.views.widgets.BogImageView android:layout_gravity="center" android:background="@drawable/delete_income_round_shape" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_16_system_delete" android:tint="@color/color_negative_solid_df_500"/>
+        <p341ge.bog.designsystem.components.list.SingleLineTextItem android:textColor="@color/color_invert_component_tr_400" android:id="@+id/delete_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextBody1"/>
+    </p341ge.bog.designsystem.components.list.ListItem>
+</LinearLayout>

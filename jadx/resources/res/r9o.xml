@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p341ge.bog.designsystem.components.layersandshadows.LayerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/interest_container" android:background="@color/color_invert_background_layer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_16" app:layerStyle="@style/LayerRadius16Shadow20">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:paddingBottom="@dimen/spacing_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p341ge.bog.designsystem.components.emptywidget.EmptyWidget android:id="@+id/block_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.list.SingleLineTextItem android:id="@+id/interest_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextSubtitle1InvertComponents400Left" android:layout_gravity="end" android:id="@+id/interest_value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </p341ge.bog.designsystem.components.list.ListItem>
+        <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.list.TwoLineReverseTextItem android:id="@+id/extra_interest_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextSubtitle1InvertComponents400Left" android:layout_gravity="end" android:id="@+id/extra_interest_value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </p341ge.bog.designsystem.components.list.ListItem>
+        <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.list.SingleLineTextItem android:id="@+id/total_interest_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextSubtitle1InvertComponents400Left" android:layout_gravity="end" android:id="@+id/total_interest_value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </p341ge.bog.designsystem.components.list.ListItem>
+        <p341ge.bog.designsystem.components.list.ListItem android:layout_width="match_parent" android:layout_height="wrap_content">
+            <p341ge.bog.designsystem.components.list.SingleLineTextItem android:id="@+id/planed_interest_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextSubtitle1Primary500Left" android:layout_gravity="end" android:id="@+id/planed_interest_value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </p341ge.bog.designsystem.components.list.ListItem>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</p341ge.bog.designsystem.components.layersandshadows.LayerView>

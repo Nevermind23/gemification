@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/background_low" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/agreement_panel" android:background="@drawable/identomat_agreement_background" android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginTop="80dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp" android:elevation="1dp">
+        <TextView android:textSize="18sp" android:id="@+id/title_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/identomat_agree_page_title" android:textAlignment="center"/>
+        <androidx.core.widget.NestedScrollView android:id="@+id/consent_scrollview" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="10dp" android:layout_weight="1" android:requiresFadingEdge="vertical">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:id="@+id/agreement_text" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_marginStart="12dp" android:layout_marginEnd="12dp" android:justificationMode="1"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="30dp" android:layout_marginRight="20dp">
+            <RelativeLayout android:id="@+id/agree_button" android:background="@drawable/identomat_button" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="4dp" android:elevation="1dp">
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/agree_text_view" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/identomat_agree" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/disagree_button" android:background="@drawable/identomat_button" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="4dp" android:elevation="1dp">
+                <TextView android:textColor="@color/primary_color" android:gravity="center" android:id="@+id/disagree_text_view" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/identomat_disagree" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/back_button" android:layout_width="30dp" android:layout_height="match_parent" android:src="@drawable/identomat_back_arrow"/>
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/back_button_title_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="" android:textAlignment="center"/>
+    </LinearLayout>
+</RelativeLayout>

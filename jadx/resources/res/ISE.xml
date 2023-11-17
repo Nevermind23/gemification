@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <FrameLayout android:background="@color/color_invert_background_canvas" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <FrameLayout android:id="@+id/webViewContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+            <WebView android:layout_gravity="center_horizontal" android:id="@+id/web_view" android:background="@color/color_invert_background_layer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <include android:id="@+id/progress_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/full_progress_bar"/>
+    </FrameLayout>
+</LinearLayout>
